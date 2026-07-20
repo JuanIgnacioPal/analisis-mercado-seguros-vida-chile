@@ -3,12 +3,17 @@
 ----
 ## **Fase 1 — Problema de negocio**
 
-**Escenario:** Una compañía multinacional de seguros de vida que opera en Chile desea analizar la evolución del mercado y el desempeño relativo de sus principales competidores. La gerencia necesita una solución analítica que permita monitorear crecimiento, participación de mercado, rentabilidad, siniestralidad, eficiencia operacional, solvencia y composición del negocio para apoyar decisiones estratégicas.
+**Escenario:**
+
+Una compañía multinacional de seguros de vida que opera en Chile desea analizar la evolución del mercado y el desempeño relativo de sus principales competidores. La gerencia necesita una solución analítica que permita monitorear crecimiento, participación de mercado, rentabilidad, siniestralidad, eficiencia operacional, solvencia y composición del negocio para apoyar decisiones estratégicas.
 
 **Problema de negocio:**
+
+
 La dirección de una compañía multinacional de seguros de vida necesita comprender cómo está evolucionando el mercado chileno, qué compañías están fortaleciendo o perdiendo su posición competitiva y qué factores financieros y operacionales explican las diferencias de desempeño entre aseguradoras.
 
 **Problema analítico**
+
 Analizar información trimestral de compañías de seguros de vida entre 2023 y 2025 para identificar tendencias de crecimiento, cambios en participación de mercado, diferencias de rentabilidad, niveles de siniestralidad, eficiencia de gastos, solvencia y evolución de la cartera asegurada.
 
 Nuestro análisis utilizará principalmente:
@@ -18,6 +23,7 @@ Nuestro análisis utilizará principalmente:
 **Stakeholders**
 Principal: 
 - Gerencia de Estrategia y Business Intelligence de una aseguradora multinacional de vida en Chile.
+  
 Secundarios:
 - Gerencia Comercial: interesada en crecimiento de primas, productos, cartera de asegurados y participación de mercado. 
 - Gerencia Financiera: interesada en primas, resultados financieros, rentabilidad, patrimonio y resultados de inversiones. 
