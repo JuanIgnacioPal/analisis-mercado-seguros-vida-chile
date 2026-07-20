@@ -57,7 +57,7 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 - Variables financieras, comerciales, operacionales y de solvencia.
 - Datos creados exclusivamente con fines educativos y de portafolio.
 
-📄 [Ver dataset original](raw/mercado_asegurador_vida_chile_sintetico.csv)
+📄 [Ver dataset original](datos/raw/mercado_asegurador_vida_chile_sintetico)
 
 ---
 
