@@ -76,7 +76,7 @@ Desarrollar una solución de Business Intelligence que permita analizar y compar
 10. ¿Cómo evoluciona la cartera asegurada?
  - ¿Qué compañías muestran mayor crecimiento de asegurados y pólizas, y cómo se relacionan los nuevos asegurados y las cancelaciones con ese crecimiento?
 
-### *🧪*Hipótesis iniciales**
+### **🧪*Hipótesis iniciales**
 
 Antes de analizar los datos estableceremos algunas hipótesis.
 H1: Las compañías con mayor participación de mercado no necesariamente presentan los mejores niveles de rentabilidad. 
