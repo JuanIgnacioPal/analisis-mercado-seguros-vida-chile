@@ -25,9 +25,11 @@ Secundarios:
 - Alta Dirección: interesada en obtener una visión ejecutiva y consolidada del desempeño competitivo del mercado.
 
 **Objetivo general**
+
 Desarrollar una solución de Business Intelligence que permita analizar y comparar el desempeño competitivo, financiero y operacional de compañías ficticias del mercado chileno de seguros de vida durante el período 2023-2025, identificando tendencias y diferencias relevantes que puedan apoyar la toma de decisiones estratégicas.
 
 **Objetivos específicos**
+
 - Analizar la evolución de la prima directa del mercado y de cada compañía para identificar tendencias de crecimiento o contracción.
 - Evaluar la evolución de la participación de mercado para detectar compañías que ganan o pierden posición competitiva. 
 - Comparar indicadores de desempeño financiero como resultado técnico, resultado neto y ROE entre compañías y períodos. 
