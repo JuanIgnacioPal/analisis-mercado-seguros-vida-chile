@@ -21,6 +21,7 @@ Nuestro análisis utilizará principalmente:
 - Análisis diagnóstico: investigar qué indicadores pueden ayudar a explicar las diferencias observadas entre compañías y períodos.
 
 **Stakeholders**
+
 Principal: 
 - Gerencia de Estrategia y Business Intelligence de una aseguradora multinacional de vida en Chile.
   
