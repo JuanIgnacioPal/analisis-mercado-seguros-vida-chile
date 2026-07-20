@@ -1,18 +1,18 @@
 # 🛡️Analisis del Mercado Chileno de Seguros de Vida
-## Proyecto BI basado en estructura CMF
+## 📊Proyecto BI basado en estructura CMF
 ----
 ## **Fase 1 — Problema de negocio**
 
-**Escenario:**
+### **🏢Escenario:**
 
 Una compañía multinacional de seguros de vida que opera en Chile desea analizar la evolución del mercado y el desempeño relativo de sus principales competidores. La gerencia necesita una solución analítica que permita monitorear crecimiento, participación de mercado, rentabilidad, siniestralidad, eficiencia operacional, solvencia y composición del negocio para apoyar decisiones estratégicas.
 
-**Problema de negocio:**
+### **💼Problema de negocio:**
 
 
 La dirección de una compañía multinacional de seguros de vida necesita comprender cómo está evolucionando el mercado chileno, qué compañías están fortaleciendo o perdiendo su posición competitiva y qué factores financieros y operacionales explican las diferencias de desempeño entre aseguradoras.
 
-**Problema analítico**
+### **📊Problema analítico**
 
 Analizar información trimestral de compañías de seguros de vida entre 2023 y 2025 para identificar tendencias de crecimiento, cambios en participación de mercado, diferencias de rentabilidad, niveles de siniestralidad, eficiencia de gastos, solvencia y evolución de la cartera asegurada.
 
@@ -20,7 +20,7 @@ Nuestro análisis utilizará principalmente:
 - Análisis descriptivo: determinar qué ocurrió en el mercado y en cada compañía durante el período estudiado. 
 - Análisis diagnóstico: investigar qué indicadores pueden ayudar a explicar las diferencias observadas entre compañías y períodos.
 
-**Stakeholders**
+### **👥Stakeholders**
 
 Principal: 
 - Gerencia de Estrategia y Business Intelligence de una aseguradora multinacional de vida en Chile.
@@ -31,11 +31,11 @@ Secundarios:
 - Gerencia de Riesgos: interesada en siniestralidad, reservas, capital y solvencia. 
 - Alta Dirección: interesada en obtener una visión ejecutiva y consolidada del desempeño competitivo del mercado.
 
-**Objetivo general**
+### **🎯Objetivo general**
 
 Desarrollar una solución de Business Intelligence que permita analizar y comparar el desempeño competitivo, financiero y operacional de compañías ficticias del mercado chileno de seguros de vida durante el período 2023-2025, identificando tendencias y diferencias relevantes que puedan apoyar la toma de decisiones estratégicas.
 
-**Objetivos específicos**
+### **🎯Objetivos específicos**
 
 - Analizar la evolución de la prima directa del mercado y de cada compañía para identificar tendencias de crecimiento o contracción.
 - Evaluar la evolución de la participación de mercado para detectar compañías que ganan o pierden posición competitiva. 
@@ -44,7 +44,7 @@ Desarrollar una solución de Business Intelligence que permita analizar y compar
 - Evaluar indicadores simplificados de solvencia y capital para identificar diferencias en la fortaleza financiera de las compañías. 
 - Analizar la composición de las primas y la evolución de la cartera para identificar qué productos y segmentos impulsan el desempeño de cada compañía.
 
-**Preguntas de negocio**
+### **❓Preguntas de negocio**
 
 1. ¿Cómo ha evolucionado el tamaño del mercado?
  - ¿Cómo ha evolucionado la prima directa total del mercado entre 2023 y 2025 y qué períodos registraron mayor crecimiento?
@@ -61,22 +61,22 @@ Desarrollar una solución de Business Intelligence que permita analizar y compar
 5. ¿Qué compañías presentan mayor siniestralidad?
  - ¿Qué aseguradoras registran los niveles más altos y bajos de tasa de siniestralidad y cómo evoluciona este indicador?
 
-7. ¿Qué compañías operan con mayor eficiencia?
+6. ¿Qué compañías operan con mayor eficiencia?
  - ¿Qué aseguradoras presentan menores ratios de gastos administrativos respecto de sus primas retenidas?
 
-8. ¿Qué compañías tienen mejores resultados técnicos?
+7. ¿Qué compañías tienen mejores resultados técnicos?
  - ¿Qué compañías convierten de manera más eficiente sus primas retenidas en resultados técnicos positivos después de considerar siniestros y gastos administrativos?
 
-9. ¿Qué compañías presentan mayor fortaleza financiera?
+8. ¿Qué compañías presentan mayor fortaleza financiera?
  - ¿Cómo se comparan las aseguradoras en términos de patrimonio, capital disponible, capital requerido y ratio de solvencia?
 
-10. ¿Qué productos impulsan las primas?
+9. ¿Qué productos impulsan las primas?
  - ¿Cuál es la composición de las primas entre Vida y Protección, Salud, Ahorro/APV, Rentas Vitalicias y Accidentes Personales, y cómo cambia entre compañías?
 
-11. ¿Cómo evoluciona la cartera asegurada?
+10. ¿Cómo evoluciona la cartera asegurada?
  - ¿Qué compañías muestran mayor crecimiento de asegurados y pólizas, y cómo se relacionan los nuevos asegurados y las cancelaciones con ese crecimiento?
 
-**Hipótesis iniciales**
+### *🧪*Hipótesis iniciales**
 
 Antes de analizar los datos estableceremos algunas hipótesis.
 H1: Las compañías con mayor participación de mercado no necesariamente presentan los mejores niveles de rentabilidad. 
@@ -85,7 +85,7 @@ H3: Las compañías especializadas en productos previsionales presentan mayores 
 H4: Las compañías que combinan menor siniestralidad y menor ratio de gastos tienden a presentar mejores resultados técnicos. 
 H5: Un crecimiento elevado de primas no implica necesariamente una mejora equivalente en rentabilidad. 
 
-**Alcance del proyecto**
+### **📍Alcance del proyecto**
 
 - Período 2023-T1 a 2025-T4. 
 - 12 compañías aseguradoras ficticias. 
@@ -98,14 +98,14 @@ H5: Un crecimiento elevado de primas no implica necesariamente una mejora equiva
 - Reservas y solvencia simplificadas. 
 - Pólizas y cartera de asegurados.
 
-**Limitaciones del proyecto**
+### **⚠️Limitaciones del proyecto**
 
 El dataset utilizado en este proyecto es completamente sintético. Los nombres de las compañías y todos los valores financieros, operacionales y comerciales fueron generados exclusivamente con fines educativos y de portafolio.
 Aunque las variables y relaciones utilizadas buscan representar conceptos habituales de la industria aseguradora chilena, los resultados obtenidos no describen el desempeño real de MetLife Chile ni de ninguna otra compañía aseguradora.
 Algunos indicadores, especialmente aquellos relacionados con resultado técnico y solvencia, utilizan fórmulas simplificadas y no deben interpretarse como cálculos regulatorios, contables o actuariales oficiales.
 El proyecto está orientado a demostrar competencias de análisis de datos, SQL y Business Intelligence, y no constituye asesoría financiera, actuarial o de inversiones.
 
-**Resultado esperado**
+### **✅Resultado esperado**
 Al finalizar el proyecto, nuestra solución debería permitir:
 
 - Identificar rápidamente las compañías líderes del mercado. 
