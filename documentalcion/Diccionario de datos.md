@@ -7,7 +7,7 @@
 
 > El dataset es 100% sintético. Las definiciones buscan representar conceptos habituales del análisis asegurador, pero no sustituyen definiciones regulatorias, contables o actuariales oficiales.
 
-| Campo | Tipo recomendado | Descripción |
+| Campo | Tipo | Descripción |
 |---|---|---|
 | `periodo` | Texto | Período trimestral de la observación, expresado como AAAA-Tn. |
 | `fecha_cierre` | Fecha | Fecha de cierre del trimestre correspondiente a la observación. |
