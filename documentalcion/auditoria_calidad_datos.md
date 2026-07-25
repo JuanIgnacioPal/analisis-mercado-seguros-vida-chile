@@ -38,18 +38,6 @@ Sin embargo, se detectó una observación de **plausibilidad de negocio** que de
 - **Ratio de gastos:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.005 puntos porcentuales**.
 - **Ratio de solvencia:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.007 puntos porcentuales**.
 
-## Decisiones de limpieza recomendadas
-
-1. Mantener intacto el archivo original dentro de `datos/raw/`.
-2. Importar el CSV mediante Power Query y tipar explícitamente cada columna.
-3. Convertir `fecha_cierre` a tipo **Fecha**.
-4. Mantener `periodo` como texto.
-5. Validar `compania_id + periodo` como clave lógica de la tabla.
-6. No corregir diferencias pequeñas de redondeo en primas, balance o participación de mercado.
-7. Documentar las tolerancias de redondeo.
-8. Revisar la construcción de `roe_anualizado_pct` antes de usarlo como KPI destacado.
-9. Generar una salida procesada solo después de documentar todas las transformaciones.
-
 ## Nota de trazabilidad
 
 No se deben sobrescribir los datos originales durante la limpieza. Las transformaciones deben quedar registradas como pasos reproducibles en Power Query y la salida debe guardarse separadamente en `datos/processed/`.
