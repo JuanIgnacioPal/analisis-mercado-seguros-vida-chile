@@ -37,7 +37,3 @@ Sin embargo, se detectó una observación de **plausibilidad de negocio** que de
 - **Tasa de siniestralidad:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.005 puntos porcentuales**.
 - **Ratio de gastos:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.005 puntos porcentuales**.
 - **Ratio de solvencia:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.007 puntos porcentuales**.
-
-## Nota de trazabilidad
-
-No se deben sobrescribir los datos originales durante la limpieza. Las transformaciones deben quedar registradas como pasos reproducibles en Power Query y la salida debe guardarse separadamente en `datos/processed/`.
