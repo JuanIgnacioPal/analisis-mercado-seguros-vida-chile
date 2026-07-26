@@ -64,7 +64,7 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 ## 🧭 Metodología y estado del proyecto
 
 - ✅ **Fase 1:** Definición del problema de negocio.
-- ⏳ **Fase 2:** Auditoría y limpieza de datos.
+- ✅ **Fase 2:** Auditoría y limpieza de datos.
 - ⏳ **Fase 3:** Preparación y análisis en SQL.
 - ⏳ **Fase 4:** Construcción y validación de KPIs.
 - ⏳ **Fase 5:** Modelado de datos en Power BI.
