@@ -80,17 +80,35 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 
 - GitHub
 - Markdown
+- Microsoft Excel
+- Power Query
 
 ### Planificadas para las siguientes fases
 
-- Microsoft Excel
-- Power Query
 - SQL
 - Microsoft Power BI
 - DAX
 
 ---
+### ✅ Calidad de datos - (resultado simplificado de la fase 2)
+
+La auditoría realizada en Power Query confirmó:
+
+- 144 observaciones y 39 variables.
+- 0 valores nulos.
+- 0 filas duplicadas.
+- 0 duplicados en la clave lógica `compania_id + periodo`.
+- Coherencia temporal entre período, año, trimestre y fecha de cierre.
+- Diferencias menores de redondeo en primas, balance y participación de mercado.
+- Una limitación documentada de plausibilidad en el ROE sintético.
+
+➡️ [Ver auditoría completa de calidad de datos](documentacion/auditoria_calidad_datos.md)
+
+📘 [Consultar diccionario de datos](documentacion/diccionario_datos.md)
+
+🔧 [Ver consulta de Power Query](power_query/mercado_asegurador_vida_raw.pq)
 
 ## 🗂️ Estructura actual del repositorio
 
-<img width="481" height="224" alt="image" src="https://github.com/user-attachments/assets/7421c5e2-8d99-4375-bb9f-8376f9152771" />
+<img width="436" height="363" alt="image" src="https://github.com/user-attachments/assets/4f929819-eb97-4dec-ae69-0748b2577e7a" />
+
