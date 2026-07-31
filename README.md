@@ -130,7 +130,7 @@ La fase incluyó:
 - Pacífico Futuro Vida obtuvo el mayor margen técnico acumulado con 39,73%.
 - AndesCare Vida presentó el mayor ratio de solvencia sintética en 2025-T4 con 222,51%.
 
-➡️ [Ver scripts y orden de ejecución]([sql/README.md](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/sql))
+➡️ [Ver scripts y orden de ejecución](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/sql)
 
 📄 [Consultar metodología y resultados SQL](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/sql/documentacion/metodologia_sql.md)
 
