@@ -2,7 +2,7 @@
 
 > 📊 Proyecto de Business Intelligence con datos sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
 
-**Estado:** 🟡 En desarrollo - Fase 2 completada  
+**Estado:** 🟡 En desarrollo - Fase 3 completada  
 **Período analizado:** 2023-T1 a 2025-T4  
 **Compañías:** 12 aseguradoras ficticias  
 **Dataset:** 144 observaciones trimestrales  
@@ -65,7 +65,7 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 
 - ✅ **Fase 1:** Definición del problema de negocio.
 - ✅ **Fase 2:** Auditoría y limpieza de datos.
-- ⏳ **Fase 3:** Preparación y análisis en SQL.
+- ✅ **Fase 3:** Preparación y análisis en SQL.
 - ⏳ **Fase 4:** Construcción y validación de KPIs.
 - ⏳ **Fase 5:** Modelado de datos en Power BI.
 - ⏳ **Fase 6:** Desarrollo del dashboard ejecutivo.
@@ -82,10 +82,10 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 - Markdown
 - Microsoft Excel
 - Power Query
+- SQL
 
 ### Planificadas para las siguientes fases
 
-- SQL
 - Microsoft Power BI
 - DAX
 
@@ -108,7 +108,34 @@ La auditoría realizada en Power Query confirmó:
 
 🔧 [Ver consulta de Power Query](power_query/mercado_asegurador_vida_raw.pq)
 
+---
+### 🗄️ Análisis en SQL - Fase 3
+
+El dataset fue importado y analizado en MySQL 8.0 mediante MySQL Workbench 8.0 CE.
+
+La fase incluyó:
+
+- Creación de la base de datos y una tabla de 39 variables.
+- Definición de la clave primaria `compania_id + periodo`.
+- Reproducción de los controles de calidad de Power Query.
+- Análisis de primas, participación, resultados, eficiencia y mix de productos.
+- Cálculo de crecimiento trimestral e interanual mediante `LAG()`.
+- Construcción de rankings mediante `RANK() OVER()`.
+
+**Resultados descriptivos destacados del escenario sintético:**
+
+- La prima directa total aumentó aproximadamente 26,50% entre 2023-T1 y 2025-T4.
+- VidaGlobal lideró la participación de mercado en 2025-T4 con 17,32%.
+- Horizonte Vida presentó el mayor crecimiento interanual en 2025-T4 con 10,83%.
+- Pacífico Futuro Vida obtuvo el mayor margen técnico acumulado con 39,73%.
+- AndesCare Vida presentó el mayor ratio de solvencia sintética en 2025-T4 con 222,51%.
+
+➡️ [Ver scripts y orden de ejecución]([sql/README.md](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/sql))
+
+📄 [Consultar metodología y resultados SQL](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/sql/documentacion/metodologia_sql.md)
+
 ## 🗂️ Estructura actual del repositorio
 
-<img width="436" height="363" alt="image" src="https://github.com/user-attachments/assets/4f929819-eb97-4dec-ae69-0748b2577e7a" />
+<img width="613" height="527" alt="image" src="https://github.com/user-attachments/assets/b3b444ad-8cfd-48dc-991f-19ef6d4d5d18" />
+
 
