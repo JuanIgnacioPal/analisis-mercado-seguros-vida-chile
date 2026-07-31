@@ -2,7 +2,7 @@
 
 > 📊 Proyecto de Business Intelligence con datos sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
 
-**Estado:** 🟡 En desarrollo - Fase 1 completada  
+**Estado:** 🟡 En desarrollo - Fase 2 completada  
 **Período analizado:** 2023-T1 a 2025-T4  
 **Compañías:** 12 aseguradoras ficticias  
 **Dataset:** 144 observaciones trimestrales  
