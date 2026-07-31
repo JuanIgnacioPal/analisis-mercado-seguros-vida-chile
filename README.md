@@ -1,11 +1,10 @@
 # 🗄️ Fase 3 — Preparación y análisis en SQL
 
-Esta carpeta contiene los scripts desarrollados y validados para **MySQL 8.0**, utilizando **MySQL Workbench 8.0 CE** como cliente.
-
+Esta carpeta contiene los scripts desarrollados y validados en **MySQL 8.0**.
 ## 📌 Orden de ejecución
 
 1. `01_creacion_base_tabla.sql`
-2. Importar el CSV original mediante **Table Data Import Wizard**
+2. Importación del CSV original
 3. `02_validacion_calidad.sql`
 4. `03_analisis_mercado.sql`
 5. `04_crecimiento.sql`
@@ -15,11 +14,11 @@ Esta carpeta contiene los scripts desarrollados y validados para **MySQL 8.0**, 
 
 | Archivo | Propósito |
 |---|---|
-| `01_creacion_base_tabla.sql` | Crea la base de datos, la tabla principal, la clave primaria y los índices. |
-| `02_validacion_calidad.sql` | Reproduce en SQL los controles de calidad ejecutados previamente en Power Query. |
-| `03_analisis_mercado.sql` | Analiza tamaño de mercado, participación, resultados, eficiencia, mix de productos y origen de capital. |
-| `04_crecimiento.sql` | Calcula crecimiento trimestral e interanual mediante CTE y `LAG()`. |
-| `05_rankings_kpis.sql` | Construye rankings con `RANK()` para participación, crecimiento, margen técnico y solvencia sintética. |
+| `Fase_01_creacion_base_tabla.sql` | Crea la base de datos, la tabla principal, la clave primaria y los índices. |
+| `Fase_02_validacion_calidad.sql` | Reproduce en SQL los controles de calidad ejecutados previamente en Power Query. |
+| `Fase_03_analisis_mercado.sql` | Analiza tamaño de mercado, participación, resultados, eficiencia, mix de productos y origen de capital. |
+| `Fase_04_crecimiento.sql` | Calcula crecimiento trimestral e interanual mediante CTE y `LAG()`. |
+| `Fase_05_rankings_kpis.sql` | Construye rankings con `RANK()` para participación, crecimiento, margen técnico y solvencia sintética. |
 
 ## 🧱 Granularidad y clave
 
@@ -49,7 +48,7 @@ La importación fue validada con los siguientes resultados:
 - Diferencias menores de redondeo consistentes con la auditoría de la Fase 2.
 - Consultas descriptivas, de crecimiento y rankings ejecutadas correctamente.
 
-## 🛠️ Recursos SQL demostrados
+## 🛠️ Recursos SQL utilizados
 
 - `CREATE DATABASE`
 - `CREATE TABLE`
@@ -71,21 +70,10 @@ La variable `roe_anualizado_pct` es internamente consistente, pero presenta valo
 
 Por este motivo:
 
-- se conserva para fines educativos;
 - no se utiliza como benchmark frente a compañías reales;
 - se excluye de los rankings principales;
 - debe interpretarse como una limitación de plausibilidad, no como un error de integridad.
 
-## 🔄 Reimportación del dataset
-
-Si necesitas importar nuevamente el CSV en la misma tabla, vacía primero los registros existentes:
-
-```sql
-USE seguros_vida_chile;
-TRUNCATE TABLE mercado_asegurador_vida;
-```
-
-Ejecuta `TRUNCATE TABLE` únicamente cuando quieras reiniciar deliberadamente la carga, ya que elimina todos los registros de la tabla.
 
 ## 📄 Documentación complementaria
 
