@@ -90,7 +90,7 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 - DAX
 
 ---
-### ✅ Calidad de datos - (resultado simplificado de la fase 2)
+### ✅ Calidad de datos - Fase 2
 
 La auditoría realizada en Power Query confirmó:
 
@@ -130,6 +130,7 @@ La fase incluyó:
 - Pacífico Futuro Vida obtuvo el mayor margen técnico acumulado con 39,73%.
 - AndesCare Vida presentó el mayor ratio de solvencia sintética en 2025-T4 con 222,51%.
 
+--- 
 ### 📐 Catálogo y validación de KPIs - Fase 4
 
 Se definió y validó un catálogo de 12 KPIs para asegurar que las métricas del futuro dashboard mantengan una fórmula, unidad, granularidad e interpretación consistentes.
@@ -163,6 +164,8 @@ La fase incluyó:
 ➡️ [Ver scripts y orden de ejecución](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/sql)
 
 📄 [Consultar metodología y resultados SQL](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/sql/documentacion/metodologia_sql.md)
+
+---
 
 ## 🗂️ Estructura actual del repositorio
 
