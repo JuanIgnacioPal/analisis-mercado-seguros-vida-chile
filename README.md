@@ -27,7 +27,7 @@ Desarrollar una solución de Business Intelligence que permita analizar y compar
 
 Para consultar la definición completa del problema, stakeholders, objetivos, preguntas de negocio e hipótesis:
 
-➡️ [Ver definición completa del proyecto](definicion_proyecto.md)
+➡️ [Ver definición completa del proyecto](definicion_proyecto.md#preguntas-de-negocio)
 
 ---
 
