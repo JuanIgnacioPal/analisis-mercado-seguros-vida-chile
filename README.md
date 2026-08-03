@@ -41,7 +41,7 @@ El proyecto busca responder, entre otras, las siguientes preguntas:
 - ¿Qué compañías presentan mayores niveles de siniestralidad y eficiencia de gastos?
 - ¿Cómo se comparan las aseguradoras en solvencia, fortaleza financiera y composición de productos?
 
-➡️ [Consultar las 10 preguntas de negocio e hipótesis](docs/definicion_proyecto.md)
+➡️ [Consultar las 10 preguntas de negocio e hipótesis](definicion_proyecto.md#preguntas-de-negocio)
 
 ---
 
