@@ -113,4 +113,4 @@ roe_anualizado_pct se conserva como ejemplo de limitación de plausibilidad, per
 
 ## 📄 Documentación complementaria
 
-➡️ [Consultar metodología y resultados de la Fase 3](../documentacion/metodologia_sql.md)
+➡️ [Consultar metodología y resultados de la Fase 3]([../documentacion/metodologia_sql.md](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/sql/documentacion/metodologia_sql.md))
