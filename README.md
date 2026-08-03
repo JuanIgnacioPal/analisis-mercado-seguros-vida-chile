@@ -104,7 +104,7 @@ La auditoría realizada en Power Query confirmó:
 
 ➡️ [Ver auditoría completa de calidad de datos](documentacion/auditoria_calidad_datos.md)
 
-📘 [Consultar diccionario de datos](main/documentacion/Diccionario%20de%20datos.md)
+📘 [Consultar diccionario de datos](documentacion/Diccionario%20de%20datos.md)
 
 🔧 [Ver consulta de Power Query](power_query/mercado_asegurador_vida_raw.pq)
 
