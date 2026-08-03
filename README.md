@@ -2,7 +2,7 @@
 
 > 📊 Proyecto de Business Intelligence con datos sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
 
-**Estado:** 🟡 En desarrollo - Fase 3 completada  
+**Estado:** 🟡 En desarrollo - Fase 4 completada  
 **Período analizado:** 2023-T1 a 2025-T4  
 **Compañías:** 12 aseguradoras ficticias  
 **Dataset:** 144 observaciones trimestrales  
@@ -66,7 +66,7 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 - ✅ **Fase 1:** Definición del problema de negocio.
 - ✅ **Fase 2:** Auditoría y limpieza de datos.
 - ✅ **Fase 3:** Preparación y análisis en SQL.
-- ⏳ **Fase 4:** Construcción y validación de KPIs.
+- ✅ **Fase 4:** Construcción y validación de KPIs.
 - ⏳ **Fase 5:** Modelado de datos en Power BI.
 - ⏳ **Fase 6:** Desarrollo del dashboard ejecutivo.
 - ⏳ **Fase 7:** Análisis de resultados, insights y recomendaciones.
@@ -130,12 +130,43 @@ La fase incluyó:
 - Pacífico Futuro Vida obtuvo el mayor margen técnico acumulado con 39,73%.
 - AndesCare Vida presentó el mayor ratio de solvencia sintética en 2025-T4 con 222,51%.
 
+### 📐 Catálogo y validación de KPIs - Fase 4
+
+Se definió y validó un catálogo de 12 KPIs para asegurar que las métricas del futuro dashboard mantengan una fórmula, unidad, granularidad e interpretación consistentes.
+
+La fase incluyó:
+
+- Clasificación de medidas aditivas, semi-aditivas y no aditivas.
+- Definición de fórmulas ponderadas para siniestralidad, gastos, margen técnico y solvencia sintética.
+- Reglas temporales para crecimiento QoQ y YoY.
+- Validación de valores de referencia para 2025-T4.
+- Exclusión del ROE sintético del conjunto principal por la limitación DQ-01.
+- Preparación de controles para comparar SQL con la futura implementación en Power BI.
+
+**Valores de referencia del escenario sintético para 2025-T4:**
+
+- Prima directa: 2.435.934 MM CLP.
+- Crecimiento QoQ: 4,77%.
+- Crecimiento YoY: 4,29%.
+- Siniestralidad ponderada: 55,70%.
+- Ratio de gastos: 12,79%.
+- Margen técnico: 31,51%.
+- Ratio de solvencia sintético: 180,48%.
+- Asegurados vigentes: 9.134.304.
+
+➡️ [Consultar diccionario de KPIs](documentacion/diccionario_kpis.md)
+
+🧪 [Ver guía de validación](documentacion/guia_validacion_kpis.md)
+
+🔧 [Ver script de validación](sql/06_validacion_kpis.sql)
+
 ➡️ [Ver scripts y orden de ejecución](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/sql)
 
 📄 [Consultar metodología y resultados SQL](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/sql/documentacion/metodologia_sql.md)
 
 ## 🗂️ Estructura actual del repositorio
 
-<img width="613" height="527" alt="image" src="https://github.com/user-attachments/assets/b3b444ad-8cfd-48dc-991f-19ef6d4d5d18" />
+<img width="765" height="623" alt="image" src="https://github.com/user-attachments/assets/f81ca043-8551-4d82-8ae5-1684dd99cede" />
+
 
 
