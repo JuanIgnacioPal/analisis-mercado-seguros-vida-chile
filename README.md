@@ -1,7 +1,8 @@
-# 🛡️ Análisis del Mercado Chileno de Seguros de Vida
+🗄️ Preparación, análisis y validación en SQL
 
-> 📊 Proyecto de Business Intelligence con datos sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
+Esta carpeta contiene los scripts desarrollados y validados para MySQL 8.0, utilizando MySQL Workbench 8.0 CE como cliente.
 
+📌 Orden de ejecución
 **Estado:** 🟡 En desarrollo - Fase 4 completada  
 **Período analizado:** 2023-T1 a 2025-T4  
 **Compañías:** 12 aseguradoras ficticias  
@@ -9,60 +10,53 @@
 **Herramientas utilizadas hasta ahora:** GitHub · Markdown  
 **Stack planificado:** Excel · Power Query · SQL · Power BI · DAX
 
----
+01_creacion_base_tabla.sql
 
-## 📌 Sobre el proyecto
+Importar el CSV original mediante Table Data Import Wizard
 
-Este proyecto de portafolio busca desarrollar una solución de Business Intelligence para analizar el desempeño competitivo, financiero y operacional de un mercado ficticio de seguros de vida en Chile.
+02_validacion_calidad.sql
 
-El análisis utilizará datos 100% sintéticos y se enfocará en indicadores como prima directa, participación de mercado, crecimiento, siniestralidad, eficiencia operacional, rentabilidad, solvencia y composición del negocio.
+03_analisis_mercado.sql
 
-El objetivo es simular un caso de negocio cercano a los desafíos que podría enfrentar un equipo de Estrategia, Business Intelligence o Analítica dentro de una compañía multinacional de seguros de vida.
+04_crecimiento.sql
 
----
+05_rankings_kpis.sql
 
-## 🎯 Objetivo
+06_validacion_kpis.sql
 
-Desarrollar una solución de Business Intelligence que permita analizar y comparar el desempeño de compañías ficticias del mercado chileno de seguros de vida durante el período 2023-2025, identificando tendencias y diferencias relevantes que puedan apoyar la toma de decisiones estratégicas.
+📂 Descripción de los scripts
 
-Para consultar la definición completa del problema, stakeholders, objetivos, preguntas de negocio e hipótesis:
+Archivo
 
-➡️ [Ver definición completa del proyecto](definicion_proyecto.md)
+Propósito
 
----
+01_creacion_base_tabla.sql
 
-## ❓ Preguntas clave del análisis
+Crea la base de datos, la tabla principal, la clave primaria y los índices.
 
-El proyecto busca responder, entre otras, las siguientes preguntas:
+02_validacion_calidad.sql
 
-- ¿Cómo ha evolucionado el tamaño del mercado y qué compañías están creciendo con mayor rapidez?
-- ¿Qué aseguradoras lideran en participación de mercado y cuáles están ganando o perdiendo posición?
-- ¿Existe una relación entre tamaño de mercado, rentabilidad y resultado técnico?
-- ¿Qué compañías presentan mayores niveles de siniestralidad y eficiencia de gastos?
-- ¿Cómo se comparan las aseguradoras en solvencia, fortaleza financiera y composición de productos?
+Reproduce en SQL los controles de calidad realizados previamente en Power Query.
 
-➡️ [Consultar las 10 preguntas de negocio e hipótesis](definicion_proyecto.md)
+03_analisis_mercado.sql
 
----
+Analiza tamaño de mercado, participación, resultados, eficiencia, mix de productos y origen de capital.
 
-## 🗃️ Dataset
+04_crecimiento.sql
 
-El dataset contiene información trimestral sintética de 12 compañías ficticias de seguros de vida entre 2023-T1 y 2025-T4.
+Calcula crecimiento trimestral e interanual mediante CTE y LAG().
 
-**Características principales:**
+05_rankings_kpis.sql
 
-- 144 observaciones.
-- 12 aseguradoras ficticias.
-- 12 períodos trimestrales.
-- Variables financieras, comerciales, operacionales y de solvencia.
-- Datos creados exclusivamente con fines educativos y de portafolio.
+Construye rankings con RANK() para participación, crecimiento, margen técnico y solvencia sintética.
 
-📄 [Ver dataset original](datos/raw/mercado_asegurador_vida_chile_sintetico.csv)
+06_validacion_kpis.sql
 
----
+Valida el catálogo formal de KPIs y fija valores de referencia para la futura implementación en Power BI.
 
-## 🧭 Metodología y estado del proyecto
+🧱 Granularidad y clave
 
+Una fila representa:
 - ✅ **Fase 1:** Definición del problema de negocio.
 - ✅ **Fase 2:** Auditoría y limpieza de datos.
 - ✅ **Fase 3:** Preparación y análisis en SQL.
@@ -72,42 +66,43 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 - ⏳ **Fase 7:** Análisis de resultados, insights y recomendaciones.
 - ⏳ **Fase 8:** Documentación y publicación final del proyecto.
 
----
+1 compañía ficticia + 1 trimestre
 
-## 🧰 Tecnologías
+La clave primaria utilizada es:
 
-### Utilizadas hasta ahora
+PRIMARY KEY (compania_id, periodo)
 
+✅ Validaciones confirmadas
 - GitHub
 - Markdown
 - Microsoft Excel
 - Power Query
 - SQL
 
-### Planificadas para las siguientes fases
+144 registros y 39 variables.
 
+12 compañías ficticias y 12 períodos trimestrales.
+
+0 valores nulos.
 - Microsoft Power BI
 - DAX
 
 ---
 ### ✅ Calidad de datos - Fase 2
 
-La auditoría realizada en Power Query confirmó:
+0 duplicados en compania_id + periodo.
 
-- 144 observaciones y 39 variables.
-- 0 valores nulos.
-- 0 filas duplicadas.
-- 0 duplicados en la clave lógica `compania_id + periodo`.
-- Coherencia temporal entre período, año, trimestre y fecha de cierre.
-- Diferencias menores de redondeo en primas, balance y participación de mercado.
-- Una limitación documentada de plausibilidad en el ROE sintético.
+0 inconsistencias temporales.
 
-➡️ [Ver auditoría completa de calidad de datos](documentacion/auditoria_calidad_datos.md)
+Diferencias de redondeo consistentes con la auditoría de Power Query.
 
-📘 [Consultar diccionario de datos](documentacion/diccionario_datos.md)
+Consultas descriptivas, temporales y rankings ejecutados correctamente.
 
-🔧 [Ver consulta de Power Query](power_query/mercado_asegurador_vida_raw.pq)
+Catálogo de KPIs validado contra SQL.
 
+Participación de mercado recalculada igual a 100,00% por período.
+
+Diferencias de siniestralidad, gastos y solvencia inferiores a 0,01 puntos porcentuales.
 ---
 ### 🗄️ Análisis en SQL - Fase 3
 
@@ -171,3 +166,37 @@ La fase incluyó:
 
 
 
+📐 KPIs validados
+
+La Fase 4 formalizó y validó:
+
+Prima directa.
+
+Participación de mercado.
+
+Crecimiento QoQ y YoY.
+
+Siniestralidad ponderada.
+
+Ratio de gastos.
+
+Resultado y margen técnico.
+
+Resultado neto.
+
+Ratio de solvencia sintético.
+
+Asegurados vigentes.
+
+Crecimiento YoY de asegurados.
+
+➡️ [Consultar el diccionario de KPIs](documentacion/diccionario_kpis.md)
+
+⚠️ Limitación DQ-01
+
+roe_anualizado_pct se conserva como ejemplo de limitación de plausibilidad, pero queda excluido de las tarjetas, rankings y benchmarks principales.
+
+
+## 📄 Documentación complementaria
+
+➡️ [Consultar metodología y resultados de la Fase 3]([../documentacion/metodologia_sql.md](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/sql/documentacion/metodologia_sql.md))
