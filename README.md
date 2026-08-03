@@ -1,78 +1,114 @@
-# 🗄️ Fase 3 — Preparación y análisis en SQL
+🗄️ Preparación, análisis y validación en SQL
 
-Esta carpeta contiene los scripts desarrollados y validados en **MySQL 8.0**.
-## 📌 Orden de ejecución
+Esta carpeta contiene los scripts desarrollados y validados para MySQL 8.0, utilizando MySQL Workbench 8.0 CE como cliente.
 
-1. `01_creacion_base_tabla.sql`
-2. Importación del CSV original
-3. `02_validacion_calidad.sql`
-4. `03_analisis_mercado.sql`
-5. `04_crecimiento.sql`
-6. `05_rankings_kpis.sql`
+📌 Orden de ejecución
 
-## 📂 Descripción de los scripts
+01_creacion_base_tabla.sql
 
-| Archivo | Propósito |
-|---|---|
-| `Fase_01_creacion_base_tabla.sql` | Crea la base de datos, la tabla principal, la clave primaria y los índices. |
-| `Fase_02_validacion_calidad.sql` | Reproduce en SQL los controles de calidad ejecutados previamente en Power Query. |
-| `Fase_03_analisis_mercado.sql` | Analiza tamaño de mercado, participación, resultados, eficiencia, mix de productos y origen de capital. |
-| `Fase_04_crecimiento.sql` | Calcula crecimiento trimestral e interanual mediante CTE y `LAG()`. |
-| `Fase_05_rankings_kpis.sql` | Construye rankings con `RANK()` para participación, crecimiento, margen técnico y solvencia sintética. |
+Importar el CSV original mediante Table Data Import Wizard
 
-## 🧱 Granularidad y clave
+02_validacion_calidad.sql
+
+03_analisis_mercado.sql
+
+04_crecimiento.sql
+
+05_rankings_kpis.sql
+
+06_validacion_kpis.sql
+
+📂 Descripción de los scripts
+
+Archivo
+
+Propósito
+
+01_creacion_base_tabla.sql
+
+Crea la base de datos, la tabla principal, la clave primaria y los índices.
+
+02_validacion_calidad.sql
+
+Reproduce en SQL los controles de calidad realizados previamente en Power Query.
+
+03_analisis_mercado.sql
+
+Analiza tamaño de mercado, participación, resultados, eficiencia, mix de productos y origen de capital.
+
+04_crecimiento.sql
+
+Calcula crecimiento trimestral e interanual mediante CTE y LAG().
+
+05_rankings_kpis.sql
+
+Construye rankings con RANK() para participación, crecimiento, margen técnico y solvencia sintética.
+
+06_validacion_kpis.sql
+
+Valida el catálogo formal de KPIs y fija valores de referencia para la futura implementación en Power BI.
+
+🧱 Granularidad y clave
 
 Una fila representa:
 
-```text
 1 compañía ficticia + 1 trimestre
-```
 
 La clave primaria utilizada es:
 
-```sql
 PRIMARY KEY (compania_id, periodo)
-```
 
-## ✅ Validaciones confirmadas
+✅ Validaciones confirmadas
 
-La importación fue validada con los siguientes resultados:
+144 registros y 39 variables.
 
-- 144 registros.
-- 39 variables.
-- 12 compañías ficticias.
-- 12 períodos trimestrales.
-- 0 valores nulos.
-- 0 duplicados en `compania_id + periodo`.
-- 0 inconsistencias temporales.
-- Diferencias menores de redondeo consistentes con la auditoría de la Fase 2.
-- Consultas descriptivas, de crecimiento y rankings ejecutadas correctamente.
+12 compañías ficticias y 12 períodos trimestrales.
 
-## 🛠️ Recursos SQL utilizados
+0 valores nulos.
 
-- `CREATE DATABASE`
-- `CREATE TABLE`
-- Tipos `DATE`, `VARCHAR`, `CHAR`, `INT`, `BIGINT` y `DECIMAL`
-- Clave primaria e índices
-- `SELECT`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY`
-- `SUM()`, `COUNT()`, `AVG()`, `MIN()` y `MAX()`
-- Subconsultas
-- `NULLIF()`
-- `UNION ALL`
-- Common Table Expressions (`WITH`)
-- Funciones de ventana
-- `LAG()`
-- `RANK() OVER()`
+0 duplicados en compania_id + periodo.
 
-## ⚠️ Limitación DQ-01
+0 inconsistencias temporales.
 
-La variable `roe_anualizado_pct` es internamente consistente, pero presenta valores sistemáticamente elevados por la lógica de generación del dataset sintético.
+Diferencias de redondeo consistentes con la auditoría de Power Query.
 
-Por este motivo:
+Consultas descriptivas, temporales y rankings ejecutados correctamente.
 
-- no se utiliza como benchmark frente a compañías reales;
-- se excluye de los rankings principales;
-- debe interpretarse como una limitación de plausibilidad, no como un error de integridad.
+Catálogo de KPIs validado contra SQL.
+
+Participación de mercado recalculada igual a 100,00% por período.
+
+Diferencias de siniestralidad, gastos y solvencia inferiores a 0,01 puntos porcentuales.
+
+📐 KPIs validados
+
+La Fase 4 formalizó y validó:
+
+Prima directa.
+
+Participación de mercado.
+
+Crecimiento QoQ y YoY.
+
+Siniestralidad ponderada.
+
+Ratio de gastos.
+
+Resultado y margen técnico.
+
+Resultado neto.
+
+Ratio de solvencia sintético.
+
+Asegurados vigentes.
+
+Crecimiento YoY de asegurados.
+
+➡️ [Consultar el diccionario de KPIs](documentacion/diccionario_kpis.md)
+
+⚠️ Limitación DQ-01
+
+roe_anualizado_pct se conserva como ejemplo de limitación de plausibilidad, pero queda excluido de las tarjetas, rankings y benchmarks principales.
 
 
 ## 📄 Documentación complementaria
