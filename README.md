@@ -157,8 +157,6 @@ La fase incluyó:
 
 ➡️ [Consultar diccionario de KPIs](documentacion/diccionario_kpis.md)
 
-🧪 [Ver guía de validación](documentacion/guia_validacion_kpis.md)
-
 🔧 [Ver script de validación](sql/06_validacion_kpis.sql)
 
 ➡️ [Ver scripts y orden de ejecución](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/sql)
