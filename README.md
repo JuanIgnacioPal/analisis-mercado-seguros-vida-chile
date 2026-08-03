@@ -73,7 +73,116 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 - ⏳ **Fase 8:** Documentación y publicación final del proyecto.
 
 ---
+# 📌 Fase 2 — Calidad de datos
 
+Se realizó una auditoría completa del dataset sintético con el objetivo de garantizar que los análisis posteriores se construyeran sobre información consistente.
+
+### ✔ Resultados obtenidos
+
+- 144 registros validados.
+- 39 variables documentadas.
+- 0 registros duplicados.
+- 0 valores nulos.
+- Consistencia entre tipos de datos y reglas de negocio.
+- Normalización de nombres de compañías y períodos.
+- Elaboración del diccionario de datos.
+- Registro completo de la metodología de limpieza.
+
+### 📚 Documentación
+
+📄 [Auditoría de calidad de datos](documentacion/auditoria_calidad_datos.md)
+
+📘 [Diccionario de datos](documentacion/diccionario_datos.md)
+
+🔧 [Consulta Power Query](power_query/mercado_asegurador_vida_raw.pq)
+
+---
+
+# 🗄 Fase 3 — Análisis en SQL
+
+Una vez validada la calidad de los datos, se construyó la capa analítica utilizando MySQL Workbench 8.0 CE.
+
+Durante esta etapa se desarrollaron consultas para responder preguntas de negocio relacionadas con crecimiento, participación de mercado, rentabilidad y solvencia.
+
+### ✔ Resultados obtenidos
+
+- Creación de la base de datos y tabla principal.
+- Definición de clave primaria compuesta e índices.
+- Validación completa de la carga del dataset.
+- Análisis descriptivo del mercado.
+- Cálculo de crecimiento trimestral (QoQ).
+- Cálculo de crecimiento interanual (YoY).
+- Construcción de rankings de compañías.
+- Validación de indicadores mediante SQL.
+
+### 📈 Principales hallazgos del escenario sintético
+
+- La prima directa total aumentó aproximadamente **26,5 %** entre **2023-T1** y **2025-T4**.
+- VidaGlobal lideró la participación de mercado en **2025-T4** con **17,32 %**.
+- Horizonte Vida presentó el mayor crecimiento interanual (**10,83 %**).
+- Pacífico Futuro Vida obtuvo el mayor margen técnico (**39,73 %**).
+- AndesCare Vida presentó el mayor ratio de solvencia sintético (**222,51 %**).
+
+> **Nota:** Estos resultados corresponden exclusivamente al dataset sintético utilizado con fines educativos y no representan el desempeño real de compañías del mercado chileno.
+
+### 📚 Documentación
+
+📄 [Metodología y resultados SQL](documentacion/metodologia_sql.md)
+
+📂 [Scripts SQL](sql/README.md)
+
+---
+
+# 📐 Fase 4 — Catálogo y validación de KPIs
+
+Antes de desarrollar el dashboard se definió un catálogo formal de indicadores para asegurar que todas las métricas utilizaran fórmulas, unidades y reglas de agregación consistentes.
+
+### ✔ Resultados obtenidos
+
+- Definición de 12 KPIs principales.
+- Clasificación de medidas aditivas, semi-aditivas y no aditivas.
+- Documentación de fórmulas e interpretación de cada KPI.
+- Validación completa mediante SQL.
+- Valores de referencia establecidos para el período **2025-T4**.
+- Exclusión del ROE del conjunto principal debido a la limitación DQ-01.
+
+### 📊 KPIs definidos
+
+- Prima directa
+- Participación de mercado
+- Crecimiento QoQ
+- Crecimiento YoY
+- Tasa de siniestralidad
+- Ratio de gastos
+- Resultado técnico
+- Margen técnico
+- Resultado neto
+- Ratio de solvencia sintético
+- Asegurados vigentes
+- Crecimiento YoY de asegurados
+
+### ✔ Valores de referencia validados (2025-T4)
+
+| Indicador | Valor |
+|-----------|-------:|
+| Prima directa | 2.435.934 MM CLP |
+| Crecimiento QoQ | 4,77 % |
+| Crecimiento YoY | 4,29 % |
+| Siniestralidad ponderada | 55,70 % |
+| Ratio de gastos | 12,79 % |
+| Margen técnico | 31,51 % |
+| Ratio de solvencia sintético | 180,48 % |
+| Asegurados vigentes | 9.134.304 |
+
+Estos valores servirán como referencia para comprobar que el modelo de Power BI reproduzca exactamente los resultados obtenidos en SQL.
+
+### 📚 Documentación
+
+📘 [Diccionario de KPIs](documentacion/diccionario_kpis.md)
+
+🧪 [Guía de validación](documentacion/guia_validacion_kpis.md)
+
+🔧 [Script de validación](sql/06_validacion_kpis.sql)
 ## 🧰 Tecnologías
 
 ### Utilizadas hasta ahora
