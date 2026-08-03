@@ -384,19 +384,3 @@ Medidas base para el ratio de solvencia sintético.
 
 Estos valores se utilizarán para validar la futura implementación en Power BI.
 
----
-
-## 7. Prerrequisitos para DAX
-
-La implementación exacta en DAX se realizará después de construir el modelo de datos.
-
-Será necesario contar con:
-
-- una dimensión calendario continua;
-- una dimensión compañía;
-- una tabla de hechos trimestral;
-- una estructura vertical para productos;
-- relaciones de uno a muchos;
-- medidas base antes de crear medidas derivadas.
-
-No se escribirán medidas DAX definitivas antes de validar ese modelo.
