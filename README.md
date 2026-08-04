@@ -129,7 +129,7 @@ Durante esta etapa se desarrollaron consultas para responder preguntas de negoci
 
 📄 [Metodología y resultados SQL](documentacion/metodologia_sql.md)
 
-📂 [Scripts SQL](sql/README.md)
+📂 [Scripts SQL](sql)
 
 ---
 
@@ -180,9 +180,6 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 
 📘 [Diccionario de KPIs](documentacion/diccionario_kpis.md)
 
-🧪 [Guía de validación](documentacion/guia_validacion_kpis.md)
-
-🔧 [Script de validación](sql/06_validacion_kpis.sql)
 ## 🧰 Tecnologías
 
 ### Utilizadas hasta ahora
