@@ -3,7 +3,7 @@
 **Proyecto:** Análisis del Mercado Chileno de Seguros de Vida  
 **Período:** 2023-T1 a 2025-T4  
 **Granularidad fuente:** una compañía ficticia por trimestre  
-**Estado:** definición inicial para validación
+**Estado:** validado
 
 ## 1. Principios de diseño
 
