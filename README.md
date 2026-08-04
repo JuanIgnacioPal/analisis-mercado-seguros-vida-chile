@@ -199,6 +199,7 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 
 ## 🗂️ Estructura actual del repositorio
 
-<img width="776" height="618" alt="image" src="https://github.com/user-attachments/assets/b333fef2-bc57-4bd2-8729-8190f8923a2c" />
+<img width="645" height="546" alt="image" src="https://github.com/user-attachments/assets/a5fc92f0-1527-48db-b05e-ad41162145d6" />
+
 
 
