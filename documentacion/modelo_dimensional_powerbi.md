@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Construir un modelo semántico en esquema estrella para analizar el mercado sintético de seguros de vida sin mezclar mediciones con granularidades diferentes.
+Construcción un modelo semántico en esquema estrella para analizar el mercado sintético de seguros de vida sin mezclar mediciones con granularidades diferentes.
 
 ## Fuente
 
@@ -14,7 +14,7 @@ Construir un modelo semántico en esquema estrella para analizar el mercado sint
 
 ## Arquitectura implementada
 
-![Modelo dimensional en Power BI](../imagenes/modelo_dimensional_powerbi.png)
+![Modelo dimensional en Power BI](imagenes/modelo_dimensional_powerbi.png)
 
 El modelo contiene tres dimensiones y dos tablas de hechos:
 
@@ -112,11 +112,11 @@ La tabla fue marcada como tabla de fechas y `año_trimestre` fue ordenado median
 
 | Dimensión | Tabla de hechos | Cardinalidad | Dirección | Estado |
 |---|---|---|---|---|
-| `D_Fecha[fecha]` | `H_Mercado_Trimestral[fecha_cierre]` | 1:* | Única | Activa |
-| `D_Compania[compania_id]` | `H_Mercado_Trimestral[compania_id]` | 1:* | Única | Activa |
-| `D_Fecha[fecha]` | `H_Primas_Producto[fecha_cierre]` | 1:* | Única | Activa |
-| `D_Compania[compania_id]` | `H_Primas_Producto[compania_id]` | 1:* | Única | Activa |
-| `D_Producto[producto_id]` | `H_Primas_Producto[producto_id]` | 1:* | Única | Activa |
+| `D_Fecha[fecha]` | `H_Mercado_Trimestral[fecha_cierre]` | 1 ---> * | Única | Activa |
+| `D_Compania[compania_id]` | `H_Mercado_Trimestral[compania_id]` | 1 ---> * | Única | Activa |
+| `D_Fecha[fecha]` | `H_Primas_Producto[fecha_cierre]` | 1 ---> * | Única | Activa |
+| `D_Compania[compania_id]` | `H_Primas_Producto[compania_id]` | 1 ---> * | Única | Activa |
+| `D_Producto[producto_id]` | `H_Primas_Producto[producto_id]` | 1 ---> * | Única | Activa |
 
 No existe una relación directa entre las dos tablas de hechos.
 
