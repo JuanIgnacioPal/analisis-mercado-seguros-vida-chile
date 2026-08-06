@@ -17,7 +17,7 @@ El archivo contiene el modelo semántico construido durante la Fase 5.
 - Dimensión de productos.
 - Tabla de hechos trimestral.
 - Tabla de primas por producto.
-- Cinco relaciones activas 1:* y unidireccionales.
+- Cinco relaciones activas 1 ---> * y unidireccionales.
 - Página temporal de validación del modelo.
 
 ## Fuente
