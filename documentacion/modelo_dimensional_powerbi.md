@@ -14,7 +14,7 @@ Construcción un modelo semántico en esquema estrella para analizar el mercado 
 
 ## Arquitectura implementada
 
-![Modelo dimensional en Power BI](imagenes/modelo_dimensional_powerbi.png)
+:file_folder:[Modelo dimensional en Power BI](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/modelo_dimensional_powerbi.png)
 
 El modelo contiene tres dimensiones y dos tablas de hechos:
 
