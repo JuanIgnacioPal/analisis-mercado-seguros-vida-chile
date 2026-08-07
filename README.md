@@ -182,7 +182,7 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 
 ---
 
-### 🧱 Modelo dimensional en Power BI - Fase 5
+# 🧱 Fase 5 - Modelo dimensional en Power BI 
 
 Se construyó y validó el modelo analítico en Power BI, utilizando como fuente los datos previamente procesados y validados en MySQL. El objetivo de esta fase fue transformar la estructura tabular original en un modelo dimensional tipo estrella, preparado para el posterior desarrollo del dashboard ejecutivo. (Power BI, Power Query, MySQL, DAX)
 
