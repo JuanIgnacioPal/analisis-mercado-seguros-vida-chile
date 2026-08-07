@@ -183,7 +183,6 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 ---
 
 ### 🧱 Modelo dimensional en Power BI - Fase 5
-📊 Fase 5 — Modelado de datos en Power BI
 
 Se construyó y validó el modelo analítico en Power BI, utilizando como fuente los datos previamente procesados y validados en MySQL. El objetivo de esta fase fue transformar la estructura tabular original en un modelo dimensional tipo estrella, preparado para el posterior desarrollo del dashboard ejecutivo. (Power BI, Power Query, MySQL, DAX)
 
@@ -222,17 +221,13 @@ Producto modifica únicamente las primas por producto.
 No aparecen categorías en blanco asociadas a claves sin correspondencia.
 Las relaciones mantienen la cardinalidad y dirección esperadas.
 
-🖥️ Vista previa del modelo analítico
+🖥️ [Vista previa del modelo analítico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/modelo_analitico_preview.png)
 
-🎬 [Demostración]() 
+🎬 Demostración 
 
-Para facilitar la revisión del proyecto sin requerir Power BI Desktop, se incluye una demostración del funcionamiento e interacción del modelo:
+https://github.com/user-attachments/assets/b0db048f-2ede-4c91-8b26-fd5c17052c6f
 
-➡️ Ver demostración del modelo analítico
-
-https://github.com/user-attachments/assets/4e0f6820-e387-4dd9-9bfc-f575f68ac3f6
-
-El archivo .pbix también se encuentra disponible para una revisión técnica del modelo:
+El archivo .pbix se encuentra disponible para una revisión técnica del modelo
 
 ➡️ Abrir archivos de Power BI
 
