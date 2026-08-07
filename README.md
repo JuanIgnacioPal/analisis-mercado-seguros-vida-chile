@@ -2,7 +2,7 @@
 
 > 📊 Proyecto de Business Intelligence con datos sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
 
-**Estado:** 🟡 En desarrollo - Fase 4 completada  
+**Estado:** 🟡 En desarrollo - Fase 5 completada  
 **Período analizado:** 2023-T1 a 2025-T4  
 **Compañías:** 12 aseguradoras ficticias  
 **Dataset:** 144 observaciones trimestrales  
@@ -67,7 +67,7 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 - ✅ **Fase 2:** Auditoría y limpieza de datos.
 - ✅ **Fase 3:** Preparación y análisis en SQL.
 - ✅ **Fase 4:** Construcción y validación de KPIs.
-- ⏳ **Fase 5:** Modelado de datos en Power BI.
+- ✅ **Fase 5:** Modelado de datos en Power BI.
 - ⏳ **Fase 6:** Desarrollo del dashboard ejecutivo.
 - ⏳ **Fase 7:** Análisis de resultados, insights y recomendaciones.
 - ⏳ **Fase 8:** Documentación y publicación final del proyecto.
@@ -180,6 +180,14 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 
 📘 [Diccionario de KPIs](documentacion/diccionario_kpis.md)
 
+---
+
+### 🧱 Modelo dimensional en Power BI - Fase 5
+
+Se construyó un modelo semántico en esquema estrella conectado a MySQL mediante modo Importar.
+
+![Modelo dimensional en Power BI]([imagenes/modelo_dimensional_powerbi.png](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/main/imagenes))
+
 ## 🧰 Tecnologías
 
 ### Utilizadas hasta ahora
@@ -189,9 +197,6 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 - Microsoft Excel
 - Power Query
 - SQL
-
-### Planificadas para las siguientes fases
-
 - Microsoft Power BI
 - DAX
 
@@ -199,7 +204,8 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 
 ## 🗂️ Estructura actual del repositorio
 
-<img width="645" height="546" alt="image" src="https://github.com/user-attachments/assets/a5fc92f0-1527-48db-b05e-ad41162145d6" />
+<img width="761" height="572" alt="image" src="https://github.com/user-attachments/assets/f451e2b4-e5d0-40a9-8bf3-89f1fc107b89" />
+
 
 
 
