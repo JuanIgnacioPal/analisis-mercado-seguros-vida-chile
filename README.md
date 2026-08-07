@@ -183,10 +183,58 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 ---
 
 ### 🧱 Modelo dimensional en Power BI - Fase 5
+📊 Fase 5 — Modelado de datos en Power BI
 
-Se construyó un modelo semántico en esquema estrella conectado a MySQL mediante modo Importar.
+Se construyó y validó el modelo analítico en Power BI, utilizando como fuente los datos previamente procesados y validados en MySQL. El objetivo de esta fase fue transformar la estructura tabular original en un modelo dimensional tipo estrella, preparado para el posterior desarrollo del dashboard ejecutivo. (Power BI, Power Query, MySQL, DAX)
 
-[Modelo dimensional en Power BI](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/modelo_dimensional_powerbi.png)
+🧱 Modelo dimensional
+
+El modelo quedó compuesto por tres dimensiones y dos tablas de hechos:
+
+D_Fecha: dimensión calendario diaria con 1.096 registros, desde 2023-01-01 hasta 2025-12-31. (Power BI, DAX)
+D_Compania: 12 aseguradoras ficticias y sus atributos descriptivos. (Power BI, Power Query)
+D_Producto: 5 categorías de productos de seguros de vida. (Power BI)
+H_Mercado_Trimestral: 144 registros y 21 columnas, con granularidad compañía-trimestre. (Power BI, Power Query)
+H_Primas_Producto: 720 registros y 4 columnas, con granularidad compañía-trimestre-producto. (Power BI, Power Query)
+
+La separación en dos tablas de hechos permite analizar las primas por producto sin duplicar métricas como siniestros, gastos, capital, patrimonio o asegurados. 
+
+🔗 Relaciones
+
+Se configuraron cinco relaciones activas 1:* con filtrado unidireccional desde las dimensiones hacia las tablas de hechos. 
+
+Se creó una página específica de validación para comprobar la propagación de filtros y reconciliar los resultados de Power BI contra los controles previamente obtenidos en SQL.
+
+Para 2025-T4 se verificaron:
+
+Control	Resultado
+Prima directa	2.435.934 MM CLP
+Prima por producto	2.435.937 MM CLP
+Diferencia documentada	3 MM CLP
+
+La diferencia corresponde al redondeo de las primas sintéticas distribuidas entre los cinco productos y no fue corregida artificialmente. 
+
+Las pruebas confirmaron además que:
+
+Fecha filtra correctamente ambas tablas de hechos.
+Compañía filtra correctamente ambas tablas de hechos.
+Producto modifica únicamente las primas por producto.
+No aparecen categorías en blanco asociadas a claves sin correspondencia.
+Las relaciones mantienen la cardinalidad y dirección esperadas.
+
+🖥️ Vista previa del modelo analítico
+
+🎬 [Demostración]() 
+
+Para facilitar la revisión del proyecto sin requerir Power BI Desktop, se incluye una demostración del funcionamiento e interacción del modelo:
+
+➡️ Ver demostración del modelo analítico
+
+https://github.com/user-attachments/assets/4e0f6820-e387-4dd9-9bfc-f575f68ac3f6
+
+El archivo .pbix también se encuentra disponible para una revisión técnica del modelo:
+
+➡️ Abrir archivos de Power BI
 
 ## 🧰 Tecnologías
 
@@ -204,7 +252,8 @@ Se construyó un modelo semántico en esquema estrella conectado a MySQL mediant
 
 ## 🗂️ Estructura actual del repositorio
 
-<img width="761" height="572" alt="image" src="https://github.com/user-attachments/assets/f451e2b4-e5d0-40a9-8bf3-89f1fc107b89" />
+<img width="782" height="621" alt="image" src="https://github.com/user-attachments/assets/bd0722d0-5299-409c-8d01-a821351a7d06" />
+
 
 
 
