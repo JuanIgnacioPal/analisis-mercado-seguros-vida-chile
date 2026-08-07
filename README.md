@@ -225,11 +225,11 @@ Las relaciones mantienen la cardinalidad y dirección esperadas.
 
 🎬 Demostración 
 
-https://github.com/user-attachments/assets/b0db048f-2ede-4c91-8b26-fd5c17052c6f
+https://github.com/user-attachments/assets/92daa5f1-a666-44ee-9a20-32f2051bdc6f
 
 El archivo .pbix se encuentra disponible para una revisión técnica del modelo
 
-➡️ Abrir archivos de Power BI
+➡️ [Abrir archivos de Power BI](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/modelo_analitico_seguros_vida_chile.pbix)
 
 ## 🧰 Tecnologías
 
