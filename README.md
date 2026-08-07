@@ -186,7 +186,7 @@ Estos valores servirán como referencia para comprobar que el modelo de Power BI
 
 Se construyó un modelo semántico en esquema estrella conectado a MySQL mediante modo Importar.
 
-[Modelo dimensional en Power BI](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/main/imagenes)
+[Modelo dimensional en Power BI](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/modelo_dimensional_powerbi.png)
 
 ## 🧰 Tecnologías
 
