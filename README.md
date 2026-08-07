@@ -247,7 +247,8 @@ El archivo .pbix se encuentra disponible para una revisión técnica del modelo
 
 ## 🗂️ Estructura actual del repositorio
 
-<img width="782" height="621" alt="image" src="https://github.com/user-attachments/assets/bd0722d0-5299-409c-8d01-a821351a7d06" />
+<img width="711" height="528" alt="image" src="https://github.com/user-attachments/assets/58ed9fbb-8bed-4f5b-b8de-aa2a56967bb4" />
+
 
 
 
