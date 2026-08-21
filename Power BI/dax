@@ -77,15 +77,3 @@ Las comparaciones QoQ y YoY utilizan `D_Fecha`, una dimensión calendario contin
 ### Valores sin comparación
 
 Cuando no existe un período anterior válido, las medidas temporales devuelven `BLANK()` en lugar de 0 %, porque ambos estados tienen significados diferentes.
-
-## Scripts
-
-Los cálculos completos se encuentran en:
-
-```text
-dax/
-├── 01_medidas_base.dax
-├── 02_kpis_derivados.dax
-├── 03_inteligencia_temporal.dax
-└── 04_medidas_competencia.dax
-```
