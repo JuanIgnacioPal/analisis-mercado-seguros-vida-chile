@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/f1171270-fd47-4771-a0f1-e82abbb664cf
+
 # 🛡️ Análisis del Mercado Chileno de Seguros de Vida
 
 > 📊 Proyecto de Business Intelligence con datos sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
@@ -293,6 +297,9 @@ Cada imagen abre la demostración correspondiente del dashboard.
 🎬 Demostración 
 
 https://github.com/user-attachments/assets/c7f8671e-7e81-4999-b195-7c400ab00b18
+https://github.com/user-attachments/assets/4289e1bf-3b1b-4aec-af65-4fddc7d69d92
+
+
 
 > Los previews permiten revisar el diseño sin Power BI Desktop; las demostraciones muestran filtros e interacciones. El archivo `.pbix` se mantiene disponible para inspección técnica.
 
