@@ -1,0 +1,91 @@
+# 🧮 Medidas DAX — Fase 6
+
+## Objetivo
+
+La capa analítica del dashboard se construyó con **29 medidas DAX explícitas** sobre el modelo dimensional validado en la Fase 5.
+
+No se utilizaron promedios simples de porcentajes precalculados para los KPIs principales. Los ratios se reconstruyen desde sus numeradores y denominadores para responder correctamente al contexto de filtros.
+
+## 1. Medidas base — 15
+
+### Volumen
+- `Prima_Directa_MM_CLP`
+- `Prima_Retenida_MM_CLP`
+
+### Siniestros y gastos
+- `Costo_Siniestros_MM_CLP`
+- `Gastos_Administración_MM_CLP`
+
+### Resultados
+- `Resultado_Técnico_MM_CLP`
+- `Resultado_Neto_MM_CLP`
+- `Resultado_Inversiones_MM_CLP`
+
+### Capital y cartera
+- `Capital_Disponible_MM_CLP`
+- `Capital_Requerido_MM_CLP`
+- `Pólizas_Vigentes`
+- `Asegurados_Vigentes`
+- `Nuevos_Asegurados`
+- `Cancelaciones`
+- `Saldo_Neto_Cartera`
+
+### Productos
+- `Prima_Producto_MM_CLP`
+
+## 2. KPIs derivados — 6
+
+- `Participación_Mercado_PTC`
+- `Siniestralidad_PTC`
+- `Ratio_Gastos_PTC`
+- `Margen_Técnico_PTC`
+- `Solvencia_Sintética_PTC`
+- `Participación_Mix_Producto_PTC`
+
+## 3. Inteligencia temporal — 6
+
+- `Prima_Directa_Trimestre_Anterior_MM_CLP`
+- `Crecimiento_Prima_QoQ_PTC`
+- `Prima_Directa_Año_Anterior_MM_CLP`
+- `Crecimiento_Prima_YoY_PTC`
+- `Asegurados_Año_Anterior`
+- `Crecimiento_Asegurados_YoY_PTC`
+
+## 4. Mercado y competencia — 2
+
+- `Ranking_Mercado`
+- `Concentración_Top_5_PTC`
+
+## Reglas de modelado aplicadas
+
+### Ratios ponderados
+
+Siniestralidad, ratio de gastos y margen técnico se calculan desde montos agregados y no mediante `AVERAGE()` de porcentajes almacenados.
+
+### Stocks de cierre
+
+Capital disponible, capital requerido, pólizas y asegurados son medidas semi-aditivas. Las medidas toman el último cierre dentro del contexto seleccionado para evitar sumar saldos de varios trimestres.
+
+### Participaciones
+
+La participación de mercado elimina únicamente el filtro de compañía en el denominador; el mix de productos elimina únicamente el filtro de producto. Los filtros de fecha y demás dimensiones compatibles se conservan.
+
+### Inteligencia temporal
+
+Las comparaciones QoQ y YoY utilizan `D_Fecha`, una dimensión calendario continua marcada como tabla de fechas.
+
+### Valores sin comparación
+
+Cuando no existe un período anterior válido, las medidas temporales devuelven `BLANK()` en lugar de 0 %, porque ambos estados tienen significados diferentes.
+
+## Scripts
+
+Los cálculos completos se encuentran en:
+
+```text
+dax/
+├── 01_medidas_base.dax
+├── 02_kpis_derivados.dax
+├── 03_inteligencia_temporal.dax
+└── 04_medidas_competencia.dax
+```
