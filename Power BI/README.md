@@ -1,42 +1,70 @@
-# 📊 Power BI
+📊 Power BI
 
-## Archivo principal
+Esta carpeta contiene dos entregables diferentes del proyecto.
 
-```text
-analisis_mercado_seguros_vida_chile.pbix
-```
+1. Modelo analítico
 
-El archivo contiene el modelo semántico construido durante la Fase 5.
+modelo_analitico_seguros_vida_chile.pbix
 
-## Contenido actual
+Propósito: permitir la revisión técnica del modelo dimensional, relaciones, medidas y página de validación.
 
-- Conexión Import a MySQL.
-- Consulta de staging sin carga.
-- Dimensión de fecha.
-- Dimensión de compañías.
-- Dimensión de productos.
-- Tabla de hechos trimestral.
-- Tabla de primas por producto.
-- Cinco relaciones activas 1 ---> * y unidireccionales.
-- Página temporal de validación del modelo.
+Preview principal:
 
-## Fuente
+../imagenes/modelo_analitico_preview.png
 
-```text
-Base de datos: seguros_vida_chile
-Tabla: mercado_asegurador_vida
-```
+Demo:
 
-La fuente se encuentra en una instancia local de MySQL y no está disponible públicamente.
+modelo_analitico_demo.mp4
 
-Como el modelo utiliza modo Importar, el PBIX conserva los datos cargados y puede abrirse para revisar la estructura y los resultados guardados. Para actualizar la información se requiere configurar una fuente MySQL compatible y sus credenciales.
+2. Dashboard ejecutivo
 
-## Seguridad
+dashboard_ejecutivo_seguros_vida_chile.pbix
 
-El repositorio no incluye:
+Propósito: presentar la solución ejecutiva terminada.
 
-- contraseñas;
-- credenciales;
-- archivos internos del servidor MySQL;
-- conexiones privadas exportadas;
-- datos reales de asegurados.
+Páginas:
+
+Resumen Ejecutivo.
+
+Mercado y Competencia.
+
+Desempeño Técnico.
+
+Productos y Cartera.
+
+Demos:
+
+dashboard_resumen_ejecutivo_demo.mp4
+dashboard_mercado_competencia_demo.mp4
+dashboard_desempeno_tecnico_demo.mp4
+dashboard_productos_cartera_demo.mp4
+
+Los previews se almacenan en ../imagenes/ para que el README principal pueda mostrarlos directamente.
+
+Fuente y actualización
+
+Base de datos local: seguros_vida_chile.
+
+Tabla fuente: mercado_asegurador_vida.
+
+Modo Power BI: Importar.
+
+El PBIX conserva los datos cargados en la última actualización. Para refrescar desde otro equipo es necesario recrear/configurar la conexión MySQL y usar credenciales propias.
+
+Seguridad
+
+El repositorio no publica:
+
+contraseñas;
+
+credenciales de MySQL;
+
+datos personales reales;
+
+archivos internos del servidor;
+
+información real de compañías de seguros.
+
+Alcance
+
+Todos los datos y compañías son sintéticos. La solvencia mostrada es sintética y no corresponde a una métrica regulatoria oficial.
