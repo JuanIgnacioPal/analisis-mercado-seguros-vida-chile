@@ -290,6 +290,10 @@ Cada imagen abre la demostración correspondiente del dashboard.
 |---|---|
 | [![Desempeño Técnico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_desempeno_tecnico_preview.png) | [![Productos y Cartera](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_productos_cartera_preview.png) |
 
+🎬 Demostración 
+
+https://github.com/user-attachments/assets/c7f8671e-7e81-4999-b195-7c400ab00b18
+
 > Los previews permiten revisar el diseño sin Power BI Desktop; las demostraciones muestran filtros e interacciones. El archivo `.pbix` se mantiene disponible para inspección técnica.
 
 ### 🔍 Consideraciones metodológicas
@@ -304,8 +308,6 @@ Cada imagen abre la demostración correspondiente del dashboard.
 
 - 📐 [Medidas DAX y metodología](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/medidas_dax.md)
 - 🎨 [Diseño del dashboard ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/diseño_dashboard_ejecutivo.md)
-- ✅ [Validación del dashboard](documentacion/validacion_dashboard.md)
-- 📊 [Archivos de Power BI]([Power%20BI/](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/main/Power%20BI))
 
 ## 🧰 Tecnologías
 
