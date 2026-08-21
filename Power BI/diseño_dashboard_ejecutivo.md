@@ -28,7 +28,7 @@ La página técnica `Validacion_Modelo` se conserva para QA, pero no forma parte
 
 ### Período
 
-`D_Fecha[anio_trimestre]` se usa con selección única y `2025-T4` como estado inicial.
+`D_Fecha[año_trimestre]` se usa con selección única y `2025-T4` como estado inicial.
 
 ### Compañía
 
