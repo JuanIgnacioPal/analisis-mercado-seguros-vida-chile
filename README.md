@@ -120,7 +120,7 @@ Durante esta etapa se desarrollaron consultas para responder preguntas de negoci
 - La prima directa total aumentó aproximadamente **26,5 %** entre **2023-T1** y **2025-T4**.
 - VidaGlobal lideró la participación de mercado en **2025-T4** con **17,32 %**.
 - Horizonte Vida presentó el mayor crecimiento interanual (**10,83 %**).
-- Pacífico Futuro Vida obtuvo el mayor margen técnico (**39,73 %**).
+- Pacífico Futuro Vida obtuvo el mayor margen técnico acumulado del período analizado (**39,73 %**).
 - AndesCare Vida presentó el mayor ratio de solvencia sintético (**222,51 %**).
 
 > **Nota:** Estos resultados corresponden exclusivamente al dataset sintético utilizado con fines educativos y no representan el desempeño real de compañías del mercado chileno.
@@ -206,10 +206,11 @@ Se creó una página específica de validación para comprobar la propagación d
 
 Para 2025-T4 se verificaron:
 
-Control	Resultado
-Prima directa	2.435.934 MM CLP
-Prima por producto	2.435.937 MM CLP
-Diferencia documentada	3 MM CLP
+| Control | Resultado |
+|---|---:|
+| Prima directa | 2.435.934 MM CLP |
+| Prima por producto | 2.435.937 MM CLP |
+| Diferencia de redondeo | 3 MM CLP |
 
 La diferencia corresponde al redondeo de las primas sintéticas distribuidas entre los cinco productos y no fue corregida artificialmente. 
 
@@ -284,11 +285,11 @@ Cada imagen abre la demostración correspondiente del dashboard.
 
 | Resumen Ejecutivo | Mercado y Competencia |
 |---|---|
-| [Resumen Ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_resumen_ejecutivo_preview.png) | [Mercado y Competencia](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_mercado_competencia_preview.png) |
+| [![Resumen Ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_resumen_ejecutivo_preview.png) | [![Mercado y Competencia](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_mercado_competencia_preview.png) |
 
 | Desempeño Técnico | Productos y Cartera |
 |---|---|
-| [Desempeño Técnico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_desempeno_tecnico_preview.png) | [Productos y Cartera](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_productos_cartera_preview.png) |
+| [![Desempeño Técnico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_desempeno_tecnico_preview.png) | [![Productos y Cartera](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_productos_cartera_preview.png) |
 
 🎬 Demostración 
 
@@ -315,9 +316,7 @@ https://github.com/user-attachments/assets/00bcf0c9-f6b9-4098-b3dc-d7abf444b902
 - 📐 [Medidas DAX y metodología](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/medidas_dax.md)
 - 🎨 [Diseño del dashboard ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/diseño_dashboard_ejecutivo.md)
 
-## 🧰 Tecnologías
-
-### Utilizadas hasta ahora
+## 🧰 Herramientas Utilizadas 
 
 - GitHub
 - Markdown
