@@ -296,7 +296,9 @@ https://github.com/user-attachments/assets/c7f8671e-7e81-4999-b195-7c400ab00b18
 
 https://github.com/user-attachments/assets/4289e1bf-3b1b-4aec-af65-4fddc7d69d92
 
+https://github.com/user-attachments/assets/8e990bac-30ce-4f89-869c-bdfc62ebf307
 
+https://github.com/user-attachments/assets/00bcf0c9-f6b9-4098-b3dc-d7abf444b902
 
 > Los previews permiten revisar el diseño sin Power BI Desktop; las demostraciones muestran filtros e interacciones. El archivo `.pbix` se mantiene disponible para inspección técnica.
 
