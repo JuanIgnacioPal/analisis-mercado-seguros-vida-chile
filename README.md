@@ -2,7 +2,7 @@
 
 > 📊 Proyecto de Business Intelligence con datos sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
 
-**Estado:** 🟡 En desarrollo - Fase 5 completada  
+**Estado:** 🟡 En desarrollo - Fase 6 completada  
 **Período analizado:** 2023-T1 a 2025-T4  
 **Compañías:** 12 aseguradoras ficticias  
 **Dataset:** 144 observaciones trimestrales  
@@ -68,7 +68,7 @@ El dataset contiene información trimestral sintética de 12 compañías fictici
 - ✅ **Fase 3:** Preparación y análisis en SQL.
 - ✅ **Fase 4:** Construcción y validación de KPIs.
 - ✅ **Fase 5:** Modelado de datos en Power BI.
-- ⏳ **Fase 6:** Desarrollo del dashboard ejecutivo.
+- ✅ **Fase 6:** Desarrollo del dashboard ejecutivo.
 - ⏳ **Fase 7:** Análisis de resultados, insights y recomendaciones.
 - ⏳ **Fase 8:** Documentación y publicación final del proyecto.
 
@@ -231,6 +231,82 @@ El archivo .pbix se encuentra disponible para una revisión técnica del modelo
 
 ➡️ [Abrir archivos de Power BI](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/modelo_analitico_seguros_vida_chile.pbix)
 
+---
+
+# 📊 Fase 6 — Dashboard ejecutivo en Power BI
+
+Sobre el modelo dimensional validado en la Fase 5 se construyó la capa analítica DAX y un dashboard ejecutivo de cuatro páginas, diseñado para responder las preguntas de negocio definidas al inicio del proyecto.
+
+### ✔ Resultados de construcción
+
+- **29 medidas DAX explícitas**: 15 medidas base, 6 KPIs derivados, 6 medidas de inteligencia temporal y 2 medidas de apoyo competitivo.
+- **4 páginas ejecutivas**: Resumen Ejecutivo, Mercado y Competencia, Desempeño Técnico, y Productos y Cartera.
+- Comparaciones **QoQ** y **YoY** mediante una dimensión calendario validada.
+- Ratios recalculados desde sus componentes, evitando promediar porcentajes almacenados.
+- Tratamiento de pólizas, asegurados y capital como **stocks de cierre**.
+- Reconciliación de los KPIs de Power BI contra los controles previamente obtenidos en SQL.
+
+### 📌 Controles principales — 2025-T4
+
+| Indicador | Resultado |
+|---|---:|
+| Prima directa | **2.435.934 MM CLP** |
+| Crecimiento QoQ | **4,77 %** |
+| Crecimiento YoY | **4,29 %** |
+| Siniestralidad | **55,70 %** |
+| Ratio de gastos | **12,79 %** |
+| Resultado técnico | **736.330 MM CLP** |
+| Margen técnico | **31,51 %** |
+| Solvencia sintética | **180,48 %** |
+| Asegurados vigentes | **9.134.304** |
+| Crecimiento YoY asegurados | **-3,83 %** |
+| Nuevos asegurados | **292.967** |
+| Cancelaciones | **157.660** |
+| Saldo neto de cartera | **135.307** |
+
+### 🧭 Páginas del dashboard
+
+**Resumen Ejecutivo**  
+Visión consolidada del mercado: primas, crecimiento, asegurados, siniestralidad, margen, solvencia, liderazgo y mix de productos.
+
+**Mercado y Competencia**  
+Ranking de las 12 compañías ficticias, concentración Top 5 y posicionamiento por participación, crecimiento y escala de asegurados.
+
+**Desempeño Técnico**  
+Seguimiento de siniestralidad, gastos, resultado técnico, margen y solvencia sintética, junto con benchmarks de compañías.
+
+**Productos y Cartera**  
+Composición de primas por producto, evolución de asegurados y pólizas, altas, cancelaciones y saldo neto de cartera.
+
+### 🖥️ Previews y demostraciones
+
+Cada imagen abre la demostración correspondiente del dashboard.
+
+| Resumen Ejecutivo | Mercado y Competencia |
+|---|---|
+| [![Resumen Ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_resumen_ejecutivo_preview.png) | [![Mercado y Competencia](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_mercado_competencia_preview.png) |
+
+| Desempeño Técnico | Productos y Cartera |
+|---|---|
+| [![Desempeño Técnico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_desempeno_tecnico_preview.png) | [![Productos y Cartera](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_productos_cartera_preview.png) |
+
+> Los previews permiten revisar el diseño sin Power BI Desktop; las demostraciones muestran filtros e interacciones. El archivo `.pbix` se mantiene disponible para inspección técnica.
+
+### 🔍 Consideraciones metodológicas
+
+- Todos los datos y compañías son **sintéticos**.
+- La **solvencia sintética** es un indicador educativo y no reproduce la metodología regulatoria oficial de la CMF.
+- `Saldo Neto Cartera = Nuevos Asegurados - Cancelaciones`; no equivale automáticamente a churn, retención o renovación.
+- En el dataset sintético, el resultado técnico se deriva de prima retenida, siniestros y gastos; por ello, la relación entre siniestralidad, ratio de gastos y margen técnico es parcialmente mecánica.
+- La diferencia entre prima directa y suma de primas por producto corresponde a redondeos del dataset sintético y se mantiene documentada.
+
+### 📚 Documentación y archivos
+
+- 📐 [Medidas DAX y metodología](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/medidas_dax.md)
+- 🎨 [Diseño del dashboard ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/diseño_dashboard_ejecutivo.md)
+- ✅ [Validación del dashboard](documentacion/validacion_dashboard.md)
+- 📊 [Archivos de Power BI]([Power%20BI/](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/main/Power%20BI))
+
 ## 🧰 Tecnologías
 
 ### Utilizadas hasta ahora
@@ -247,7 +323,8 @@ El archivo .pbix se encuentra disponible para una revisión técnica del modelo
 
 ## 🗂️ Estructura actual del repositorio
 
-<img width="711" height="528" alt="image" src="https://github.com/user-attachments/assets/58ed9fbb-8bed-4f5b-b8de-aa2a56967bb4" />
+<img width="906" height="741" alt="image" src="https://github.com/user-attachments/assets/3ceff545-6515-412d-be8f-2788280db893" />
+
 
 
 
