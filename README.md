@@ -284,11 +284,11 @@ Cada imagen abre la demostración correspondiente del dashboard.
 
 | Resumen Ejecutivo | Mercado y Competencia |
 |---|---|
-| [![Resumen Ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_resumen_ejecutivo_preview.png) | [![Mercado y Competencia](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_mercado_competencia_preview.png) |
+| [Resumen Ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_resumen_ejecutivo_preview.png) | [Mercado y Competencia](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_mercado_competencia_preview.png) |
 
 | Desempeño Técnico | Productos y Cartera |
 |---|---|
-| [![Desempeño Técnico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_desempeno_tecnico_preview.png) | [![Productos y Cartera](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_productos_cartera_preview.png) |
+| [Desempeño Técnico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_desempeno_tecnico_preview.png) | [Productos y Cartera](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/dashboard_productos_cartera_preview.png) |
 
 🎬 Demostración 
 
