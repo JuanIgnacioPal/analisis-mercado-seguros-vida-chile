@@ -317,6 +317,30 @@ https://github.com/user-attachments/assets/00bcf0c9-f6b9-4098-b3dc-d7abf444b902
 - 📐 [Medidas DAX y metodología](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/medidas_dax.md)
 - 🎨 [Diseño del dashboard ejecutivo](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/Power%20BI/diseño_dashboard_ejecutivo.md)
 
+---
+
+## 💡 Fase 7 — Hallazgos y recomendaciones
+
+El análisis final permitió convertir los KPIs y dashboards validados en una lectura ejecutiva del escenario sintético.
+
+### Hallazgos principales
+
+- 📈 **Crecimiento con contexto temporal:** la prima directa aumentó **26,50%** entre 2023-T1 y 2025-T4; las caídas QoQ observadas en T1 muestran por qué el YoY es necesario para interpretar la tendencia estructural.
+- 🏢 **Presión competitiva:** VidaGlobal conserva el liderazgo, pero su brecha frente a Horizonte se redujo de **4,38 pp a 3,12 pp**; Horizonte y NovaProtección crecen por encima del mercado.
+- 👥 **Divergencia comercial:** en 2025-T4 la prima crece **+4,29% YoY**, mientras los asegurados vigentes caen **-3,83%**.
+- ⚙️ **Desempeño multidimensional:** el margen técnico mejora mientras la solvencia sintética disminuye, por lo que ambos deben analizarse por separado.
+- 📦 **Mix estable:** Vida y Protección + Rentas Vitalicias explican **69,72%** del crecimiento absoluto YoY de primas por producto sin una gran rotación del mix.
+
+### Recomendaciones
+
+1. Monitorear competidores mediante participación, cambio de share y crecimiento YoY.
+2. Profundizar la divergencia entre primas y asegurados con datos de prima promedio, renovación y persistencia.
+3. Mantener separados los indicadores de eficiencia técnica y solvencia/capital.
+4. Analizar en mayor profundidad los motores de Vida y Protección y Rentas Vitalicias.
+5. Incorporar conciliación stock-flujo de cartera como control obligatorio de calidad de datos.
+
+📄 [Ver hallazgos y recomendaciones completos](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/documentacion/hallazgos_y_recomendaciones.md#-fase-7--hallazgos-y-recomendaciones-ejecutivas)
+
 ## 🧰 Herramientas Utilizadas 
 
 - GitHub
