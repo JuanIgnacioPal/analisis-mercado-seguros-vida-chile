@@ -49,7 +49,7 @@ La importación fue validada con los siguientes resultados:
 - Diferencias menores de redondeo consistentes con la auditoría de la Fase 2.
 - Consultas descriptivas, de crecimiento y rankings ejecutadas correctamente.
 
-## ⚠️ Limitación DQ-01
+## ⚠️ Limitación de plausibilidad del ROE
 
 La variable `roe_anualizado_pct` es internamente consistente, pero presenta valores sistemáticamente elevados por la lógica de generación del dataset sintético.
 
