@@ -19,6 +19,7 @@ Esta carpeta contiene los scripts desarrollados y validados utilizando **MySQL W
 | `Fase_03_analisis_mercado.sql` | Analiza tamaño de mercado, participación, resultados, eficiencia, mix de productos y origen de capital. |
 | `Fase_04_crecimiento.sql` | Calcula crecimiento trimestral e interanual mediante CTE y `LAG()`. |
 | `Fase_05_rankings_kpis.sql` | Construye rankings con `RANK()` para participación, crecimiento, margen técnico y solvencia sintética. |
+| `Fase_06_validacion_kpis` | Validación de KPIs y controles posteriormente utilizados en Power BI. |
 
 ## 🧱 Granularidad y clave
 
