@@ -33,7 +33,7 @@ Rankings y KPIs
 
 ## 4. Creación del modelo relacional
 
-El archivo `01_creacion_base_tabla.sql` crea una tabla de 39 columnas con tipos definidos explícitamente.
+El archivo `Fase_01_creacion_base_tabla.sql` crea una tabla de 39 columnas con tipos definidos explícitamente.
 
 Se utilizaron:
 
@@ -48,7 +48,7 @@ La clave primaria compuesta impide que una compañía tenga más de una observac
 
 ## 5. Validación de calidad en SQL
 
-El archivo `02_validacion_calidad.sql` confirmó:
+El archivo `Fase_02_validacion_calidad.sql` confirmó:
 
 | Control | Resultado |
 |---|---:|
@@ -69,7 +69,7 @@ Los resultados coinciden con la auditoría realizada previamente en Power Query.
 
 ## 6. Análisis descriptivo
 
-El archivo `03_analisis_mercado.sql` respondió seis grupos de preguntas.
+El archivo `Fase_03_analisis_mercado.sql` respondió seis grupos de preguntas.
 
 ### 6.1 Evolución del mercado
 
@@ -117,7 +117,7 @@ Esta comparación describe únicamente el escenario ficticio y no debe extrapola
 
 ## 7. Crecimiento temporal
 
-El archivo `04_crecimiento.sql` utiliza `LAG()` para calcular:
+El archivo `Fase_04_crecimiento.sql` utiliza `LAG()` para calcular:
 
 - crecimiento trimestral o QoQ;
 - crecimiento interanual o YoY;
@@ -142,7 +142,7 @@ Los valores nulos son consecuencia de la ventana temporal disponible y no errore
 
 ## 8. Rankings y KPIs
 
-El archivo `05_rankings_kpis.sql` utiliza `RANK() OVER()`.
+El archivo `Fase_05_rankings_kpis.sql` utiliza `RANK() OVER()`.
 
 ### 8.1 Participación de mercado
 
