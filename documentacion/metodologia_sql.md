@@ -154,7 +154,7 @@ Horizonte Vida ocupa la primera posición en 2025-T4 con **10,83%**.
 
 ### 8.3 Margen técnico
 
-Pacífico Futuro Vida ocupa la primera posición con **39,73%**.
+Pacífico Futuro Vida presentó el mayor margen técnico acumulado del período 2023-T1 a 2025-T4, con 39,73%..
 
 ### 8.4 Solvencia sintética
 
