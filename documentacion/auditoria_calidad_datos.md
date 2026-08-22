@@ -40,7 +40,17 @@ Sin embargo, se detectó una observación de **plausibilidad de negocio** que de
 
 ---
 
-## DQ-02 — No conciliación stock-flujo de cartera
+## 🔄 Hallazgos de calidad posteriores
+
+Durante las fases posteriores del proyecto se realizaron controles
+adicionales derivados del análisis en SQL y Power BI.
+
+Estos controles complementan la auditoría inicial de la Fase 2 y
+documentan limitaciones detectadas durante el análisis.
+
+---
+      
+## ⚠️ Limitación posterior — No conciliación stock-flujo de cartera sd
 
 **Fecha de detección:** Fase 7 — análisis de resultados.
 
