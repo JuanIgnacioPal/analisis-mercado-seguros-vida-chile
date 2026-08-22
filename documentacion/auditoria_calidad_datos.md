@@ -37,3 +37,42 @@ Sin embargo, se detectó una observación de **plausibilidad de negocio** que de
 - **Tasa de siniestralidad:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.005 puntos porcentuales**.
 - **Ratio de gastos:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.005 puntos porcentuales**.
 - **Ratio de solvencia:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.007 puntos porcentuales**.
+
+---
+
+## DQ-02 — No conciliación stock-flujo de cartera
+
+**Fecha de detección:** Fase 7 — análisis de resultados.
+
+### Control 2025
+
+| Métrica | Resultado |
+|---|---:|
+| Nuevos asegurados | 1.165.912 |
+| Cancelaciones | 673.317 |
+| Nuevos - Cancelaciones | +492.595 |
+| Cambio stock 2024-T4 → 2025-T4 | -363.754 |
+| Diferencia no conciliada | **-856.349** |
+
+### Evaluación
+
+Las variables de flujo disponibles no explican el cambio del stock de asegurados. El dataset sintético probablemente omite otros movimientos o genera stocks y flujos de manera parcialmente independiente.
+
+### Decisión analítica
+
+- Conservar `Saldo Neto Cartera` como indicador descriptivo de altas menos cancelaciones.
+- No utilizarlo para explicar la variación del stock de asegurados.
+- No interpretarlo como churn, retención o renovación.
+- No modificar retrospectivamente el dataset para forzar la conciliación.
+
+### Recomendación para datos reales
+
+Aplicar una regla auditable:
+
+```text
+Stock final = Stock inicial + Altas - Bajas ± Otros movimientos identificados
+```
+
+El conjunto de movimientos debe estar definido al nivel de cliente/póliza correspondiente antes de construir KPIs de persistencia o retención.
+
+
