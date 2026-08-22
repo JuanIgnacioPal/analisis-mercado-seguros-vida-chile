@@ -222,7 +222,8 @@ Producto modifica únicamente las primas por producto.
 No aparecen categorías en blanco asociadas a claves sin correspondencia.
 Las relaciones mantienen la cardinalidad y dirección esperadas.
 
-🖥️ [![Vista previa del modelo analítico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/modelo_analitico_preview.png)
+🖥️ Preview del modelo analítico
+[![Vista previa del modelo analítico](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/modelo_analitico_preview.png)
 
 🎬 Demostración 
 
