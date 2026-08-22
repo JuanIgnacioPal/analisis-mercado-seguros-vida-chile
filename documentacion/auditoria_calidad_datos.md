@@ -40,26 +40,6 @@ Sin embargo, se detectó una observación de **plausibilidad de negocio** que de
 
 ---
 
-### DQ-01 — ROE no utilizable para comparación
-
-Durante la validación se determinó que el ROE disponible en el dataset
-sintético no presenta suficiente variabilidad para utilizarse como
-indicador comparativo entre compañías.
-
-Por esta razón:
-
-- El ROE no se utiliza como KPI principal.
-- No se emplea para validar la hipótesis de que una mayor participación
-  de mercado implique mayor rentabilidad.
-- Para ese análisis se utiliza el margen técnico como indicador relativo
-  de desempeño.
-
-La variable se conserva en el dataset por trazabilidad, pero queda
-excluida de las conclusiones principales del proyecto.
-
-
----
-
 ## DQ-02 — No conciliación stock-flujo de cartera
 
 **Fecha de detección:** Fase 7 — análisis de resultados.
