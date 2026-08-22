@@ -2,9 +2,7 @@
 
 ## Objetivo
 
-Convertir los resultados validados del proyecto en decisiones posibles para el escenario ficticio, manteniendo una separación explícita entre evidencia, interpretación, recomendación y limitación.
-
-> **Alcance:** las compañías, valores y resultados son sintéticos. Las recomendaciones demuestran razonamiento analítico y no constituyen asesoría sobre aseguradoras reales ni sobre el mercado chileno real.
+Convertir los resultados validados del proyecto en decisiones posibles para el escenario, manteniendo una separación explícita entre evidencia, interpretación, recomendación y limitación.
 
 ---
 
@@ -17,7 +15,7 @@ Convertir los resultados validados del proyecto en decisiones posibles para el e
 - Horizonte (**+10,83% YoY**) y NovaProtección (**+7,11%**) crecen por encima del mercado (**+4,29%**), mientras VidaGlobal crece **+1,77%**.
 - La concentración Top 5 permanece estable en torno a **61%-63%**, por lo que el cambio principal ocurre dentro del grupo líder.
 
-**Lectura:** la amenaza competitiva relevante no es una concentración creciente, sino la redistribución de share entre aseguradoras de escala significativa.
+**Nota:** la amenaza competitiva relevante no es una concentración creciente, sino la redistribución de share entre aseguradoras de escala significativa.
 
 ---
 
@@ -29,7 +27,7 @@ Entre 2024-T4 y 2025-T4:
 - Asegurados vigentes: **-3,83%**.
 - Pólizas vigentes: **+1,49%**.
 
-**Lectura:** la producción crece sin una expansión equivalente del stock de asegurados. El dataset no permite atribuir una causa específica.
+**Nota:** la producción crece sin una expansión equivalente del stock de asegurados. El dataset no permite atribuir una causa específica.
 
 ---
 
@@ -39,7 +37,7 @@ Entre 2024-T4 y 2025-T4:
 - La solvencia sintética disminuye de **193,12% a 180,48%**.
 - Cordillera combina **40,97%** de margen con **136,00%** de solvencia sintética, mientras AndesCare presenta **16,16%** de margen y **222,51%** de solvencia sintética.
 
-**Lectura:** un único ranking compuesto ocultaría diferencias relevantes entre desempeño técnico y cobertura de capital.
+**Nota:** un único ranking compuesto ocultaría diferencias relevantes entre desempeño técnico y cobertura de capital.
 
 ---
 
@@ -52,7 +50,7 @@ Entre 2024-T4 y 2025-T4:
 - En conjunto explican **69,72%** del crecimiento absoluto.
 - La participación de cada producto varía menos de aproximadamente **1 pp** durante los 12 trimestres.
 
-**Lectura:** el crecimiento se produce principalmente dentro de una estructura de mix estable, no por una gran rotación hacia nuevas categorías.
+**Nota:** el crecimiento se produce principalmente dentro de una estructura de mix estable, no por una gran rotación hacia nuevas categorías.
 
 ---
 
@@ -66,7 +64,7 @@ Durante 2025:
 - Cambio observado del stock de asegurados: **-363.754**.
 - Diferencia no conciliada: **-856.349**.
 
-**Lectura:** `Nuevos Asegurados - Cancelaciones` es útil como flujo descriptivo, pero no explica el cambio del stock con las variables disponibles.
+**Nota:** `Nuevos Asegurados - Cancelaciones` es útil como flujo descriptivo, pero no explica el cambio del stock con las variables disponibles.
 
 **Control de calidad:** documentar como **DQ-02 — No conciliación stock-flujo de cartera**.
 
