@@ -355,48 +355,7 @@ El análisis final permitió convertir los KPIs y dashboards validados en una le
 
 ## 🗂️ Estructura actual del repositorio
 
-analisis-mercado-seguros-vida-chile/
-│
-├── README.md
-├── definicion_proyecto.md
-│
-├── datos/
-│   └── raw/
-│       └── mercado_asegurador_vida_chile_sintetico.csv
-│
-├── documentacion/
-│   ├── auditoria_calidad_datos.md
-│   ├── diccionario_datos.md
-│   ├── diccionario_kpis.md
-│   ├── metodologia_sql.md
-│   ├── modelo_dimensional_powerbi.md
-│   ├── medidas_dax.md
-│   ├── diseño_dashboard_ejecutivo.md 
-│   └── hallazgos_y_recomendaciones.md
-│   
-├── imagenes/
-│   ├── modelo_analitico_preview.png
-│   ├── modelo_dimensional_powerbi.png
-│   ├── validacion_kpis_preview.png
-│   ├── dashboard_resumen_ejecutivo_preview.png
-│   ├── dashboard_mercado_competencia_preview.png
-│   ├── dashboard_desempeno_tecnico_preview.png
-│   └── dashboard_productos_cartera_preview.png
-│
-├── power_query/
-│   └── mercado_asegurador_vida_raw.pq
-│
-├── sql/
-│   └── [scripts SQL validados]
-│
-└── Power BI/
-    ├── README.md
-    ├── modelo_analitico_seguros_vida_chile.pbix
-    ├── meddidas_dax.md
-    ├──	diseño_dashboard_ejecutivo.md
-    └── dashboard_ejecutivo_seguros_vida_chile.pbix
-
-
+<img width="877" height="747" alt="image" src="https://github.com/user-attachments/assets/844e98e9-7d6a-439b-92a9-75e8e8a43014" />
 
 
 
