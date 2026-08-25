@@ -360,8 +360,8 @@ analisis-mercado-seguros-vida-chile/
     ├── modelo_analitico_seguros_vida_chile.pbix
     ├── dashboard_ejecutivo_seguros_vida_chile.pbix
     ├── medidas_dax.md
-    ├── diseño_dashboard_ejecutivo.md
-    └── [demos y archivos complementarios]
+    └── diseño_dashboard_ejecutivo.md
+    
 ```
 
 </details>
