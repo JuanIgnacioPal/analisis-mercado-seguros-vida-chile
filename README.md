@@ -170,7 +170,7 @@ La diferencia corresponde al redondeo de las primas sintéticas distribuidas ent
 
 ---
 
-## 🖥️ Páginas del dashboard
+## Páginas del dashboard
 
 | Resumen Ejecutivo                                            | Mercado y Competencia                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -317,7 +317,7 @@ Los ratios fueron recalculados desde sus componentes para evitar promediar porce
 ---
 
 <details>
-<summary><strong>🗂️ Estructura del repositorio</strong></summary>
+<summary><strong>🗂️ Estructura principal del repositorio</strong></summary>
 
 
 <br>
