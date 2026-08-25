@@ -92,10 +92,6 @@ Antes de analizar los datos, se establecen las siguientes hipótesis:
 - Reservas y solvencia simplificadas.
 - Pólizas y cartera de asegurados.
 
-⚠️Limitaciones del proyecto
-
-El dataset utilizado en este proyecto es completamente sintético. Los nombres de las compañías y todos los valores financieros, operacionales y comerciales fueron generados exclusivamente con fines educativos y de portafolio. Aunque las variables y relaciones utilizadas buscan representar conceptos habituales de la industria aseguradora chilena, los resultados obtenidos no describen el desempeño real de MetLife Chile ni de ninguna otra compañía aseguradora. Algunos indicadores, especialmente aquellos relacionados con resultado técnico y solvencia, utilizan fórmulas simplificadas y no deben interpretarse como cálculos regulatorios, contables o actuariales oficiales. El proyecto está orientado a demostrar competencias de análisis de datos, SQL y Business Intelligence, y no constituye asesoría financiera, actuarial o de inversiones.
-
 ✅Resultado esperado
 
 Al finalizar el proyecto, nuestra solución debería permitir:
