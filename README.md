@@ -2,7 +2,7 @@
 
 > 📊 Proyecto end-to-end de Business Intelligence con datos 100 % sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
 
-**Estado:** 🟡 Fase 8 — QA y publicación final  
+**Estado:** ✅ Proyecto finalizado 
 **Período analizado:** 2023-T1 a 2025-T4  
 **Compañías:** 12 aseguradoras ficticias  
 **Dataset:** 144 observaciones trimestrales · 39 variables originales  
@@ -308,9 +308,7 @@ Los ratios fueron recalculados desde sus componentes para evitar promediar porce
 5. ✅ **Modelo Power BI** — esquema estrella, relaciones y validación.
 6. ✅ **Dashboard ejecutivo** — DAX, cuatro páginas e interacciones.
 7. ✅ **Hallazgos y recomendaciones** — interpretación, contraste de hipótesis y priorización ejecutiva.
-8. 🟡 **Documentación y publicación final** — QA, presentación y cierre del portfolio.
-
-<!-- Al cerrar la Fase 8, cambiar el último punto a: 8. ✅ **Documentación y publicación final** — QA, publicación y cierre. -->
+8. ✅ **Documentación y publicación final** — QA, presentación y cierre del portfolio.
 
 </details>
 
