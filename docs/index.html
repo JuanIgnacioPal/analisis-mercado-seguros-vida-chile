@@ -3,177 +3,782 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Análisis del Mercado Chileno de Seguros de Vida</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Análisis del Mercado Chileno de Seguros de Vida
+    </title>
 
     <meta
         name="description"
-        content="Proyecto end-to-end de Business Intelligence aplicado al mercado chileno de seguros de vida con datos sintéticos."
+        content="Proyecto end-to-end de Business Intelligence aplicado al mercado chileno de seguros de vida con datos 100 % sintéticos."
     >
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="author"
+        content="Juan Ignacio Palacios"
+    >
+
+    <meta
+        property="og:title"
+        content="Análisis del Mercado Chileno de Seguros de Vida"
+    >
+
+    <meta
+        property="og:description"
+        content="Proyecto de Business Intelligence con SQL, Power BI, DAX y análisis de mercado."
+    >
+
+    <meta
+        property="og:image"
+        content="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
+
 
 <body>
 
-    <header class="hero">
+    <!-- ACCESSIBILITY -->
 
-    <div class="container hero-grid">
-
-        <div class="hero-content">
-
-            <p class="eyebrow">
-                DATA ANALYTICS · INSURANCE · CHILE
-            </p>
-
-            <h1>
-                Análisis del Mercado
-                Asegurador de Vida en Chile
-            </h1>
-
-            <p class="intro">
-                Proyecto end-to-end de análisis de datos orientado
-                a transformar información del mercado asegurador
-                en indicadores, insights competitivos y una
-                visualización ejecutiva para la toma de decisiones.
-            </p>
-
-            <div class="tech-list">
-                <span>SQL</span>
-                <span>Power BI</span>
-                <span>Excel</span>
-                <span>DAX</span>
-            </div>
-
-            <div class="actions">
-
-                <a
-                    class="button primary"
-                    href="#dashboards"
-                >
-                    Explorar dashboards
-                </a>
-
-                <a
-                    class="button secondary"
-                    href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile"
-                    target="_blank"
-                >
-                    Ver GitHub
-                </a>
-
-            </div>
-
-        </div>
+    <a
+        class="skip-link"
+        href="#contenido"
+    >
+        Saltar al contenido
+    </a>
 
 
-        <div class="hero-visual">
+    <!-- NAVIGATION -->
 
-            <img
-                src="imagenes/modelo_analitico_preview.png"
-                alt="Dashboard de análisis del mercado asegurador de vida en Chile"
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a
+                class="brand"
+                href="#inicio"
+                aria-label="Ir al inicio"
+            >
+                <span class="brand-mark"></span>
+
+                <span>
+                    Insurance Analytics
+                </span>
+            </a>
+
+            <nav
+                class="navigation"
+                aria-label="Navegación principal"
             >
 
+                <a href="#proyecto">
+                    Proyecto
+                </a>
+
+                <a href="#dashboard">
+                    Dashboard
+                </a>
+
+                <a href="#hallazgos">
+                    Hallazgos
+                </a>
+
+                <a href="#metodologia">
+                    Metodología
+                </a>
+
+                <a
+                    class="nav-github"
+                    href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub ↗
+                </a>
+
+            </nav>
+
         </div>
 
-    </div>
-
-</header>
+    </header>
 
 
-    <main>
 
-        <section class="stats container">
-
-            <article>
-                <strong>12</strong>
-                <span>Compañías ficticias</span>
-            </article>
-
-            <article>
-                <strong>144</strong>
-                <span>Observaciones</span>
-            </article>
-
-            <article>
-                <strong>39</strong>
-                <span>Variables originales</span>
-            </article>
-
-            <article>
-                <strong>4</strong>
-                <span>Páginas ejecutivas</span>
-            </article>
-
-        </section>
+    <main id="contenido">
 
 
-        <section class="section container">
+        <!-- HERO -->
 
-            <p class="section-label">EL PROYECTO</p>
+        <section
+            class="hero"
+            id="inicio"
+        >
 
-            <h2>
-                Del dato bruto a una lectura ejecutiva
-            </h2>
+            <div class="container hero-grid">
 
-            <p>
-                El proyecto simula una necesidad de Estrategia,
-                Business Intelligence o Analítica dentro de una
-                compañía multinacional de seguros de vida.
-            </p>
+                <div class="hero-copy">
 
-            <div class="flow">
-                <span>Excel / CSV</span>
-                <span>→</span>
-                <span>Power Query</span>
-                <span>→</span>
-                <span>MySQL / SQL</span>
-                <span>→</span>
-                <span>Power BI / DAX</span>
-                <span>→</span>
-                <span>Decisiones</span>
+                    <p class="eyebrow">
+                        Proyecto de Business Intelligence
+                    </p>
+
+                    <h1>
+                        Análisis del Mercado Chileno
+                        de Seguros de Vida
+                    </h1>
+
+                    <p class="hero-description">
+                        Proyecto end-to-end orientado a transformar
+                        datos sintéticos del mercado asegurador en
+                        indicadores, análisis competitivo y
+                        recomendaciones de negocio.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="button button-primary"
+                            href="#dashboard"
+                        >
+                            Explorar dashboard
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver repositorio ↗
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stack">
+
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Power Query</span>
+                        <span>Excel</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="dashboard-window">
+
+                        <div class="window-header">
+
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="window-label">
+                                Resumen Ejecutivo
+                            </span>
+
+                        </div>
+
+                        <a
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
+                                alt="Dashboard Resumen Ejecutivo del análisis del mercado chileno de seguros de vida"
+                            >
+
+                        </a>
+
+                    </div>
+
+                    <p class="visual-caption">
+                        Dashboard desarrollado en Power BI
+                    </p>
+
+                </div>
+
             </div>
 
         </section>
 
 
-        <section class="section alternate">
+
+        <!-- PROJECT METRICS -->
+
+        <section
+            class="metrics"
+            aria-label="Métricas del proyecto"
+        >
+
+            <div class="container metrics-grid">
+
+                <article class="metric">
+                    <strong>144</strong>
+                    <span>Observaciones</span>
+                </article>
+
+                <article class="metric">
+                    <strong>12</strong>
+                    <span>Compañías ficticias</span>
+                </article>
+
+                <article class="metric">
+                    <strong>39</strong>
+                    <span>Variables originales</span>
+                </article>
+
+                <article class="metric">
+                    <strong>29</strong>
+                    <span>Medidas DAX</span>
+                </article>
+
+                <article class="metric">
+                    <strong>4</strong>
+                    <span>Páginas ejecutivas</span>
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BUSINESS CASE -->
+
+        <section
+            class="section"
+            id="proyecto"
+        >
+
+            <div class="container narrow">
+
+                <p class="section-kicker">
+                    Caso de negocio
+                </p>
+
+                <h2>
+                    Del dato bruto a una lectura
+                    ejecutiva del mercado
+                </h2>
+
+                <p class="section-intro">
+                    El proyecto simula una necesidad de Estrategia,
+                    Business Intelligence o Analítica dentro de una
+                    compañía multinacional de seguros de vida:
+                    monitorear un mercado competitivo, validar
+                    indicadores y transformar los resultados en
+                    información útil para la toma de decisiones.
+                </p>
+
+
+                <div class="business-question">
+
+                    <span class="question-label">
+                        Pregunta central
+                    </span>
+
+                    <p>
+                        ¿Cómo evoluciona el mercado y qué señales
+                        permiten identificar cambios en crecimiento,
+                        participación, desempeño técnico,
+                        productos y cartera?
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- DASHBOARD GALLERY -->
+
+        <section
+            class="section section-soft"
+            id="dashboard"
+        >
 
             <div class="container">
 
-                <p class="section-label">HALLAZGOS</p>
+                <div class="section-heading">
 
-                <h2>
-                    Algunos resultados del análisis
-                </h2>
+                    <div>
 
-                <div class="cards">
-
-                    <article class="card">
-                        <h3>Crecimiento del mercado</h3>
-                        <p>
-                            La prima directa del mercado sintético
-                            aumentó 26,50 % entre 2023-T1 y 2025-T4.
+                        <p class="section-kicker">
+                            Dashboard
                         </p>
+
+                        <h2>
+                            Cuatro perspectivas,
+                            una misma historia
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Cada página responde a una necesidad analítica
+                        distinta, manteniendo un diseño consistente
+                        y orientado a lectura ejecutiva.
+                    </p>
+
+                </div>
+
+
+
+                <!-- DASHBOARD 1 -->
+
+                <article class="dashboard-feature">
+
+                    <div class="dashboard-image">
+
+                        <a
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
+                                alt="Dashboard Resumen Ejecutivo"
+                                loading="lazy"
+                            >
+
+                        </a>
+
+                    </div>
+
+                    <div class="dashboard-description">
+
+                        <span class="dashboard-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Resumen Ejecutivo
+                            </h3>
+
+                            <p>
+                                Visión consolidada de primas,
+                                crecimiento, asegurados,
+                                siniestralidad, margen, solvencia,
+                                liderazgo y mix de productos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DASHBOARD 2 -->
+
+                <article class="dashboard-feature">
+
+                    <div class="dashboard-image">
+
+                        <a
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_mercado_competencia_preview.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_mercado_competencia_preview.png"
+                                alt="Dashboard Mercado y Competencia"
+                                loading="lazy"
+                            >
+
+                        </a>
+
+                    </div>
+
+                    <div class="dashboard-description">
+
+                        <span class="dashboard-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Mercado y Competencia
+                            </h3>
+
+                            <p>
+                                Ranking de las 12 compañías,
+                                concentración Top 5 y posicionamiento
+                                por participación, crecimiento
+                                y escala.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DASHBOARD 3 -->
+
+                <article class="dashboard-feature">
+
+                    <div class="dashboard-image">
+
+                        <a
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_desempeno_tecnico_preview.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_desempeno_tecnico_preview.png"
+                                alt="Dashboard Desempeño Técnico"
+                                loading="lazy"
+                            >
+
+                        </a>
+
+                    </div>
+
+                    <div class="dashboard-description">
+
+                        <span class="dashboard-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Desempeño Técnico
+                            </h3>
+
+                            <p>
+                                Seguimiento de siniestralidad,
+                                gastos, resultado técnico,
+                                margen y solvencia sintética
+                                entre compañías.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DASHBOARD 4 -->
+
+                <article class="dashboard-feature">
+
+                    <div class="dashboard-image">
+
+                        <a
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_productos_cartera_preview.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_productos_cartera_preview.png"
+                                alt="Dashboard Productos y Cartera"
+                                loading="lazy"
+                            >
+
+                        </a>
+
+                    </div>
+
+                    <div class="dashboard-description">
+
+                        <span class="dashboard-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Productos y Cartera
+                            </h3>
+
+                            <p>
+                                Composición de primas por producto,
+                                evolución de asegurados y pólizas,
+                                altas, cancelaciones y saldo
+                                neto de cartera.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- KEY FINDINGS -->
+
+        <section
+            class="section findings-section"
+            id="hallazgos"
+        >
+
+            <div class="container">
+
+                <div class="findings-heading">
+
+                    <p class="section-kicker light">
+                        Hallazgos clave
+                    </p>
+
+                    <h2>
+                        Lo que cuentan los datos
+                    </h2>
+
+                </div>
+
+
+                <div class="findings-grid">
+
+                    <article class="finding">
+
+                        <strong>
+                            +26,50 %
+                        </strong>
+
+                        <h3>
+                            Crecimiento de prima directa
+                        </h3>
+
+                        <p>
+                            Aumento acumulado del mercado sintético
+                            entre 2023-T1 y 2025-T4.
+                        </p>
+
                     </article>
 
-                    <article class="card">
-                        <h3>Competencia</h3>
+
+                    <article class="finding">
+
+                        <strong>
+                            17,32 %
+                        </strong>
+
+                        <h3>
+                            Participación del líder
+                        </h3>
+
                         <p>
-                            VidaGlobal mantuvo el liderazgo en 2025-T4,
-                            aunque Horizonte redujo la distancia frente
-                            al líder.
+                            VidaGlobal mantuvo el liderazgo
+                            del mercado en 2025-T4.
                         </p>
+
                     </article>
 
-                    <article class="card">
-                        <h3>Cartera</h3>
+
+                    <article class="finding">
+
+                        <strong>
+                            +4,29 %
+                        </strong>
+
+                        <h3>
+                            Prima directa YoY
+                        </h3>
+
                         <p>
-                            En 2025-T4 las primas crecieron 4,29 % YoY
-                            mientras los asegurados vigentes disminuyeron
-                            3,83 %.
+                            Crecimiento interanual observado
+                            durante 2025-T4.
                         </p>
+
+                    </article>
+
+
+                    <article class="finding">
+
+                        <strong>
+                            −3,83 %
+                        </strong>
+
+                        <h3>
+                            Asegurados vigentes YoY
+                        </h3>
+
+                        <p>
+                            La cartera disminuyó mientras
+                            las primas continuaron creciendo.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="finding-note">
+
+                    <p>
+                        La divergencia entre crecimiento de primas
+                        y reducción de asegurados representa una
+                        señal que requeriría mayor granularidad en
+                        un entorno real para explicar su origen.
+                    </p>
+
+                    <a
+                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/documentacion/hallazgos_y_recomendaciones.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Consultar análisis completo →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ANALYTICAL WORKFLOW -->
+
+        <section
+            class="section"
+            id="metodologia"
+        >
+
+            <div class="container">
+
+                <div class="section-heading workflow-heading">
+
+                    <div>
+
+                        <p class="section-kicker">
+                            Metodología
+                        </p>
+
+                        <h2>
+                            Del dato a la decisión
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        La solución separa preparación,
+                        validación, análisis, modelado y
+                        visualización para mantener trazabilidad
+                        a lo largo del proyecto.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow">
+
+                    <article class="workflow-step">
+
+                        <span>01</span>
+
+                        <h3>
+                            Excel / CSV
+                        </h3>
+
+                        <p>
+                            Dataset sintético y definición
+                            inicial del problema.
+                        </p>
+
+                    </article>
+
+
+                    <article class="workflow-step">
+
+                        <span>02</span>
+
+                        <h3>
+                            Power Query
+                        </h3>
+
+                        <p>
+                            Auditoría, tipificación y
+                            preparación de los datos.
+                        </p>
+
+                    </article>
+
+
+                    <article class="workflow-step">
+
+                        <span>03</span>
+
+                        <h3>
+                            MySQL + SQL
+                        </h3>
+
+                        <p>
+                            Validaciones, crecimiento,
+                            rankings y controles de KPIs.
+                        </p>
+
+                    </article>
+
+
+                    <article class="workflow-step">
+
+                        <span>04</span>
+
+                        <h3>
+                            Power BI + DAX
+                        </h3>
+
+                        <p>
+                            Modelo dimensional, KPIs,
+                            inteligencia temporal y dashboard.
+                        </p>
+
+                    </article>
+
+
+                    <article class="workflow-step">
+
+                        <span>05</span>
+
+                        <h3>
+                            Decisión
+                        </h3>
+
+                        <p>
+                            Hallazgos, recomendaciones
+                            y limitaciones documentadas.
+                        </p>
+
                     </article>
 
                 </div>
@@ -183,49 +788,294 @@
         </section>
 
 
-        <section class="section container">
 
-            <p class="section-label">METODOLOGÍA</p>
+        <!-- TECHNICAL EVIDENCE -->
 
-            <h2>
-                Análisis con trazabilidad
-            </h2>
+        <section class="section section-soft">
 
-            <p>
-                La solución incluye auditoría de calidad,
-                análisis y validación mediante SQL,
-                definición formal de KPIs, modelado dimensional,
-                medidas DAX, dashboard ejecutivo y una etapa final
-                de interpretación y recomendaciones.
-            </p>
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-kicker">
+                            Evidencia técnica
+                        </p>
+
+                        <h2>
+                            El resultado es visible.
+                            El proceso también.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        El repositorio conserva las capas
+                        necesarias para revisar cómo se obtuvo,
+                        validó y presentó cada resultado.
+                    </p>
+
+                </div>
+
+
+                <div class="evidence-grid">
+
+
+                    <a
+                        class="evidence-card"
+                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/main/sql"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <span class="evidence-index">
+                            01
+                        </span>
+
+                        <h3>
+                            SQL
+                        </h3>
+
+                        <p>
+                            Preparación, análisis,
+                            rankings y controles.
+                        </p>
+
+                        <span class="evidence-link">
+                            Revisar scripts →
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        class="evidence-card"
+                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/documentacion/diccionario_kpis.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <span class="evidence-index">
+                            02
+                        </span>
+
+                        <h3>
+                            KPIs
+                        </h3>
+
+                        <p>
+                            Fórmulas, unidades,
+                            interpretación y agregación.
+                        </p>
+
+                        <span class="evidence-link">
+                            Ver diccionario →
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        class="evidence-card"
+                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/tree/main/Power%20BI"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <span class="evidence-index">
+                            03
+                        </span>
+
+                        <h3>
+                            Power BI
+                        </h3>
+
+                        <p>
+                            Modelo dimensional,
+                            DAX y dashboard ejecutivo.
+                        </p>
+
+                        <span class="evidence-link">
+                            Explorar Power BI →
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        class="evidence-card"
+                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/documentacion/auditoria_calidad_datos.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <span class="evidence-index">
+                            04
+                        </span>
+
+                        <h3>
+                            Calidad
+                        </h3>
+
+                        <p>
+                            Nulos, duplicados,
+                            consistencia y plausibilidad.
+                        </p>
+
+                        <span class="evidence-link">
+                            Ver auditoría →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
 
         </section>
 
 
-        <section class="container notice">
 
-            <strong>Nota metodológica</strong>
+        <!-- METHODOLOGICAL NOTE -->
 
-            <p>
-                Los datos y compañías utilizados son 100 % sintéticos.
-                El proyecto tiene fines educativos y de portfolio y
-                no representa el desempeño real del mercado asegurador chileno.
-            </p>
+        <section class="section disclaimer-section">
+
+            <div class="container">
+
+                <div class="disclaimer">
+
+                    <div>
+
+                        <span class="disclaimer-icon">
+                            i
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Nota metodológica
+                        </h2>
+
+                        <p>
+                            Los datos y compañías utilizados
+                            son 100 % sintéticos y se emplean
+                            únicamente con fines educativos
+                            y de portfolio.
+                        </p>
+
+                        <p>
+                            La solvencia sintética no reproduce
+                            la metodología regulatoria oficial
+                            de la Comisión para el Mercado
+                            Financiero (CMF).
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
+
+
+
+        <!-- FINAL CTA -->
+
+        <section class="cta-section">
+
+            <div class="container cta-grid">
+
+                <div>
+
+                    <p class="section-kicker light">
+                        Repositorio completo
+                    </p>
+
+                    <h2>
+                        ¿Quieres ver cómo
+                        se construyó?
+                    </h2>
+
+                </div>
+
+
+                <div class="cta-content">
+
+                    <p>
+                        Explora el dataset, scripts SQL,
+                        documentación, modelo Power BI,
+                        medidas DAX, validaciones y
+                        conclusiones del proyecto.
+                    </p>
+
+                    <a
+                        class="button button-light"
+                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Abrir repositorio en GitHub ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
     </main>
 
 
-    <footer>
 
-        <div class="container">
-            <p>
-                Proyecto de Data Analytics & Business Intelligence
-            </p>
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <strong>
+                    Análisis del Mercado Chileno
+                    de Seguros de Vida
+                </strong>
+
+                <p>
+                    Proyecto de Data Analytics
+                    & Business Intelligence
+                </p>
+
+            </div>
+
+
+            <div class="footer-right">
+
+                <span>
+                    SQL · Power BI · DAX · Excel
+                </span>
+
+                <a
+                    href="#inicio"
+                    aria-label="Volver al inicio"
+                >
+                    Volver arriba ↑
+                </a>
+
+            </div>
+
         </div>
 
     </footer>
+
 
 </body>
 
