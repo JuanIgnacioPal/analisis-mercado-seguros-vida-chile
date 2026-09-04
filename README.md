@@ -1,5 +1,5 @@
 
-🌐 **[Ver presentación web del proyecto](https://juanignaciopal.github.io/analisis-mercado-seguros-vida-chile/)**
+🌐 **[Presentación web del proyecto](https://juanignaciopal.github.io/analisis-mercado-seguros-vida-chile/)**
 # 🛡️ Análisis del Mercado Chileno de Seguros de Vida
 
 > 📊 Proyecto end-to-end de Business Intelligence con datos 100 % sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
