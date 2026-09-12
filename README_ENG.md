@@ -135,7 +135,7 @@ This page provides a portfolio-level view of how the market evolves across diffe
 
 This project is not only an insurance-market dashboard.
 
-It demonstrates a broader set of transferable Data Analytics capabilities:
+It is also meant to demonstrate a broader set of transferable Data Analytics capabilities:
 
 - 🧹 **Data preparation and quality control**
 - 🗄️ **SQL-based analytical reasoning**
