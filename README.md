@@ -338,6 +338,7 @@ Los ratios fueron recalculados desde sus componentes para evitar promediar porce
 analisis-mercado-seguros-vida-chile/
 │
 ├── README.md
+├── README_ENG.md
 ├── definicion_proyecto.md
 │
 ├── datos/
@@ -352,6 +353,7 @@ analisis-mercado-seguros-vida-chile/
 │   └── hallazgos_y_recomendaciones.md
 │
 ├── imagenes/
+    esp/
 │   ├── modelo_analitico_preview.png
 │   ├── modelo_dimensional_powerbi.png
 │   ├── validacion_kpis_preview.png
