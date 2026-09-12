@@ -2,7 +2,7 @@
 
 > 📊 **End-to-end Data Analytics project focused on the Chilean insurance market using official public data from the Comisión para el Mercado Financiero (CMF).**
 
-[🇨🇱 Español](README.md) | 🇬🇧 **English**
+[Spanish version](README.md)
 
 ---
 
