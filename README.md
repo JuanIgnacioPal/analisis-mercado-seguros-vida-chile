@@ -342,40 +342,40 @@ analisis-mercado-seguros-vida-chile/
 ├── definicion_proyecto.md
 │
 ├── datos/
-│       └── raw/
-│           └── mercado_asegurador_vida_chile_sintetico.csv
+│   └── raw/
+│      └── mercado_asegurador_vida_chile_sintetico.csv
 │
 ├── documentacion/
-│       ├── auditoria_calidad_datos.md
-│       ├── diccionario_datos.md
-│       ├── diccionario_kpis.md
-│       ├── metodologia_sql.md
-│       └── hallazgos_y_recomendaciones.md
+│    ├── auditoria_calidad_datos.md
+│    ├── diccionario_datos.md
+│    ├── diccionario_kpis.md
+│    ├── metodologia_sql.md
+│    └── hallazgos_y_recomendaciones.md
 │
 ├── imagenes/
-    ├── esp/
-│       ├── modelo_analitico_preview.png
-│       ├── modelo_dimensional_powerbi.png
-│       ├── validacion_kpis_preview.png
-│   ├── eng/
-│       ├── dashboard_resumen_ejecutivo_preview.png
-│       ├── dashboard_mercado_competencia_preview.png
-│       ├── dashboard_desempeno_tecnico_preview.png
-│       └── dashboard_productos_cartera_preview.png
+│    ├── esp/
+│    ├── modelo_analitico_preview.png
+│    ├── modelo_dimensional_powerbi.png
+│    ├── validacion_kpis_preview.png
+│    ├── eng/
+│    ├── dashboard_resumen_ejecutivo_preview.png
+│    ├── dashboard_mercado_competencia_preview.png
+│    ├── dashboard_desempeno_tecnico_preview.png
+│    └── dashboard_productos_cartera_preview.png
 │
 ├── power_query/
 │       └── mercado_asegurador_vida_raw.pq
 │
 ├── sql/
-│       ├── README.md
-│       └── [scripts SQL validados]
+│   ├── README.md
+│   └── [scripts SQL validados]
 │
 └── Power BI/
-        ├── README.md
-        ├── modelo_analitico_seguros_vida_chile.pbix
-        ├── dashboard_ejecutivo_seguros_vida_chile.pbix
-        ├── medidas_dax.md
-        └── diseño_dashboard_ejecutivo.md
+    ├── README.md
+    ├── modelo_analitico_seguros_vida_chile.pbix
+    ├── dashboard_ejecutivo_seguros_vida_chile.
+    ├── medidas_dax.md
+    └── diseño_dashboard_ejecutivo.md
     
 ```
 
