@@ -87,6 +87,50 @@ The project follows an end-to-end analytical process:
 
 ---
 
+## 📊 Dashboard Preview
+
+The final Power BI report is structured into four analytical pages, each designed to answer a different set of business questions about the Chilean life insurance market.
+
+### 🧭 1. Executive Summary
+
+Provides a high-level view of the market through key indicators such as **Direct Premium, Insured Lives, Claims Ratio, Technical Margin, and Composite Solvency Ratio**.
+
+It also summarizes premium trends, leading insurers, and the distribution of the product portfolio.
+
+![Executive Summary](images/EN/01_executive_summary.png)
+
+---
+
+### 🏢 2. Market & Competition
+
+Focuses on the competitive structure of the insurance market, including **market share, year-over-year growth, and concentration among the largest insurers**.
+
+This page is designed to identify market leaders and changes in competitive positioning over time.
+
+![Market and Competition](images/EN/02_market_competition.png)
+
+---
+
+### ⚙️ 3. Technical Performance
+
+Evaluates insurers through technical indicators including **Claims Ratio, Expense Ratio, Technical Result, Technical Margin, and Composite Solvency Ratio**.
+
+The page helps compare operational performance and identify insurers with stronger technical results.
+
+![Technical Performance](images/EN/03_technical_performance.png)
+
+---
+
+### 📦 4. Products & Portfolio
+
+Analyzes the composition of insurance premiums by product while tracking changes in **Insured Lives, In-force Policies, New Insured Lives, Cancellations, and Net Portfolio Change**.
+
+This page provides a portfolio-level view of how the market evolves across different insurance products.
+
+![Products and Portfolio](images/EN/04_products_portfolio.png)
+
+---
+
 ## 💼 What This Project Demonstrates
 
 This project is not only an insurance-market dashboard.
