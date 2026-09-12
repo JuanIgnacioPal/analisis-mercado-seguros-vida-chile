@@ -1,6 +1,6 @@
 # Chilean Insurance Market Analysis | CMF
 
-> 📊 **End-to-end Data Analytics project focused on the Chilean insurance market using official public data from the Comisión para el Mercado Financiero (CMF).**
+> 📊 **End-to-end Data Analytics project focused on the Chilean insurance market using using a synthetic dataset inspired by concepts, indicators, and reporting practices from the Chilean insurance market and CMF regulatory context.**
 
 [Spanish version](README.md)
 
