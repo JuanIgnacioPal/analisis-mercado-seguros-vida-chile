@@ -1,15 +1,15 @@
 # Chilean Insurance Market Analysis | CMF
 
-> 📊 **End-to-end Data Analytics project focused on the Chilean insurance market using using a synthetic dataset inspired by concepts, indicators, and reporting practices from the Chilean insurance market and CMF regulatory context.**
+> 📊 End-to-end Data Analytics project focused on the Chilean insurance market using a synthetic dataset inspired by concepts, indicators, and reporting practices from the Chilean insurance market and CMF regulatory context.
 
 | 🇨🇱 [Spanish README](README.md) | Original Spanish edition of the project |
 
 ---
 ## 📌 Project Overview
 
-This project analyzes the **evolution, competitive structure, and performance of the Chilean insurance market** using official regulatory data published by the **Comisión para el Mercado Financiero (CMF)**.
+This project analyzes the evolution, competitive structure, and performance of a synthetic Chilean life insurance market scenario inspired by the terminology, indicators, and regulatory context of the Comisión para el Mercado Financiero (CMF).
 
-The main objective was to transform raw regulatory information into a structured analytical solution capable of answering relevant business questions related to:
+The main objective was to transform structured insurance data into an analytical solution capable of answering relevant business questions related to:
 
 - 📈 Market growth and evolution over time
 - 🏢 Competitive positioning among insurance companies
@@ -22,7 +22,6 @@ Rather than focusing only on visualization, the project covers the **complete an
 The final result is an interactive **Power BI dashboard** designed to communicate market information clearly and support data-driven interpretation.
 
 ---
-
 ## 🎯 Project Objective
 
 The project was developed to simulate a realistic Data Analyst workflow within a regulated financial industry.
@@ -227,6 +226,24 @@ A catalog of **12 core KPIs** was established before dashboard development so th
 This SQL layer served as an independent analytical control, allowing the final Power BI results to be compared against previously validated calculations. (SQL, Power BI)
 
 ---
+## 📐 Power BI & DAX Layer
+
+The validated data was transformed into an interactive analytical model in **Power BI**, with DAX used as the business-logic layer for KPI calculation and comparative analysis. (Power BI, DAX)
+
+The final model includes **29 explicit DAX measures**, organized into:
+
+- 15 base measures for premiums, claims, expenses, technical results, insured lives, policies, and solvency-related variables. (Power BI, DAX)
+- 6 derived KPIs, including **Claims Ratio, Expense Ratio, Technical Margin, and Composite Solvency Ratio**. (Power BI, DAX)
+- 6 time-intelligence measures for **QoQ and YoY comparisons**. (Power BI, DAX)
+- 2 competitive-analysis measures supporting rankings and market analysis. (Power BI, DAX)
+
+A dedicated calendar dimension was used to control chronological analysis and ensure that quarterly comparisons followed the correct sequence. (Power BI, DAX)
+
+Percentage-based KPIs were recalculated from their underlying components whenever appropriate instead of averaging stored percentage values. (Power BI, DAX)
+
+Portfolio indicators such as **Insured Lives, In-force Policies, and Capital** were treated as period-end stock measures rather than additive flows across time. (Power BI, DAX)
+
+---
 ## ✅ Cross-Validation Controls
 
 Before publication, the principal Power BI indicators were reconciled against results previously validated through SQL. (SQL, Power BI)
@@ -307,7 +324,7 @@ Based on the patterns identified in the synthetic dataset, the following actions
 
 Direct Premium continues to increase, but growth should not be assessed through premium volume alone.
 
-Management should monitor premium expansion together with **Claims Ratio, Expense Ratio, and Technical Margin** to determine whether additional business is translating into sustainable technical performance rather than simply higher written volume.
+Management should monitor premium expansion together with **Claims Ratio, Expense Ratio, and Technical Margin** to determine whether additional business is translating into sustainable technical performance rather than simply higher premium volume.
 
 > **Recommended action:** Maintain a combined view of premium growth and technical KPIs by insurer and reporting period to identify cases where commercial expansion is accompanied by deteriorating profitability.
 
@@ -515,4 +532,11 @@ It is also meant to demonstrate a broader set of transferable Data Analytics cap
 - 🌎 **Communication of a local business case for an international audience**
 
 ---
-> ⚠️ **Analytical Scope:** These recommendations are derived exclusively from the synthetic dataset developed for this portfolio project. They represent analytical scenarios and should not be interpreted as recommendations regarding actual insurers or the Chilean insurance market.
+## ⚠️ Methodological Limitations
+
+- All companies, observations, and results are **100% synthetic** and are used exclusively for educational and portfolio purposes.
+- ROE was excluded from the main conclusions due to a plausibility limitation identified in the synthetic dataset.
+- The **Composite Solvency Ratio** is a project-specific analytical indicator and does not reproduce the official CMF regulatory solvency methodology.
+- `Net Portfolio Change = New Insured Lives - Cancellations`; these flows do not fully reconcile with changes in the stock of insured lives and should therefore not be interpreted as churn, retention, or persistence.
+- Direct Premium and product-level premium totals contain minor rounding differences resulting from the synthetic allocation process.
+- Relationships between Claims Ratio, Expense Ratio, and Technical Margin are partially mechanical because of the formulas used to construct the synthetic technical result.
