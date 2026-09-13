@@ -191,6 +191,23 @@ Synthetic Insurance Dataset
  Business Insights & Recommendations
 
 ``` 
+---
+## 🧱 Dimensional Model
+
+The Power BI semantic model was designed using a **star schema**, separating descriptive dimensions from transactional and analytical fact tables.
+
+The model contains:
+
+- `D_Fecha` — calendar dimension covering the complete analytical period. (Power BI, DAX)
+- `D_Compania` — dimension containing the 12 fictitious life insurance companies included in the analysis. (Power BI)
+- `D_Producto` — dimension containing the five insurance product categories. (Power BI)
+- `H_Mercado_Trimestral` — quarterly fact table containing market, financial, portfolio, claims, expense, and solvency indicators by insurer. (Power BI)
+- `H_Primas_Producto` — fact table containing premium distribution by insurer, quarter, and insurance product. (Power BI)
+
+The product-level premium table was intentionally separated from the main quarterly fact table to avoid duplicating non-additive measures such as claims, expenses, capital, equity, and insured lives. (Power BI)
+
+The model uses active **one-to-many relationships**, with single-direction filtering from dimensions toward fact tables, providing a simple and controlled structure for analytical reporting. (Power BI)
+---
 
 ## 💼 What This Project Demonstrates
 
