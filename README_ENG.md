@@ -2,24 +2,6 @@
 
 > 📊 **End-to-end Data Analytics project focused on the Chilean insurance market using using a synthetic dataset inspired by concepts, indicators, and reporting practices from the Chilean insurance market and CMF regulatory context.**
 
-[Spanish version](README.md)
----
-## 🧭 Quick Navigation
-
-| Resource | Description |
-|---|---|
-| 📌 [Project Definition](definicion_proyecto.md) | Business scenario, stakeholders, objectives, questions, and hypotheses |
-| 🗃️ [Raw Dataset](datos/raw/mercado_asegurador_vida_chile_sintetico.csv) | Original synthetic insurance dataset |
-| 🔎 [Data Quality Audit](documentacion/auditoria_calidad_datos.md) | Data-quality assessment and validation process |
-| 📖 [Data Dictionary](documentacion/diccionario_datos.md) | Dataset variables and definitions |
-| 🗄️ [SQL Methodology](documentacion/metodologia_sql.md) | SQL analysis methodology and validated results |
-| 💻 [SQL Scripts](sql/) | Database creation, validation, analysis, and KPI queries |
-| 📐 [KPI Dictionary](documentacion/diccionario_kpis.md) | Business definitions, formulas, units, and aggregation rules |
-| 🔧 [Power Query](power_query/mercado_asegurador_vida_raw.pq) | Data preparation query |
-| 📊 [Power BI Files](Power%20BI/) | Semantic model, DAX documentation, dashboard documentation, and PBIX files |
-| 🧮 [DAX Documentation](Power%20BI/medidas_dax.md) | Measures and calculation methodology |
-| 🎨 [Dashboard Design](Power%20BI/diseño_dashboard_ejecutivo.md) | Dashboard structure and design decisions |
-| 💡 [Findings & Recommendations](documentacion/hallazgos_y_recomendaciones.md) | Complete analytical findings and executive recommendations |
 | 🇨🇱 [Spanish README](README.md) | Original Spanish edition of the project |
 
 ---
@@ -497,6 +479,24 @@ The README was reorganized to prioritize:
 This structure allows recruiters to understand the project's business value quickly while preserving the complete technical process for deeper review. (GitHub)
 
 </details>
+
+---
+## 🧭 Quick Navigation
+
+| Resource | Description |
+|---|---|
+| 📌 [Project Definition](definicion_proyecto.md) | Business scenario, stakeholders, objectives, questions, and hypotheses |
+| 🗃️ [Raw Dataset](datos/raw/mercado_asegurador_vida_chile_sintetico.csv) | Original synthetic insurance dataset |
+| 🔎 [Data Quality Audit](documentacion/auditoria_calidad_datos.md) | Data-quality assessment and validation process |
+| 📖 [Data Dictionary](documentacion/diccionario_datos.md) | Dataset variables and definitions |
+| 🗄️ [SQL Methodology](documentacion/metodologia_sql.md) | SQL analysis methodology and validated results |
+| 💻 [SQL Scripts](sql/) | Database creation, validation, analysis, and KPI queries |
+| 📐 [KPI Dictionary](documentacion/diccionario_kpis.md) | Business definitions, formulas, units, and aggregation rules |
+| 🔧 [Power Query](power_query/mercado_asegurador_vida_raw.pq) | Data preparation query |
+| 📊 [Power BI Files](Power%20BI/) | Semantic model, DAX documentation, dashboard documentation, and PBIX files |
+| 🧮 [DAX Documentation](Power%20BI/medidas_dax.md) | Measures and calculation methodology |
+| 🎨 [Dashboard Design](Power%20BI/diseño_dashboard_ejecutivo.md) | Dashboard structure and design decisions |
+| 💡 [Findings & Recommendations](documentacion/hallazgos_y_recomendaciones.md) | Complete analytical findings and executive recommendations |
 
 ---
 ## 💼 What This Project Demonstrates
