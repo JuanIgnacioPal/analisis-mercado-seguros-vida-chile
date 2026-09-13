@@ -207,6 +207,7 @@ The model contains:
 The product-level premium table was intentionally separated from the main quarterly fact table to avoid duplicating non-additive measures such as claims, expenses, capital, equity, and insured lives. (Power BI)
 
 The model uses active **one-to-many relationships**, with single-direction filtering from dimensions toward fact tables, providing a simple and controlled structure for analytical reporting. (Power BI)
+
 ---
 
 ## 💼 What This Project Demonstrates
