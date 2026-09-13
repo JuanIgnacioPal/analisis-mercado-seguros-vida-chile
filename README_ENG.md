@@ -130,6 +130,65 @@ This page provides a portfolio-level view of how the market evolves across diffe
 ![Products and Portfolio](imagenes/ENG/dashboard_product_n_portfolio_preview.png)
 
 ---
+---
+
+## 🗃️ Data & Project Scope
+
+This project uses a **100% synthetic dataset** created exclusively for educational and portfolio purposes.
+
+The dataset is inspired by the structure, terminology, and analytical indicators commonly used in the Chilean life insurance market and its regulatory environment.
+
+> ⚠️ **Important:** The companies and observations used in this project are fictitious and do not represent the actual performance of insurers operating in Chile.
+
+### Dataset Overview
+
+| Attribute | Description |
+|---|---|
+| 🏢 Insurance companies | 12 fictitious life insurers |
+| 📅 Period analyzed | Q1 2023 – Q4 2025 |
+| 📊 Quarterly observations | 144 |
+| 🧾 Original variables | 39 |
+| 📦 Product categories | 5 |
+| 🗓️ Reporting frequency | Quarterly |
+
+The dataset includes financial, commercial, operational, portfolio, and solvency-related variables used to simulate a realistic Business Intelligence case in the life insurance industry.
+
+---
+
+## 🏗️ Analytical Architecture
+
+The project follows an end-to-end analytical workflow in which each layer serves a specific purpose.
+
+```text
+Synthetic Insurance Dataset
+            │
+            ▼
+     Data Quality Audit
+     Excel / Power Query
+            │
+            ▼
+       MySQL Database
+            │
+            ▼
+ SQL Analysis & Validation
+            │
+            ▼
+      KPI Definition
+     12 Core Indicators
+            │
+            ▼
+   Power BI Data Model
+      Star Schema
+            │
+            ▼
+       DAX Measures
+   Business Logic Layer
+            │
+            ▼
+ Executive Power BI Dashboard
+            │
+            ▼
+ Business Insights & Recommendations
 
 ## 💼 What This Project Demonstrates
 
