@@ -190,6 +190,8 @@ Synthetic Insurance Dataset
             ▼
  Business Insights & Recommendations
 
+``` 
+
 ## 💼 What This Project Demonstrates
 
 This project is not only an insurance-market dashboard.
