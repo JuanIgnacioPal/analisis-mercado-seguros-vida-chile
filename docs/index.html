@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,12 @@
     >
 
     <title>
-        Análisis del Mercado Chileno de Seguros de Vida
+        Chilean Life Insurance Market Analysis | Juan Ignacio Palacios
     </title>
 
     <meta
         name="description"
-        content="Proyecto end-to-end de Business Intelligence aplicado al mercado chileno de seguros de vida con datos 100 % sintéticos."
+        content="Bilingual Business Intelligence portfolio project analyzing a synthetic Chilean life insurance market scenario using SQL, Power BI, DAX, Power Query and dimensional modeling."
     >
 
     <meta
@@ -23,19 +23,25 @@
         content="Juan Ignacio Palacios"
     >
 
+    <!-- Open Graph -->
     <meta
         property="og:title"
-        content="Análisis del Mercado Chileno de Seguros de Vida"
+        content="Chilean Life Insurance Market Analysis"
     >
 
     <meta
         property="og:description"
-        content="Proyecto de Business Intelligence con SQL, Power BI, DAX y análisis de mercado."
+        content="Business Intelligence portfolio project using SQL, Power BI, DAX and synthetic insurance data."
     >
 
     <meta
         property="og:image"
-        content="imagenes/ES/dashboard_resumen_ejecutivo_preview.png"
+        content="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_executive_summary_preview.png"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
     >
 
     <link
@@ -48,25 +54,23 @@
 <body>
 
     <!-- ACCESSIBILITY -->
-
     <a
         class="skip-link"
-        href="#contenido"
+        href="#content"
     >
-        Saltar al contenido
+        Skip to content
     </a>
 
 
     <!-- NAVIGATION -->
-
     <header class="site-header">
 
         <div class="container nav-container">
 
             <a
                 class="brand"
-                href="#inicio"
-                aria-label="Ir al inicio"
+                href="#home"
+                aria-label="Go to homepage"
             >
                 <span class="brand-mark"></span>
 
@@ -75,25 +79,34 @@
                 </span>
             </a>
 
+
             <nav
                 class="navigation"
-                aria-label="Navegación principal"
+                aria-label="Main navigation"
             >
 
-                <a href="#proyecto">
-                    Proyecto
+                <a href="#project">
+                    Project
                 </a>
 
                 <a href="#dashboard">
                     Dashboard
                 </a>
 
-                <a href="#hallazgos">
-                    Hallazgos
+                <a href="#findings">
+                    Findings
                 </a>
 
-                <a href="#metodologia">
-                    Metodología
+                <a href="#methodology">
+                    Methodology
+                </a>
+
+                <a
+                    href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/README.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Español ↗
                 </a>
 
                 <a
@@ -112,15 +125,16 @@
     </header>
 
 
+    <main id="content">
 
-    <main id="contenido">
 
-
-        <!-- HERO -->
+        <!-- ======================================================
+             HERO
+             ====================================================== -->
 
         <section
             class="hero"
-            id="inicio"
+            id="home"
         >
 
             <div class="container hero-grid">
@@ -128,20 +142,22 @@
                 <div class="hero-copy">
 
                     <p class="eyebrow">
-                        Proyecto de Business Intelligence
+                        Bilingual Business Intelligence Portfolio
                     </p>
 
                     <h1>
-                        Análisis del Mercado Chileno
-                        de Seguros de Vida
+                        Chilean Life Insurance
+                        Market Analysis
                     </h1>
 
                     <p class="hero-description">
-                        Proyecto end-to-end orientado a transformar
-                        datos sintéticos del mercado asegurador en
-                        indicadores, análisis competitivo y
-                        recomendaciones de negocio.
+                        End-to-end Data Analytics project built around a
+                        synthetic Chilean life insurance market scenario,
+                        transforming structured insurance data into validated
+                        KPIs, competitive analysis, executive dashboards and
+                        business-oriented recommendations.
                     </p>
+
 
                     <div class="hero-actions">
 
@@ -149,23 +165,34 @@
                             class="button button-primary"
                             href="#dashboard"
                         >
-                            Explorar dashboard
+                            Explore Dashboard
                         </a>
 
                         <a
                             class="button button-secondary"
-                            href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile"
+                            href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/README_ENG.md"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Ver repositorio ↗
+                            English Documentation ↗
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/README.md"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Versión en Español ↗
                         </a>
 
                     </div>
 
+
                     <div class="hero-stack">
 
                         <span>SQL</span>
+                        <span>MySQL</span>
                         <span>Power BI</span>
                         <span>DAX</span>
                         <span>Power Query</span>
@@ -175,6 +202,8 @@
 
                 </div>
 
+
+                <!-- HERO DASHBOARD -->
 
                 <div class="hero-visual">
 
@@ -189,20 +218,21 @@
                             </div>
 
                             <span class="window-label">
-                                Resumen Ejecutivo
+                                Executive Summary
                             </span>
 
                         </div>
 
+
                         <a
-                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_executive_summary_preview.png"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
 
                             <img
-                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
-                                alt="Dashboard Resumen Ejecutivo del análisis del mercado chileno de seguros de vida"
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_executive_summary_preview.png"
+                                alt="Executive Summary dashboard of the synthetic Chilean life insurance market analysis"
                             >
 
                         </a>
@@ -210,7 +240,7 @@
                     </div>
 
                     <p class="visual-caption">
-                        Dashboard desarrollado en Power BI
+                        Executive dashboard developed in Power BI
                     </p>
 
                 </div>
@@ -221,38 +251,40 @@
 
 
 
-        <!-- PROJECT METRICS -->
+        <!-- ======================================================
+             PROJECT METRICS
+             ====================================================== -->
 
         <section
             class="metrics"
-            aria-label="Métricas del proyecto"
+            aria-label="Project metrics"
         >
 
             <div class="container metrics-grid">
 
                 <article class="metric">
                     <strong>144</strong>
-                    <span>Observaciones</span>
+                    <span>Quarterly observations</span>
                 </article>
 
                 <article class="metric">
                     <strong>12</strong>
-                    <span>Compañías ficticias</span>
+                    <span>Fictitious insurers</span>
                 </article>
 
                 <article class="metric">
                     <strong>39</strong>
-                    <span>Variables originales</span>
+                    <span>Original variables</span>
                 </article>
 
                 <article class="metric">
                     <strong>29</strong>
-                    <span>Medidas DAX</span>
+                    <span>DAX measures</span>
                 </article>
 
                 <article class="metric">
                     <strong>4</strong>
-                    <span>Páginas ejecutivas</span>
+                    <span>Executive pages</span>
                 </article>
 
             </div>
@@ -261,45 +293,46 @@
 
 
 
-        <!-- BUSINESS CASE -->
+        <!-- ======================================================
+             BUSINESS CASE
+             ====================================================== -->
 
         <section
             class="section"
-            id="proyecto"
+            id="project"
         >
 
             <div class="container narrow">
 
                 <p class="section-kicker">
-                    Caso de negocio
+                    Business Case
                 </p>
 
                 <h2>
-                    Del dato bruto a una lectura
-                    ejecutiva del mercado
+                    From insurance data
+                    to decision-ready insight
                 </h2>
 
                 <p class="section-intro">
-                    El proyecto simula una necesidad de Estrategia,
-                    Business Intelligence o Analítica dentro de una
-                    compañía multinacional de seguros de vida:
-                    monitorear un mercado competitivo, validar
-                    indicadores y transformar los resultados en
-                    información útil para la toma de decisiones.
+                    The project simulates a Business Intelligence and
+                    Analytics requirement inside a multinational life
+                    insurance environment: monitor a competitive market,
+                    validate key indicators and transform analytical results
+                    into information that can support management decisions.
                 </p>
 
 
                 <div class="business-question">
 
                     <span class="question-label">
-                        Pregunta central
+                        CENTRAL QUESTION
                     </span>
 
                     <p>
-                        ¿Cómo evoluciona el mercado y qué señales
-                        permiten identificar cambios en crecimiento,
-                        participación, desempeño técnico,
-                        productos y cartera?
+                        How is the simulated insurance market evolving,
+                        and which signals reveal meaningful changes in
+                        growth, market share, technical performance,
+                        product mix and portfolio development?
                     </p>
 
                 </div>
@@ -310,7 +343,9 @@
 
 
 
-        <!-- DASHBOARD GALLERY -->
+        <!-- ======================================================
+             DASHBOARD GALLERY
+             ====================================================== -->
 
         <section
             class="section section-soft"
@@ -324,20 +359,20 @@
                     <div>
 
                         <p class="section-kicker">
-                            Dashboard
+                            Power BI Dashboard
                         </p>
 
                         <h2>
-                            Cuatro perspectivas,
-                            una misma historia
+                            Four perspectives.
+                            One analytical story.
                         </h2>
 
                     </div>
 
                     <p>
-                        Cada página responde a una necesidad analítica
-                        distinta, manteniendo un diseño consistente
-                        y orientado a lectura ejecutiva.
+                        Each report page addresses a different business
+                        perspective while maintaining a consistent,
+                        executive-oriented design.
                     </p>
 
                 </div>
@@ -351,20 +386,21 @@
                     <div class="dashboard-image">
 
                         <a
-                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_executive_summary_preview.png"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
 
                             <img
-                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_resumen_ejecutivo_preview.png"
-                                alt="Dashboard Resumen Ejecutivo"
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_executive_summary_preview.png"
+                                alt="Executive Summary dashboard"
                                 loading="lazy"
                             >
 
                         </a>
 
                     </div>
+
 
                     <div class="dashboard-description">
 
@@ -375,14 +411,14 @@
                         <div>
 
                             <h3>
-                                Resumen Ejecutivo
+                                Executive Summary
                             </h3>
 
                             <p>
-                                Visión consolidada de primas,
-                                crecimiento, asegurados,
-                                siniestralidad, margen, solvencia,
-                                liderazgo y mix de productos.
+                                Consolidated view of Direct Premium,
+                                Insured Lives, Claims Ratio, Technical Margin,
+                                Composite Solvency Ratio, market leaders
+                                and product mix.
                             </p>
 
                         </div>
@@ -400,20 +436,21 @@
                     <div class="dashboard-image">
 
                         <a
-                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_mercado_competencia_preview.png"
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_Market_Share_preview.png"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
 
                             <img
-                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_mercado_competencia_preview.png"
-                                alt="Dashboard Mercado y Competencia"
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_Market_Share_preview.png"
+                                alt="Market and Competition dashboard"
                                 loading="lazy"
                             >
 
                         </a>
 
                     </div>
+
 
                     <div class="dashboard-description">
 
@@ -424,14 +461,13 @@
                         <div>
 
                             <h3>
-                                Mercado y Competencia
+                                Market &amp; Competition
                             </h3>
 
                             <p>
-                                Ranking de las 12 compañías,
-                                concentración Top 5 y posicionamiento
-                                por participación, crecimiento
-                                y escala.
+                                Market-share ranking, Top 5 concentration,
+                                YoY premium growth and competitive positioning
+                                across the 12 fictitious insurers.
                             </p>
 
                         </div>
@@ -449,20 +485,21 @@
                     <div class="dashboard-image">
 
                         <a
-                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_desempeno_tecnico_preview.png"
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_Technical_performance_preview.png"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
 
                             <img
-                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_desempeno_tecnico_preview.png"
-                                alt="Dashboard Desempeño Técnico"
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_Technical_performance_preview.png"
+                                alt="Technical Performance dashboard"
                                 loading="lazy"
                             >
 
                         </a>
 
                     </div>
+
 
                     <div class="dashboard-description">
 
@@ -473,14 +510,13 @@
                         <div>
 
                             <h3>
-                                Desempeño Técnico
+                                Technical Performance
                             </h3>
 
                             <p>
-                                Seguimiento de siniestralidad,
-                                gastos, resultado técnico,
-                                margen y solvencia sintética
-                                entre compañías.
+                                Analysis of Claims Ratio, Expense Ratio,
+                                Technical Result, Technical Margin and
+                                Composite Solvency Ratio across insurers.
                             </p>
 
                         </div>
@@ -498,20 +534,21 @@
                     <div class="dashboard-image">
 
                         <a
-                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_productos_cartera_preview.png"
+                            href="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_product_n_portfolio_preview.png"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
 
                             <img
-                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/dashboard_productos_cartera_preview.png"
-                                alt="Dashboard Productos y Cartera"
+                                src="https://raw.githubusercontent.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/main/imagenes/ENG/dashboard_product_n_portfolio_preview.png"
+                                alt="Products and Portfolio dashboard"
                                 loading="lazy"
                             >
 
                         </a>
 
                     </div>
+
 
                     <div class="dashboard-description">
 
@@ -522,14 +559,14 @@
                         <div>
 
                             <h3>
-                                Productos y Cartera
+                                Products &amp; Portfolio
                             </h3>
 
                             <p>
-                                Composición de primas por producto,
-                                evolución de asegurados y pólizas,
-                                altas, cancelaciones y saldo
-                                neto de cartera.
+                                Premium mix by product, evolution of
+                                Insured Lives and In-force Policies,
+                                new insured lives, cancellations and
+                                Net Portfolio Change.
                             </p>
 
                         </div>
@@ -544,11 +581,13 @@
 
 
 
-        <!-- KEY FINDINGS -->
+        <!-- ======================================================
+             KEY FINDINGS
+             ====================================================== -->
 
         <section
             class="section findings-section"
-            id="hallazgos"
+            id="findings"
         >
 
             <div class="container">
@@ -556,11 +595,11 @@
                 <div class="findings-heading">
 
                     <p class="section-kicker light">
-                        Hallazgos clave
+                        Key Findings
                     </p>
 
                     <h2>
-                        Lo que cuentan los datos
+                        What the data reveals
                     </h2>
 
                 </div>
@@ -568,19 +607,21 @@
 
                 <div class="findings-grid">
 
+
                     <article class="finding">
 
                         <strong>
-                            +26,50 %
+                            +4.29%
                         </strong>
 
                         <h3>
-                            Crecimiento de prima directa
+                            Direct Premium YoY
                         </h3>
 
                         <p>
-                            Aumento acumulado del mercado sintético
-                            entre 2023-T1 y 2025-T4.
+                            Premium volume continued expanding
+                            in Q4 2025 compared with the same
+                            period of the previous year.
                         </p>
 
                     </article>
@@ -589,16 +630,17 @@
                     <article class="finding">
 
                         <strong>
-                            17,32 %
+                            62.15%
                         </strong>
 
                         <h3>
-                            Participación del líder
+                            Top 5 Concentration
                         </h3>
 
                         <p>
-                            VidaGlobal mantuvo el liderazgo
-                            del mercado en 2025-T4.
+                            Five insurers represented a substantial
+                            share of the simulated market's total
+                            Direct Premium.
                         </p>
 
                     </article>
@@ -607,16 +649,17 @@
                     <article class="finding">
 
                         <strong>
-                            +4,29 %
+                            31.51%
                         </strong>
 
                         <h3>
-                            Prima directa YoY
+                            Technical Margin
                         </h3>
 
                         <p>
-                            Crecimiento interanual observado
-                            durante 2025-T4.
+                            The latest period maintained positive
+                            technical performance within the
+                            assumptions of the synthetic dataset.
                         </p>
 
                     </article>
@@ -625,16 +668,17 @@
                     <article class="finding">
 
                         <strong>
-                            −3,83 %
+                            −3.83%
                         </strong>
 
                         <h3>
-                            Asegurados vigentes YoY
+                            Insured Lives YoY
                         </h3>
 
                         <p>
-                            La cartera disminuyó mientras
-                            las primas continuaron creciendo.
+                            Insured Lives declined despite
+                            continued premium growth, creating
+                            an analytical question for deeper study.
                         </p>
 
                     </article>
@@ -645,18 +689,18 @@
                 <div class="finding-note">
 
                     <p>
-                        La divergencia entre crecimiento de primas
-                        y reducción de asegurados representa una
-                        señal que requeriría mayor granularidad en
-                        un entorno real para explicar su origen.
+                        The divergence between premium growth and the
+                        decline in Insured Lives cannot be fully explained
+                        with the aggregated dataset and would require
+                        policy-level or customer-level information.
                     </p>
 
                     <a
-                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/documentacion/hallazgos_y_recomendaciones.md"
+                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/README_ENG.md#-key-findings"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Consultar análisis completo →
+                        View complete analysis →
                     </a>
 
                 </div>
@@ -667,11 +711,131 @@
 
 
 
-        <!-- ANALYTICAL WORKFLOW -->
+        <!-- ======================================================
+             EXECUTIVE RECOMMENDATIONS
+             ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-kicker">
+                            Executive Recommendations
+                        </p>
+
+                        <h2>
+                            From analytical signals
+                            to possible business actions
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Recommendations are framed as analytical
+                        scenarios rather than prescriptions for
+                        real insurance companies.
+                    </p>
+
+                </div>
+
+
+                <div class="evidence-grid">
+
+
+                    <article class="evidence-card">
+
+                        <span class="evidence-index">
+                            01
+                        </span>
+
+                        <h3>
+                            Evaluate growth quality
+                        </h3>
+
+                        <p>
+                            Monitor premium expansion together with
+                            Claims Ratio, Expense Ratio and Technical
+                            Margin instead of evaluating volume alone.
+                        </p>
+
+                    </article>
+
+
+                    <article class="evidence-card">
+
+                        <span class="evidence-index">
+                            02
+                        </span>
+
+                        <h3>
+                            Monitor competition
+                        </h3>
+
+                        <p>
+                            Track quarterly market-share movements
+                            alongside premium growth to distinguish
+                            market expansion from competitive gains.
+                        </p>
+
+                    </article>
+
+
+                    <article class="evidence-card">
+
+                        <span class="evidence-index">
+                            03
+                        </span>
+
+                        <h3>
+                            Preserve technical discipline
+                        </h3>
+
+                        <p>
+                            Monitor claims, expenses and technical
+                            margin as the portfolio expands to identify
+                            potential deterioration early.
+                        </p>
+
+                    </article>
+
+
+                    <article class="evidence-card">
+
+                        <span class="evidence-index">
+                            04
+                        </span>
+
+                        <h3>
+                            Investigate portfolio decline
+                        </h3>
+
+                        <p>
+                            Extend future analysis with policy-level
+                            data to study renewals, cancellations,
+                            acquisition cohorts and retention behavior.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             ANALYTICAL WORKFLOW
+             ====================================================== -->
 
         <section
-            class="section"
-            id="metodologia"
+            class="section section-soft"
+            id="methodology"
         >
 
             <div class="container">
@@ -681,20 +845,21 @@
                     <div>
 
                         <p class="section-kicker">
-                            Metodología
+                            Methodology
                         </p>
 
                         <h2>
-                            Del dato a la decisión
+                            From data
+                            to business insight
                         </h2>
 
                     </div>
 
                     <p>
-                        La solución separa preparación,
-                        validación, análisis, modelado y
-                        visualización para mantener trazabilidad
-                        a lo largo del proyecto.
+                        The solution separates preparation,
+                        validation, analysis, modeling and
+                        visualization to maintain traceability
+                        throughout the analytical workflow.
                     </p>
 
                 </div>
@@ -702,17 +867,18 @@
 
                 <div class="workflow">
 
+
                     <article class="workflow-step">
 
                         <span>01</span>
 
                         <h3>
-                            Excel / CSV
+                            Dataset
                         </h3>
 
                         <p>
-                            Dataset sintético y definición
-                            inicial del problema.
+                            Synthetic insurance data and
+                            initial business-problem definition.
                         </p>
 
                     </article>
@@ -727,8 +893,8 @@
                         </h3>
 
                         <p>
-                            Auditoría, tipificación y
-                            preparación de los datos.
+                            Data-quality audit, typing and
+                            preparation for analysis.
                         </p>
 
                     </article>
@@ -743,8 +909,8 @@
                         </h3>
 
                         <p>
-                            Validaciones, crecimiento,
-                            rankings y controles de KPIs.
+                            Validation, market analysis,
+                            rankings and KPI controls.
                         </p>
 
                     </article>
@@ -759,8 +925,8 @@
                         </h3>
 
                         <p>
-                            Modelo dimensional, KPIs,
-                            inteligencia temporal y dashboard.
+                            Star schema, analytical measures,
+                            time intelligence and dashboard.
                         </p>
 
                     </article>
@@ -771,12 +937,12 @@
                         <span>05</span>
 
                         <h3>
-                            Decisión
+                            Business Insight
                         </h3>
 
                         <p>
-                            Hallazgos, recomendaciones
-                            y limitaciones documentadas.
+                            Findings, recommendations and
+                            documented analytical limitations.
                         </p>
 
                     </article>
@@ -789,7 +955,127 @@
 
 
 
-        <!-- TECHNICAL EVIDENCE -->
+        <!-- ======================================================
+             VALIDATION
+             ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-kicker">
+                            Cross-Validation
+                        </p>
+
+                        <h2>
+                            The dashboard was not
+                            trusted by default
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Key Power BI results were reconciled
+                        against previously validated SQL controls
+                        before publication.
+                    </p>
+
+                </div>
+
+
+                <div class="evidence-grid">
+
+
+                    <article class="evidence-card">
+
+                        <span class="evidence-index">
+                            01
+                        </span>
+
+                        <h3>
+                            12 Core KPIs
+                        </h3>
+
+                        <p>
+                            Business definitions, formulas,
+                            aggregation rules and reference
+                            values were defined before visualization.
+                        </p>
+
+                    </article>
+
+
+                    <article class="evidence-card">
+
+                        <span class="evidence-index">
+                            02
+                        </span>
+
+                        <h3>
+                            SQL Reference Layer
+                        </h3>
+
+                        <p>
+                            SQL calculations provided an
+                            independent analytical control
+                            for the Power BI layer.
+                        </p>
+
+                    </article>
+
+
+                    <article class="evidence-card">
+
+                        <span class="evidence-index">
+                            03
+                        </span>
+
+                        <h3>
+                            Power BI Reconciliation
+                        </h3>
+
+                        <p>
+                            Q4 2025 premiums, growth, ratios,
+                            technical results and portfolio
+                            indicators were reconciled.
+                        </p>
+
+                    </article>
+
+
+                    <article class="evidence-card">
+
+                        <span class="evidence-index">
+                            04
+                        </span>
+
+                        <h3>
+                            Rounding Documented
+                        </h3>
+
+                        <p>
+                            A 3 MM CLP difference in product
+                            premium allocation was documented
+                            rather than artificially corrected.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             TECHNICAL EVIDENCE
+             ====================================================== -->
 
         <section class="section section-soft">
 
@@ -800,20 +1086,20 @@
                     <div>
 
                         <p class="section-kicker">
-                            Evidencia técnica
+                            Technical Evidence
                         </p>
 
                         <h2>
-                            El resultado es visible.
-                            El proceso también.
+                            The result is visible.
+                            So is the process.
                         </h2>
 
                     </div>
 
                     <p>
-                        El repositorio conserva las capas
-                        necesarias para revisar cómo se obtuvo,
-                        validó y presentó cada resultado.
+                        The repository preserves the technical
+                        layers required to inspect how the data was
+                        prepared, analyzed, validated and presented.
                     </p>
 
                 </div>
@@ -838,16 +1124,16 @@
                         </h3>
 
                         <p>
-                            Preparación, análisis,
-                            rankings y controles.
+                            Database creation, validation,
+                            market analysis, rankings and
+                            KPI controls.
                         </p>
 
                         <span class="evidence-link">
-                            Revisar scripts →
+                            Review scripts →
                         </span>
 
                     </a>
-
 
 
                     <a
@@ -862,20 +1148,20 @@
                         </span>
 
                         <h3>
-                            KPIs
+                            KPI Dictionary
                         </h3>
 
                         <p>
-                            Fórmulas, unidades,
-                            interpretación y agregación.
+                            Business definitions,
+                            formulas, units and
+                            aggregation behavior.
                         </p>
 
                         <span class="evidence-link">
-                            Ver diccionario →
+                            View dictionary →
                         </span>
 
                     </a>
-
 
 
                     <a
@@ -894,16 +1180,16 @@
                         </h3>
 
                         <p>
-                            Modelo dimensional,
-                            DAX y dashboard ejecutivo.
+                            Dimensional model,
+                            DAX documentation and
+                            dashboard files.
                         </p>
 
                         <span class="evidence-link">
-                            Explorar Power BI →
+                            Explore Power BI →
                         </span>
 
                     </a>
-
 
 
                     <a
@@ -918,16 +1204,17 @@
                         </span>
 
                         <h3>
-                            Calidad
+                            Data Quality
                         </h3>
 
                         <p>
-                            Nulos, duplicados,
-                            consistencia y plausibilidad.
+                            Missing values, duplicates,
+                            consistency controls and
+                            plausibility checks.
                         </p>
 
                         <span class="evidence-link">
-                            Ver auditoría →
+                            View audit →
                         </span>
 
                     </a>
@@ -941,7 +1228,9 @@
 
 
 
-        <!-- METHODOLOGICAL NOTE -->
+        <!-- ======================================================
+             METHODOLOGICAL LIMITATIONS
+             ====================================================== -->
 
         <section class="section disclaimer-section">
 
@@ -957,24 +1246,34 @@
 
                     </div>
 
+
                     <div>
 
                         <h2>
-                            Nota metodológica
+                            Methodological Note
                         </h2>
 
                         <p>
-                            Los datos y compañías utilizados
-                            son 100 % sintéticos y se emplean
-                            únicamente con fines educativos
-                            y de portfolio.
+                            All companies, observations and analytical
+                            results used in this project are
+                            <strong>100% synthetic</strong> and were
+                            created exclusively for educational and
+                            portfolio purposes.
                         </p>
 
                         <p>
-                            La solvencia sintética no reproduce
-                            la metodología regulatoria oficial
-                            de la Comisión para el Mercado
-                            Financiero (CMF).
+                            The <strong>Composite Solvency Ratio</strong>
+                            is a project-specific analytical indicator and
+                            does not reproduce the official regulatory
+                            solvency methodology of Chile's Comisión para
+                            el Mercado Financiero (CMF).
+                        </p>
+
+                        <p>
+                            Net Portfolio Change should not automatically
+                            be interpreted as churn, retention or renewal,
+                            and customer-level behavioral conclusions would
+                            require additional analytical granularity.
                         </p>
 
                     </div>
@@ -987,7 +1286,9 @@
 
 
 
-        <!-- FINAL CTA -->
+        <!-- ======================================================
+             FINAL CTA
+             ====================================================== -->
 
         <section class="cta-section">
 
@@ -996,12 +1297,12 @@
                 <div>
 
                     <p class="section-kicker light">
-                        Repositorio completo
+                        Complete Repository
                     </p>
 
                     <h2>
-                        ¿Quieres ver cómo
-                        se construyó?
+                        Want to inspect
+                        how it was built?
                     </h2>
 
                 </div>
@@ -1010,20 +1311,34 @@
                 <div class="cta-content">
 
                     <p>
-                        Explora el dataset, scripts SQL,
-                        documentación, modelo Power BI,
-                        medidas DAX, validaciones y
-                        conclusiones del proyecto.
+                        Explore the synthetic dataset, SQL scripts,
+                        dimensional model, DAX measures, validation
+                        controls, documentation and complete analytical
+                        conclusions.
                     </p>
 
-                    <a
-                        class="button button-light"
-                        href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Abrir repositorio en GitHub ↗
-                    </a>
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="button button-light"
+                            href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open GitHub Repository ↗
+                        </a>
+
+                        <a
+                            class="button button-light"
+                            href="https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/README_ENG.md"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            English README ↗
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -1036,7 +1351,9 @@
 
 
 
-    <!-- FOOTER -->
+    <!-- ==========================================================
+         FOOTER
+         ========================================================== -->
 
     <footer class="site-footer">
 
@@ -1045,13 +1362,13 @@
             <div>
 
                 <strong>
-                    Análisis del Mercado Chileno
-                    de Seguros de Vida
+                    Chilean Life Insurance
+                    Market Analysis
                 </strong>
 
                 <p>
-                    Proyecto de Data Analytics
-                    & Business Intelligence
+                    Data Analytics &amp;
+                    Business Intelligence Portfolio
                 </p>
 
             </div>
@@ -1060,14 +1377,14 @@
             <div class="footer-right">
 
                 <span>
-                    SQL · Power BI · DAX · Excel
+                    SQL · Power BI · DAX · MySQL · Excel
                 </span>
 
                 <a
-                    href="#inicio"
-                    aria-label="Volver al inicio"
+                    href="#home"
+                    aria-label="Back to top"
                 >
-                    Volver arriba ↑
+                    Back to top ↑
                 </a>
 
             </div>
@@ -1075,7 +1392,6 @@
         </div>
 
     </footer>
-
 
 </body>
 
