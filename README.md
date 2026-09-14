@@ -28,7 +28,7 @@ Full documentation is available below in Spanish.
 
 ## 📊 Dashboard ejecutivo
 
-[![Vista previa del Resumen Ejecutivo](imagenes/dashboard_resumen_ejecutivo_preview.png)
+[![Vista previa del Resumen Ejecutivo](imagenes/ES/dashboard_resumen_ejecutivo_preview.png)
 
 El dashboard permite analizar **crecimiento, participación de mercado, competencia, desempeño técnico, solvencia sintética, productos y evolución de cartera** dentro del escenario ficticio.
 
