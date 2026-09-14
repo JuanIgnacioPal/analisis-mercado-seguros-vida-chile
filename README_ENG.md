@@ -196,58 +196,57 @@ The Power BI semantic model was designed using a **star schema**, separating des
 
 The model contains:
 
-- `D_Fecha` — calendar dimension covering the complete analytical period. (Power BI, DAX)
-- `D_Compania` — dimension containing the 12 fictitious life insurance companies included in the analysis. (Power BI)
-- `D_Producto` — dimension containing the five insurance product categories. (Power BI)
-- `H_Mercado_Trimestral` — quarterly fact table containing market, financial, portfolio, claims, expense, and solvency indicators by insurer. (Power BI)
-- `H_Primas_Producto` — fact table containing premium distribution by insurer, quarter, and insurance product. (Power BI)
+- `D_Fecha` — calendar dimension covering the complete analytical period. 
+- `D_Compania` — dimension containing the 12 fictitious life insurance companies included in the analysis. 
+- `D_Producto` — dimension containing the five insurance product categories. 
+- `H_Mercado_Trimestral` — quarterly fact table containing market, financial, portfolio, claims, expense, and solvency indicators by insurer. 
+- `H_Primas_Producto` — fact table containing premium distribution by insurer, quarter, and insurance product. 
 
-The product-level premium table was intentionally separated from the main quarterly fact table to avoid duplicating non-additive measures such as claims, expenses, capital, equity, and insured lives. (Power BI)
+The product-level premium table was intentionally separated from the main quarterly fact table to avoid duplicating non-additive measures such as claims, expenses, capital, equity, and insured lives.
 
-The model uses active **one-to-many relationships**, with single-direction filtering from dimensions toward fact tables, providing a simple and controlled structure for analytical reporting. (Power BI)
+The model uses active **one-to-many relationships**, with single-direction filtering from dimensions toward fact tables, providing a simple and controlled structure for analytical reporting.
 
 ---
 ## 🗄️ SQL Analysis & KPI Validation
 
-After the initial data preparation and quality review, the analytical dataset was loaded into **MySQL Workbench 8.0 CE** for structured exploration and independent validation. (SQL)
+After the initial data preparation and quality review, the analytical dataset was loaded into **MySQL Workbench 8.0 CE** for structured exploration and independent validation. 
 
 The SQL stage included:
 
-- Database and table creation with defined data types and composite primary keys. (SQL)
-- Validation of row counts, duplicate records, null values, and logical consistency. (SQL)
-- Analysis of quarterly premium evolution and insurance-market performance. (SQL)
-- Calculation of **Quarter-over-Quarter (QoQ)** and **Year-over-Year (YoY)** growth. (SQL)
-- Company rankings and market-share analysis. (SQL)
-- Validation of technical and portfolio KPIs before their implementation in Power BI. (SQL)
-- Business-rule checks used to identify inconsistencies between related insurance variables. (SQL)
+- Database and table creation with defined data types and composite primary keys. 
+- Validation of row counts, duplicate records, null values, and logical consistency. 
+- Analysis of quarterly premium evolution and insurance-market performance. 
+- Calculation of **Quarter-over-Quarter (QoQ)** and **Year-over-Year (YoY)** growth. 
+- Company rankings and market-share analysis. 
+- Validation of technical and portfolio KPIs before their implementation in Power BI. 
+- Business-rule checks used to identify inconsistencies between related insurance variables. 
 
-A catalog of **12 core KPIs** was established before dashboard development so that each indicator had a defined business meaning, calculation logic, aggregation method, and expected result. (SQL, Power BI)
+A catalog of **12 core KPIs** was established before dashboard development so that each indicator had a defined business meaning, calculation logic, aggregation method, and expected result. 
 
-This SQL layer served as an independent analytical control, allowing the final Power BI results to be compared against previously validated calculations. (SQL, Power BI)
+This SQL layer served as an independent analytical control, allowing the final Power BI results to be compared against previously validated calculations.
 
 ---
 ## 📐 Power BI & DAX Layer
 
-The validated data was transformed into an interactive analytical model in **Power BI**, with DAX used as the business-logic layer for KPI calculation and comparative analysis. (Power BI, DAX)
+The validated data was transformed into an interactive analytical model in **Power BI**, with DAX used as the business-logic layer for KPI calculation and comparative analysis. 
 
 The final model includes **29 explicit DAX measures**, organized into:
 
-- 15 base measures for premiums, claims, expenses, technical results, insured lives, policies, and solvency-related variables. (Power BI, DAX)
-- 6 derived KPIs, including **Claims Ratio, Expense Ratio, Technical Margin, and Composite Solvency Ratio**. (Power BI, DAX)
-- 6 time-intelligence measures for **QoQ and YoY comparisons**. (Power BI, DAX)
-- 2 competitive-analysis measures supporting rankings and market analysis. (Power BI, DAX)
+- 15 base measures for premiums, claims, expenses, technical results, insured lives, policies, and solvency-related variables. 
+- 6 derived KPIs, including **Claims Ratio, Expense Ratio, Technical Margin, and Composite Solvency Ratio**. 
+- 6 time-intelligence measures for **QoQ and YoY comparisons**. 
+- 2 competitive-analysis measures supporting rankings and market analysis. 
 
-A dedicated calendar dimension was used to control chronological analysis and ensure that quarterly comparisons followed the correct sequence. (Power BI, DAX)
+A dedicated calendar dimension was used to control chronological analysis and ensure that quarterly comparisons followed the correct sequence. 
 
-Percentage-based KPIs were recalculated from their underlying components whenever appropriate instead of averaging stored percentage values. (Power BI, DAX)
+Percentage-based KPIs were recalculated from their underlying components whenever appropriate instead of averaging stored percentage values. 
 
-Portfolio indicators such as **Insured Lives, In-force Policies, and Capital** were treated as period-end stock measures rather than additive flows across time. (Power BI, DAX)
+Portfolio indicators such as **Insured Lives, In-force Policies, and Capital** were treated as period-end stock measures rather than additive flows across time. 
 
 ---
 ## ✅ Cross-Validation Controls
 
-Before publication, the principal Power BI indicators were reconciled against results previously validated through SQL. (SQL, Power BI)
-
+Before publication, the principal Power BI indicators were reconciled against results previously validated through SQL. 
 For **Q4 2025**, the main validation controls included:
 
 | KPI | Validated Result |
@@ -266,7 +265,7 @@ For **Q4 2025**, the main validation controls included:
 | Cancellations | 157,660 |
 | Net Portfolio Change | 135,307 |
 
-A separate reconciliation was performed between total **Direct Premium** and premiums allocated across insurance products. (SQL, Power BI)
+A separate reconciliation was performed between total **Direct Premium** and premiums allocated across insurance products. 
 
 | Validation Control | Result |
 |---|---:|
@@ -274,9 +273,9 @@ A separate reconciliation was performed between total **Direct Premium** and pre
 | Premium by Product | 2,435,937 MM CLP |
 | Difference | 3 MM CLP |
 
-The **3 MM CLP difference** results from rounding in the synthetic product allocation and was documented as part of the project's validation process rather than artificially corrected. (SQL, Power BI)
+The **3 MM CLP difference** results from rounding in the synthetic product allocation and was documented as part of the project's validation process rather than artificially corrected. 
 
-These controls ensure that the dashboard does not rely exclusively on visual-layer calculations and that its principal business indicators remain consistent with the validated analytical layer. (SQL, Power BI)
+These controls ensure that the dashboard does not rely exclusively on visual-layer calculations and that its principal business indicators remain consistent with the validated analytical layer. 
 
 ---
 ## 🔎 Key Findings
@@ -328,7 +327,6 @@ Management should monitor premium expansion together with **Claims Ratio, Expens
 
 > **Recommended action:** Maintain a combined view of premium growth and technical KPIs by insurer and reporting period to identify cases where commercial expansion is accompanied by deteriorating profitability.
 
-(SQL, Power BI)
 
 ### 🏢 2. Monitor competitive concentration and market-share movements
 
@@ -338,8 +336,6 @@ Management should therefore evaluate not only current market share, but also how
 
 > **Recommended action:** Track market-share gains and losses by quarter and compare them with premium growth to distinguish overall market expansion from genuine competitive gains.
 
-(SQL, Power BI)
-
 ### ⚙️ 3. Preserve technical discipline as the portfolio grows
 
 The latest period shows positive technical results, supported by a **55.70% Claims Ratio**, **12.79% Expense Ratio**, and **31.51% Technical Margin**.
@@ -347,8 +343,6 @@ The latest period shows positive technical results, supported by a **55.70% Clai
 Future growth should therefore be evaluated against these indicators to identify whether claims or operating expenses begin to consume a larger portion of premium income.
 
 > **Recommended action:** Establish periodic thresholds or internal monitoring ranges for claims, expenses, and technical margin so that deteriorating trends can be investigated before they materially affect technical performance.
-
-(SQL, Power BI)
 
 ### 👥 4. Investigate the decline in insured lives
 
@@ -358,8 +352,6 @@ The available aggregated dataset does not provide enough information to determin
 
 > **Recommended action:** Extend the analysis with policy-level or customer-level data to examine renewals, cancellations, acquisition cohorts, product migration, and retention behavior.
 
-(SQL, Power BI, Applied Statistics)
-
 ### 🛡️ 5. Use solvency together with profitability and growth indicators
 
 The **Composite Solvency Ratio of 180.48%** provides an additional dimension for comparing insurers, but it should not be interpreted in isolation.
@@ -367,8 +359,6 @@ The **Composite Solvency Ratio of 180.48%** provides an additional dimension for
 An insurer showing strong premium growth or technical profitability may present a different risk profile when solvency indicators are incorporated into the analysis.
 
 > **Recommended action:** Evaluate competitive performance through a balanced framework combining **growth, technical profitability, portfolio development, and solvency-related indicators** rather than ranking insurers through a single KPI.
-
-(SQL, Power BI)
 
 ---
 ## 🧪 Project Methodology
@@ -402,7 +392,7 @@ The process included validation of:
 - Business-rule consistency
 - Variable definitions
 
-The final source contained **144 quarterly observations and 39 documented variables**. (Excel, Power Query)
+The final source contained **144 quarterly observations and 39 documented variables**. 
 
 ➡️ [View Data Quality Audit](documentacion/auditoria_calidad_datos.md)
 
@@ -414,7 +404,7 @@ The final source contained **144 quarterly observations and 39 documented variab
 
 The validated dataset was loaded into **MySQL Workbench 8.0 CE**.
 
-SQL was used to create the analytical database, validate the data load, calculate market indicators, analyze company performance, and establish independent reference values for later Power BI validation. (SQL)
+SQL was used to create the analytical database, validate the data load, calculate market indicators, analyze company performance, and establish independent reference values for later Power BI validation. 
 
 ➡️ [View SQL Methodology](documentacion/metodologia_sql.md)
 
@@ -435,7 +425,7 @@ Each KPI was documented according to:
 - Analytical interpretation
 - Reference value
 
-The indicators were validated through SQL before being implemented in Power BI. (SQL, Power BI)
+The indicators were validated through SQL before being implemented in Power BI. 
 
 ➡️ [View KPI Dictionary](documentacion/diccionario_kpis.md)
 
@@ -452,7 +442,7 @@ The final model contains:
 - 5 active one-to-many relationships
 - Single-direction filtering from dimensions to facts
 
-The model was validated before development of the executive dashboard. (Power BI, DAX)
+The model was validated before development of the executive dashboard. 
 
 ---
 
@@ -467,7 +457,7 @@ The reporting layer covers:
 3. Technical Performance
 4. Products & Portfolio
 
-The principal Power BI results were reconciled against previously validated SQL controls. (Power BI, DAX, SQL)
+The principal Power BI results were reconciled against previously validated SQL controls. 
 
 ➡️ [View DAX Documentation](Power%20BI/medidas_dax.md)
 
@@ -479,7 +469,7 @@ The principal Power BI results were reconciled against previously validated SQL 
 
 Validated KPIs were transformed into business-oriented findings and executive recommendations.
 
-The analysis focused on market growth, competitive positioning, technical performance, portfolio development, product mix, and solvency-related indicators. (SQL, Power BI, DAX)
+The analysis focused on market growth, competitive positioning, technical performance, portfolio development, product mix, and solvency-related indicators. 
 
 ➡️ [View Complete Findings & Recommendations](documentacion/hallazgos_y_recomendaciones.md)
 
@@ -493,7 +483,7 @@ The README was reorganized to prioritize:
 
 **Business context → Dashboard → Findings → Recommendations → Architecture → Validation → Methodology**
 
-This structure allows recruiters to understand the project's business value quickly while preserving the complete technical process for deeper review. (GitHub)
+This structure allows recruiters to understand the project's business value quickly while preserving the complete technical process for deeper review. 
 
 </details>
 
