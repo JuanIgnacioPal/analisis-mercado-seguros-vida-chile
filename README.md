@@ -354,6 +354,11 @@ analisis-mercado-seguros-vida-chile/
 │    ├── metodologia_sql.md
 │    └── hallazgos_y_recomendaciones.md
 │
+├── docs/
+│    ├── index.html
+│    └── style.css
+│
+│
 ├── imagenes/
 │    ├── esp/
 │    ├── modelo_analitico_preview.png
