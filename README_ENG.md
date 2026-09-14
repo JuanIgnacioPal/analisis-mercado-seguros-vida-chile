@@ -15,7 +15,7 @@ The main objective was to transform structured insurance data into an analytical
 - 🏢 Competitive positioning among insurance companies
 - 💰 Premium distribution and market concentration
 - 🔍 Performance differences across insurance segments
-- 📊 Changes in market participation between reporting periods
+- 📊 Changes in market share between reporting periods
 
 Rather than focusing only on visualization, the project covers the **complete analytical workflow**, from data preparation and validation to SQL analysis, KPI development, data modeling, and business-oriented visualization.
 
@@ -28,7 +28,7 @@ The project was developed to simulate a realistic Data Analyst workflow within a
 
 Its purpose is to demonstrate the ability to:
 
-- Transform raw regulatory data into analysis-ready datasets
+- Transform structured insurance data into analysis-ready datasets
 - Detect and validate potential data-quality issues
 - Use SQL to explore, validate, and analyze market information
 - Define business-oriented KPIs
@@ -45,7 +45,7 @@ The analysis was designed around questions such as:
 - Which insurance companies hold the largest share of the Chilean market?
 - How has premium volume evolved across reporting periods?
 - How concentrated is the market among the leading insurers?
-- Which insurance segments show the strongest market participation?
+- Which insurance segments show the largest share of premium volume?
 - How does competitive positioning change over time?
 - Which companies gain or lose market share between periods?
 
@@ -69,7 +69,7 @@ These questions guided the analytical process from the SQL layer to the final da
 
 The project follows an end-to-end analytical process:
 
-**Raw CMF Data**  
+**Synthetic Insurance Dataset**  
 ⬇️  
 **Data Preparation & Validation**  
 ⬇️  
