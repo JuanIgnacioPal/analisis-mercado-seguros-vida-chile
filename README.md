@@ -4,13 +4,15 @@
 
 > 📊 Proyecto end-to-end de Business Intelligence con datos 100 % sintéticos, inspirado en conceptos e indicadores del mercado asegurador chileno.
 
-## English Summary
+## 🌎 English Summary
 
-Data analytics portfolio project examining the Chilean life insurance market using public CMF data. The project covers data validation, SQL analysis, KPI development and interactive Power BI reporting, with a focus on market performance, competition and technical insurance indicators.
+Bilingual Data Analytics & Business Intelligence portfolio project examining a **synthetic Chilean life insurance market scenario**, inspired by insurance concepts, indicators, and the regulatory context of the Comisión para el Mercado Financiero (CMF).
 
-Tools: SQL · Excel · Power BI · Power Query · DAX
+The project covers **data-quality validation, SQL analysis, KPI development, dimensional modeling, DAX, and interactive Power BI reporting**, with a focus on market performance, competition, technical insurance indicators, and portfolio analysis.
 
-[English version](README_ENG.md)
+**Tech Stack:** SQL · MySQL · Excel · Power Query · Power BI · DAX · GitHub
+
+➡️ [View the complete English edition](README_ENG.md)
 
 Full documentation is available below in Spanish.
 
