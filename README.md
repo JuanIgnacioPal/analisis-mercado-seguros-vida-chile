@@ -331,7 +331,7 @@ Los ratios fueron recalculados desde sus componentes para evitar promediar porce
 ---
 
 <details>
-<summary><strong>🗂️ Estructura principal del repositorio</strong></summary>
+<summary><strong>🗂️ Estructura actual del repositorio</strong></summary>
 
 
 <br>
