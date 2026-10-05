@@ -360,11 +360,11 @@ analisis-mercado-seguros-vida-chile/
 │
 │
 ├── imagenes/
-│    ├── esp/
+│    ├── ES/
 │    ├── modelo_analitico_preview.png
 │    ├── modelo_dimensional_powerbi.png
 │    ├── validacion_kpis_preview.png
-│    ├── eng/
+│    ├── ENG/
 │    ├── dashboard_resumen_ejecutivo_preview.png
 │    ├── dashboard_mercado_competencia_preview.png
 │    ├── dashboard_desempeno_tecnico_preview.png
@@ -380,7 +380,7 @@ analisis-mercado-seguros-vida-chile/
 └── Power BI/
     ├── README.md
     ├── modelo_analitico_seguros_vida_chile.pbix
-    ├── dashboard_ejecutivo_seguros_vida_chile.
+    ├── dashboard_ejecutivo_seguros_vida_chile.pbix
     ├── medidas_dax.md
     └── diseño_dashboard_ejecutivo.md
     
