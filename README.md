@@ -336,53 +336,56 @@ Los ratios fueron recalculados desde sus componentes para evitar promediar porce
 <br>
 
 ```text
+
 analisis-mercado-seguros-vida-chile/
-│
 ├── README.md
 ├── README_ENG.md
 ├── definicion_proyecto.md
-│
 ├── datos/
 │   └── raw/
-│      └── mercado_asegurador_vida_chile_sintetico.csv
-│
+│       └── mercado_asegurador_vida_chile_sintetico.csv
 ├── documentacion/
-│    ├── auditoria_calidad_datos.md
-│    ├── diccionario_datos.md
-│    ├── diccionario_kpis.md
-│    ├── metodologia_sql.md
-│    └── hallazgos_y_recomendaciones.md
-│
+│   ├── auditoria_calidad_datos.md
+│   ├── diccionario_datos.md
+│   ├── diccionario_kpis.md
+│   ├── hallazgos_y_recomendaciones.md
+│   ├── metodologia_sql.md
+│   ├── modelo_dimensional_powerbi.md
+│   └── validacion_modelo_powerbi.md
 ├── docs/
-│    ├── index.html
-│    └── style.css
-│
-│
+│   ├── index.html
+│   └── style.css
 ├── imagenes/
-│    ├── ES/
-│    ├── modelo_analitico_preview.png
-│    ├── modelo_dimensional_powerbi.png
-│    ├── validacion_kpis_preview.png
-│    ├── ENG/
-│    ├── dashboard_resumen_ejecutivo_preview.png
-│    ├── dashboard_mercado_competencia_preview.png
-│    ├── dashboard_desempeno_tecnico_preview.png
-│    └── dashboard_productos_cartera_preview.png
-│
+│   ├── ES/
+│   │   ├── dashboard_desempeno_tecnico_preview.png
+│   │   ├── dashboard_mercado_competencia_preview.png
+│   │   ├── dashboard_productos_cartera_preview.png
+│   │   ├── dashboard_resumen_ejecutivo_preview.png
+│   │   ├── modelo_analitico_preview.png
+│   │   ├── modelo_dimensional_powerbi.png
+│   │   └── validacion_kpis_preview.png
+│   └── ENG/
+│       ├── Executive_summary_preview.png
+│       ├── Market_n_Comp_preview.png
+│       ├── Product_n_Portfolio_preview.png
+│       └── Technical_Performance_preview.png
 ├── power_query/
-│       └── mercado_asegurador_vida_raw.pq
-│
+│   └── mercado_asegurador_vida_raw.pq
 ├── sql/
 │   ├── README.md
-│   └── [scripts SQL validados]
-│
+│   ├── Fase_01_creacion_base_tabla.sql
+│   ├── Fase_02_validacion_calidad.sql
+│   ├── Fase_03_analisis_mercado.sql
+│   ├── Fase_04_crecimiento.sql
+│   ├── Fase_05_rankings_kpis.sql
+│   └── Fase_06_validacion_kpis.sql
 └── Power BI/
     ├── README.md
-    ├── modelo_analitico_seguros_vida_chile.pbix
     ├── dashboard_ejecutivo_seguros_vida_chile.pbix
+    ├── diseño_dashboard_ejecutivo.md
     ├── medidas_dax.md
-    └── diseño_dashboard_ejecutivo.md
-    
+    └── modelo_analitico_seguros_vida_chile.pbix
+
 ```
 
 </details>
