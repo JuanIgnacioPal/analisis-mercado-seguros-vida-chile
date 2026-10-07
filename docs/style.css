@@ -1526,7 +1526,7 @@ p {
 
 @media (max-width: 1020px) {
 
-    .navigation a:not(.nav-github) {
+    .navigation > a:not(.nav-github) {
         display: none;
     }
 
