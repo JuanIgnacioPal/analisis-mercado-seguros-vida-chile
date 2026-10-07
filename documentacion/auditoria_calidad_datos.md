@@ -34,9 +34,9 @@ Sin embargo, se detectó una observación de **plausibilidad de negocio** que de
 - **Mix de primas:** la suma de las cinco primas por producto difiere de la prima directa en un máximo de **2 millones de CLP** por fila. La diferencia es compatible con redondeos del dataset sintético.
 - **Ecuación contable simplificada:** `activos = pasivos + patrimonio` presenta una diferencia máxima de **1 millón de CLP**, atribuible al redondeo.
 - **Participación de mercado:** la suma por trimestre se encuentra entre **99.99% y 100.02%**, compatible con redondeo a dos decimales.
-- **Tasa de siniestralidad:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.005 puntos porcentuales**.
-- **Ratio de gastos:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.005 puntos porcentuales**.
-- **Ratio de solvencia:** la diferencia máxima entre el valor almacenado y el recálculo es inferior a **0.007 puntos porcentuales**.
+- **Tasa de siniestralidad:** la diferencia absoluta máxima entre el valor almacenado y el recalculado es inferior a **0,01 puntos porcentuales**.
+- **Ratio de gastos:** la diferencia absoluta máxima entre el valor almacenado y el recalculado es inferior a **0,01 puntos porcentuales**.
+- **Ratio de solvencia sintética:** la diferencia absoluta máxima entre el valor almacenado y el recalculado es inferior a **0,01 puntos porcentuales**.
 
 ---
 
