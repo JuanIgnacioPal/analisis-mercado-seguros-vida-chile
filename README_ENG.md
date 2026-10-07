@@ -95,7 +95,7 @@ Provides a high-level view of the market through key indicators such as **Direct
 
 It also summarizes premium trends, leading insurers, and the distribution of the product portfolio.
 
-![Executive Summary](imagenes/ENG/dashboard_executive_summary_preview.png)
+![Executive Summary](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/ENG/Executive_summary_preview.png)
 
 ---
 
@@ -105,7 +105,7 @@ Focuses on the competitive structure of the insurance market, including **market
 
 This page is designed to identify market leaders and changes in competitive positioning over time.
 
-![Market and Competition](imagenes/ENG/dashboard_Market_Share_preview.png)
+![Market and Competition](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/ENG/Market_n_Comp_preview.png)
 
 ---
 
@@ -115,7 +115,7 @@ Evaluates insurers through technical indicators including **Claims Ratio, Expens
 
 The page helps compare operational performance and identify insurers with stronger technical results.
 
-![Technical Performance](imagenes/ENG/dashboard_Technical_performance_preview.png)
+![Technical Performance](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/ENG/Technical_Performance_preview.png)
 
 ---
 
@@ -125,7 +125,7 @@ Analyzes the composition of insurance premiums by product while tracking changes
 
 This page provides a portfolio-level view of how the market evolves across different insurance products.
 
-![Products and Portfolio](imagenes/ENG/dashboard_product_n_portfolio_preview.png)
+![Products and Portfolio](https://github.com/JuanIgnacioPal/analisis-mercado-seguros-vida-chile/blob/main/imagenes/ENG/Product_n_Portfolio_preview.png)
 
 ---
 ---
