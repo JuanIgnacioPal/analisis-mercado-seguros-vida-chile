@@ -178,7 +178,7 @@ Se configuraron **cinco relaciones activas 1:\*** con filtrado unidireccional de
 
 La diferencia corresponde al redondeo de las primas sintéticas distribuidas entre los productos y se mantiene documentada, sin corrección artificial.
 
-[![Vista previa del modelo analítico](imagenes/modelo_analitico_preview.png)](https://github.com/user-attachments/assets/92daa5f1-a666-44ee-9a20-32f2051bdc6f)
+[![Vista previa del modelo analítico](imagenes/modelo_analitico_preview.png)](https://github.com/user-attachments/assets/4ec6196a-7c48-4ce3-ac86-36e4c83eb843)
 
 ➡️ [Abrir modelo analítico `.pbix`](Power%20BI/modelo_analitico_seguros_vida_chile.pbix)
 
