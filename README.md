@@ -192,11 +192,6 @@ La diferencia corresponde al redondeo de las primas sintéticas distribuidas ent
 | **Desempeño Técnico**                                        | **Productos y Cartera**                                      |
 | [![Desempeño Técnico](imagenes/ES/dashboard_desempeno_tecnico_preview.png)](https://github.com/user-attachments/assets/8e990bac-30ce-4f89-869c-bdfc62ebf307) . | [![Productos y Cartera](imagenes/ES/dashboard_productos_cartera_preview.png)](https://github.com/user-attachments/assets/ba71ef60-cf69-4bbf-8f89-0ac396030089) . |
 
-
-
-
-
-
 ### Resumen Ejecutivo
 
 Visión consolidada de primas, crecimiento, asegurados, siniestralidad, margen, solvencia, liderazgo y mix de productos.
