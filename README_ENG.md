@@ -91,7 +91,7 @@ The final Power BI report is structured into four analytical pages, each designe
 
 ### 🧭 1. Executive Summary
 
-Provides a high-level view of the market through key indicators such as **Direct Premium, Insured Lives, Claims Ratio, Technical Margin, and Composite Solvency Ratio**.
+Provides a high-level view of the market through key indicators such as **Direct Premium, Insured Lives, Claims Ratio, Technical Margin, and Synthetic Solvency Ratio**.
 
 It also summarizes premium trends, leading insurers, and the distribution of the product portfolio.
 
@@ -233,7 +233,7 @@ The validated data was transformed into an interactive analytical model in **Pow
 The final model includes **29 explicit DAX measures**, organized into:
 
 - 15 base measures for premiums, claims, expenses, technical results, insured lives, policies, and solvency-related variables. 
-- 6 derived KPIs, including **Claims Ratio, Expense Ratio, Technical Margin, and Composite Solvency Ratio**. 
+- 6 derived KPIs, including **Claims Ratio, Expense Ratio, Technical Margin, and Synthetic Solvency Ratio**. 
 - 6 time-intelligence measures for **QoQ and YoY comparisons**. 
 - 2 competitive-analysis measures supporting rankings and market analysis. 
 
@@ -258,7 +258,7 @@ For **Q4 2025**, the main validation controls included:
 | Expense Ratio | 12.79% |
 | Technical Result | 736,330 MM CLP |
 | Technical Margin | 31.51% |
-| Composite Solvency Ratio | 180.48% |
+| Synthetic Solvency Ratio | 180.48% |
 | Insured Lives | 9,134,304 |
 | Insured Lives YoY Growth | -3.83% |
 | New Insured Lives | 292,967 |
@@ -310,7 +310,7 @@ This suggests that short-term portfolio movement was positive even though the to
 
 ### 🛡️ 5. Solvency remains an important comparative dimension
 
-The market-level **Composite Solvency Ratio reached 180.48%** in Q4 2025.
+The market-level **Synthetic Solvency Ratio reached 180.48%** in Q4 2025.
 
 Because solvency capacity differs across insurers, this indicator complements premium growth and technical profitability when comparing company performance.
 
@@ -354,7 +354,7 @@ The recorded additions and cancellations do not reconcile with the change in the
 
 ### 🛡️ 5. Use solvency together with profitability and growth indicators
 
-The **Composite Solvency Ratio of 180.48%** provides an additional dimension for comparing insurers, but it should not be interpreted in isolation.
+The **Synthetic Solvency Ratio of 180.48%** provides an additional dimension for comparing insurers, but it should not be interpreted in isolation.
 
 An insurer showing strong premium growth or technical profitability may present a different risk profile when solvency indicators are incorporated into the analysis.
 
@@ -526,7 +526,7 @@ It is also meant to demonstrate a broader set of transferable Data Analytics cap
 
 - All companies, observations, and results are **100% synthetic** and are used exclusively for educational and portfolio purposes.
 - ROE was excluded from the main conclusions due to a plausibility limitation identified in the synthetic dataset.
-- The **Composite Solvency Ratio** is a project-specific analytical indicator and does not reproduce the official CMF regulatory solvency methodology.
+- The **Synthetic Solvency Ratio** is a project-specific analytical indicator and does not reproduce the official CMF regulatory solvency methodology.
 - `Net Recorded Flow = New Insured Lives - Cancellations`. These recorded flows do not reconcile with changes in the stock of insured lives and must not be interpreted as net portfolio growth, churn, retention, or persistence.
 - Direct Premium and product-level premium totals contain minor rounding differences resulting from the synthetic allocation process.
 - Relationships between Claims Ratio, Expense Ratio, and Technical Margin are partially mechanical because of the formulas used to construct the synthetic technical result.
