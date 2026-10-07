@@ -111,7 +111,7 @@ This page is designed to identify market leaders and changes in competitive posi
 
 ### ⚙️ 3. Technical Performance
 
-Evaluates insurers through technical indicators including **Claims Ratio, Expense Ratio, Technical Result, Technical Margin, and Composite Solvency Ratio**.
+Evaluates insurers through technical indicators including **Claims Ratio, Expense Ratio, Technical Result, Technical Margin, and Synthetic Solvency Ratio**.
 
 The page helps compare operational performance and identify insurers with stronger technical results.
 
