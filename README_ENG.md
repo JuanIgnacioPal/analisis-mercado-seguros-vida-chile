@@ -121,7 +121,7 @@ The page helps compare operational performance and identify insurers with strong
 
 ### 📦 4. Products & Portfolio
 
-Analyzes the composition of insurance premiums by product while tracking changes in **Insured Lives, In-force Policies, New Insured Lives, Cancellations, and Net Portfolio Change**.
+Analyzes the composition of insurance premiums by product while tracking changes in **Insured Lives, In-force Policies, New Insured Lives, Cancellations, and Net Recorded Flow**.
 
 This page provides a portfolio-level view of how the market evolves across different insurance products.
 
@@ -263,7 +263,7 @@ For **Q4 2025**, the main validation controls included:
 | Insured Lives YoY Growth | -3.83% |
 | New Insured Lives | 292,967 |
 | Cancellations | 157,660 |
-| Net Portfolio Change | 135,307 |
+| Net Recorded Flow (New Insured Lives − Cancellations) | 135,307 |
 
 A separate reconciliation was performed between total **Direct Premium** and premiums allocated across insurance products. 
 
@@ -304,7 +304,7 @@ Together, these indicators suggest positive technical performance in the latest 
 
 The market closed Q4 2025 with **9,134,304 Insured Lives**, representing a **3.83% Year-over-Year decline**.
 
-However, the latest period recorded **292,967 New Insured Lives** and **157,660 Cancellations**, producing a positive **Net Portfolio Change of 135,307**.
+New Insured Lives minus Cancellations totaled **135,307 in Q4 2025**. However, the stock of Insured Lives decreased by **157,296 quarter-on-quarter**. These recorded flows do not reconcile with the change in the stock and should not be interpreted as net portfolio growth.
 
 This suggests that short-term portfolio movement was positive even though the total insured population remained below the previous year's level.
 
@@ -346,9 +346,9 @@ Future growth should therefore be evaluated against these indicators to identify
 
 ### 👥 4. Investigate the decline in insured lives
 
-Although Q4 2025 recorded a positive **Net Portfolio Change of 135,307**, total Insured Lives remained **3.83% below the previous year**.
+In Q4 2025, Insured Lives decreased by **157,296 quarter-on-quarter** and remained **3.83% below the previous year**, despite a positive **Net Recorded Flow of 135,307**.
 
-The available aggregated dataset does not provide enough information to determine the cause of this difference.
+The recorded additions and cancellations do not reconcile with the change in the stock of insured lives. The available aggregated dataset does not identify the movements needed to explain this discrepancy.
 
 > **Recommended action:** Extend the analysis with policy-level or customer-level data to examine renewals, cancellations, acquisition cohorts, product migration, and retention behavior.
 
@@ -527,6 +527,6 @@ It is also meant to demonstrate a broader set of transferable Data Analytics cap
 - All companies, observations, and results are **100% synthetic** and are used exclusively for educational and portfolio purposes.
 - ROE was excluded from the main conclusions due to a plausibility limitation identified in the synthetic dataset.
 - The **Composite Solvency Ratio** is a project-specific analytical indicator and does not reproduce the official CMF regulatory solvency methodology.
-- `Net Portfolio Change = New Insured Lives - Cancellations`; these flows do not fully reconcile with changes in the stock of insured lives and should therefore not be interpreted as churn, retention, or persistence.
+- `Net Recorded Flow = New Insured Lives - Cancellations`. These recorded flows do not reconcile with changes in the stock of insured lives and must not be interpreted as net portfolio growth, churn, retention, or persistence.
 - Direct Premium and product-level premium totals contain minor rounding differences resulting from the synthetic allocation process.
 - Relationships between Claims Ratio, Expense Ratio, and Technical Margin are partially mechanical because of the formulas used to construct the synthetic technical result.
