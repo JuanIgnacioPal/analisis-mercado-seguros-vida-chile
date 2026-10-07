@@ -186,12 +186,11 @@ La diferencia corresponde al redondeo de las primas sintéticas distribuidas ent
 
 ## Páginas del dashboard
 
-| **Resumen Ejecutivo**                                        | **Mercado y Competencia**                                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [![Resumen Ejecutivo](imagenes/ES/dashboard_resumen_ejecutivo_preview.png)](https://github.com/user-attachments/assets/be63b88f-59ce-40c2-b764-40892e708f39) . | [![Mercado y Competencia](imagenes/ES/dashboard_mercado_competencia_preview.png)](https://github.com/user-attachments/assets/831add63-40d3-4394-a3d9-d3691d924bc4) .
-| **Desempeño Técnico**                                        | **Productos y Cartera**                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [![Desempeño Técnico](imagenes/ES/dashboard_desempeno_tecnico_preview.png)](https://github.com/user-attachments/assets/8e990bac-30ce-4f89-869c-bdfc62ebf307) . | [![Productos y Cartera](imagenes/ES/dashboard_productos_cartera_preview.png)](https://github.com/user-attachments/assets/ba71ef60-cf69-4bbf-8f89-0ac396030089) . |
+| **Resumen Ejecutivo** | **Mercado y Competencia** |
+| :---: | :---: |
+| [![Resumen Ejecutivo](imagenes/ES/dashboard_resumen_ejecutivo_preview.png)](https://github.com/user-attachments/assets/be63b88f-59ce-40c2-b764-40892e708f39) | [![Mercado y Competencia](imagenes/ES/dashboard_mercado_competencia_preview.png)](https://github.com/user-attachments/assets/831add63-40d3-4394-a3d9-d3691d924bc4) |
+| <div align="center"><strong>Desempeño Técnico</strong></div> | <div align="center"><strong>Productos y Cartera</strong></div> |
+| [![Desempeño Técnico](imagenes/ES/dashboard_desempeno_tecnico_preview.png)](https://github.com/user-attachments/assets/8e990bac-30ce-4f89-869c-bdfc62ebf307) | [![Productos y Cartera](imagenes/ES/dashboard_productos_cartera_preview.png)](https://github.com/user-attachments/assets/ba71ef60-cf69-4bbf-8f89-0ac396030089) |
 
 ### Resumen Ejecutivo
 
