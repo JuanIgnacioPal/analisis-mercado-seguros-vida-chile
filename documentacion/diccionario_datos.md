@@ -42,9 +42,11 @@
 | `nuevos_asegurados` | Número entero | Número sintético de nuevos asegurados incorporados durante el período. |
 | `cancelaciones` | Número entero | Número sintético de cancelaciones registradas durante el período. |
 | `siniestros_reportados` | Número entero | Número sintético de siniestros reportados durante el período. |
-| `costo_promedio_siniestro_millones_clp` | Número decimal | Costo promedio sintético por siniestro pagado, en millones de CLP. |
+| `costo_promedio_siniestro_millones_clp` | Número decimal | Proxy sintético calculado como `siniestros_pagados_millones_clp / siniestros_reportados`, expresado en millones de CLP por siniestro reportado. No representa el costo promedio por siniestro pagado. |
 | `tasa_siniestralidad_pct` | Número decimal | Costo de siniestros dividido por prima retenida neta, expresado como porcentaje. |
 | `ratio_gastos_pct` | Número decimal | Gastos administrativos divididos por prima retenida neta, expresado como porcentaje. |
 | `ratio_solvencia_pct` | Número decimal | Capital disponible dividido por capital requerido, expresado como porcentaje. Indicador educativo simplificado. |
 | `roe_anualizado_pct` | Número decimal | ROE sintético anualizado calculado a partir del resultado neto trimestral y el patrimonio. Requiere revisión de plausibilidad. |
 | `participacion_mercado_pct` | Número decimal | Participación de la compañía en la prima directa total del mercado ficticio durante el mismo período, expresada como porcentaje. |
+
+> **Limitación del costo promedio de siniestros:** este campo relaciona el monto pagado durante el período con el número de siniestros reportados en ese período. Los pagos y los reportes pueden corresponder a siniestros distintos. El dataset no contiene el número de siniestros pagados, por lo que este indicador debe interpretarse únicamente como un proxy sintético y no como una medida de severidad promedio de los siniestros pagados.
