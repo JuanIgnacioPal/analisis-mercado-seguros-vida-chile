@@ -14,7 +14,7 @@ The main objective was to transform structured insurance data into an analytical
 - 📈 Market growth and evolution over time
 - 🏢 Competitive positioning among insurance companies
 - 💰 Premium distribution and market concentration
-- 🔍 Performance differences across insurance segments
+- 🔍 Performance differences across insurers
 - 📊 Changes in market share between reporting periods
 
 Rather than focusing only on visualization, the project covers the **complete analytical workflow**, from data preparation and validation to SQL analysis, KPI development, data modeling, and business-oriented visualization.
@@ -45,7 +45,7 @@ The analysis was designed around questions such as:
 - Which insurance companies hold the largest share of the Chilean market?
 - How has premium volume evolved across reporting periods?
 - How concentrated is the market among the leading insurers?
-- Which insurance segments show the largest share of premium volume?
+- Which product categories account for the largest share of premium volume?
 - How does competitive positioning change over time?
 - Which companies gain or lose market share between periods?
 
