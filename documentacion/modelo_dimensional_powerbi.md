@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Construcción un modelo semántico en esquema estrella para analizar el mercado sintético de seguros de vida sin mezclar mediciones con granularidades diferentes.
+Construcción de un modelo semántico en esquema estrella para analizar el mercado sintético de seguros de vida sin mezclar mediciones con granularidades diferentes.
 
 ## Fuente
 
