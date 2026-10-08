@@ -202,7 +202,7 @@ The model contains:
 - `H_Mercado_Trimestral` — quarterly fact table containing market, financial, portfolio, claims, expense, and solvency indicators by insurer. 
 - `H_Primas_Producto` — fact table containing premium distribution by insurer, quarter, and insurance product. 
 
-The product-level premium table was intentionally separated from the main quarterly fact table to avoid duplicating non-additive measures such as claims, expenses, capital, equity, and insured lives.
+The product-premium fact table is separate from the main quarterly fact table to avoid duplicating company-quarter metrics at the product level. Claims and expenses are additive flows that can be summed across companies and non-overlapping quarters. Capital, equity, and insured lives are semi-additive stocks: within this dataset, they can be summed across companies for the same reporting date, but should not be summed across quarters.
 
 The model uses active **one-to-many relationships**, with single-direction filtering from dimensions toward fact tables, providing a simple and controlled structure for analytical reporting.
 
