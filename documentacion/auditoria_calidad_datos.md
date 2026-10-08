@@ -50,7 +50,7 @@ documentan limitaciones detectadas durante el análisis.
 
 ---
       
-## ⚠️ Limitación posterior — No conciliación stock-flujo de cartera sd
+## ⚠️ Limitación posterior — No conciliación stock-flujo de cartera 
 
 **Fecha de detección:** Fase 7 — análisis de resultados.
 
